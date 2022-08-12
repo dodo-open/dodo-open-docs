@@ -1,6 +1,6 @@
 # 一、介绍
 
-&emsp;&emsp;Wow~你发现了DoDo空间站里的新天地！
+&emsp;&emsp;Wow~你发现了DoDo空间站里的新天地。
 <img src="https://img.imdodo.com/upload/cdn/1001AD84F00738E3526442F21183D74C_1642749767970.png" width="50" height="50" />
 <img style="float:right" src="https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png" width="170" height="210" />
 
