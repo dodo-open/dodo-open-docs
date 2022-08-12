@@ -1,7 +1,7 @@
-# 文字频道API
+# 文字频道API（Modify）
 
 
-## 发送消息
+## 发送消息（Modify）
 
 SetChannelMessageSend
 
@@ -20,9 +20,10 @@ SetChannelMessageSend
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |channelId|string|是|频道ID|
-|messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息<!--，6：卡片消息-->|
+|messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息，6：卡片消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 |referencedMessageId|string|否|回复消息ID|
+|dodoId|string|否|DoDo号，非必传，如果传了，则给该成员发送频道私信|
 
 #### 出参
 
@@ -36,7 +37,7 @@ SetChannelMessageSend
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|messageId|string|消息ID|
+|messageId|string|消息ID，如入参传了DoDo号，则返回频道私信消息ID|
 
 #### 入参示例
 
@@ -89,19 +90,32 @@ SetChannelMessageSend
 
   </CodeGroupItem>
 
-<!--<CodeGroupItem title="6 - 卡片消息">
+   <CodeGroupItem title="6 - 卡片消息">
 
 ```json
 {
     "channelId": "1000101",
     "messageType": 3,
     "messageBody": {
-        "card": "xxx"
+        "content": "卡片外内容",
+        "card": {
+            "type": "card",
+            "components": [{
+                    "type": "section",
+                    "text": {
+                        "type": "dodo-md",
+                        "content": "卡片文本内容"
+                    }
+                }
+            ],
+            "theme": "green",
+            "title": "卡片标题"
+        }
     }
 }
 ```
 
-  </CodeGroupItem>-->
+  </CodeGroupItem>
 
 </CodeGroup>
 
@@ -118,7 +132,7 @@ SetChannelMessageSend
 ```
 
 
-## 编辑消息
+## 编辑消息（Modify）
 
 SetChannelMessageEdit
 
@@ -136,8 +150,8 @@ SetChannelMessageEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|messageId|string|是|待编辑的消息ID<!--，不可编辑频道私信消息ID-->|
-|messageType|int|是|消息类型，1：文字消息<!--，6：卡片消息-->|
+|messageId|string|是|待编辑的消息ID，不可编辑频道私信消息ID|
+|messageType|int|是|消息类型，1：文字消息，6：卡片消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 
 #### 出参
@@ -164,26 +178,39 @@ SetChannelMessageEdit
     "messageId": "111111111111111111",
     "messageType": 1,
     "messageBody": {
-        "content": "测试文字消息"
+        "content": "编辑后的测试文字消息"
     }
 }
 ```
 
   </CodeGroupItem>
 
-<!--   <CodeGroupItem title="6 - 卡片消息">
+   <CodeGroupItem title="6 - 卡片消息">
 
 ```json
 {
     "channelId": "1000101",
     "messageType": 3,
     "messageBody": {
-        "card": "xxx"
+        "content": "卡片外内容",
+        "card": {
+            "type": "card",
+            "components": [{
+                    "type": "section",
+                    "text": {
+                        "type": "dodo-md",
+                        "content": "编辑后的卡片文本内容"
+                    }
+                }
+            ],
+            "theme": "green",
+            "title": "卡片标题"
+        }
     }
 }
 ```
 
-  </CodeGroupItem>-->
+  </CodeGroupItem>
 
 </CodeGroup>
 

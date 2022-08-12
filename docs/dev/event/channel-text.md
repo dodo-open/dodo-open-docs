@@ -1,4 +1,4 @@
-# 文字频道Event
+# 文字频道Event（Modify）
 
 
 ## 消息事件
@@ -26,11 +26,11 @@ EventBodyChannelMessage
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |reference|object|[回复信息](../api/message.md#回复信息)|
-|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息|
+|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息|
 |messageBody|object|[消息内容](../api/message.md#消息内容)|
 
 
-## 消息表情反应事件
+## 消息表情反应事件（Modify）
 
 MessageReactionEvent
 
@@ -47,12 +47,12 @@ EventBodyMessageReaction
 |islandId|string|来源群号|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
-<!--|messageId|string|来源消息ID|-->
+|messageId|string|来源消息ID|
 |reactionTarget|object|[反应对象](../api/message.md#反应对象)|
 |reactionEmoji|object|[反应表情](../api/message.md#消息表情)|
 |reactionType|int|反应类型，0：删除，1：新增|
 
-<!--
+
 ## 卡片消息按钮点击事件（Add）
 
 CardMessageButtonClickEvent
@@ -70,7 +70,7 @@ EventBodyCardMessageButtonClick
 |islandId|string|来源群号|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
-|messageId|string|来源消息ID|
+|messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |buttonType|int|按钮类型，1：跳转链接，2：复制内容，3：回传参数，4：回传表单|
@@ -95,7 +95,7 @@ EventBodyCardMessageFormEcho
 |islandId|string|来源群号|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
-|messageId|string|来源消息ID|
+|messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |formId|string|表单ID|
@@ -124,10 +124,10 @@ EventBodyCardMessageListEcho
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandId|string|来源群号|
-|channelId|string|来源频道ID|
+|channelId|string|来源频道ID，频道私信触发时，返回频道私信消息ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |listId|string|列表ID|
-|listData|`List<string>`|列表数据|-->
+|listData|`List<string>`|列表数据|

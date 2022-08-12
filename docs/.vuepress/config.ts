@@ -215,7 +215,7 @@ export default defineUserConfig({
                 '/dev/api/personal.md',
                 '/dev/api/resource.md',
                 '/dev/api/message.md',
-                // '/dev/api/card.md'
+                '/dev/api/card.md'
               ],
             },
             {

@@ -1,4 +1,4 @@
-# 身份组API
+# 身份组API（Modify）
 
 ## 获取身份组列表
 
@@ -59,7 +59,7 @@ GetRoleList
 }
 ```
 
-<!--
+
 ## 创建身份组（Add）
 
 SetRoleAdd
@@ -79,10 +79,10 @@ SetRoleAdd
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群号|
-|roleName|string|否|身份组名称|
-|roleColor|string|否|身份组颜色|
-|position|int|否|身份组排序位置|
-|permission|string|否|[身份组权限值（16进制）](../start/permission.md#权限值说明)|
+|roleName|string|否|身份组名称，非必传，不传时设置为`新的身份组`，不能大于32个字符或16个汉字|
+|roleColor|string|否|身份组颜色，非必传，不传时默认为`#333333`，16进制HEX格式颜色码|
+|position|int|否|身份组排序位置，非必传，不传时默认为1，不可传比机器人身份组大的排序值|
+|permission|string|否|[身份组权限值（16进制）](../start/permission.md#权限值说明)，非必传，不传时默认为0|
 
 #### 出参
 
@@ -139,10 +139,10 @@ SetRoleEdit
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群号|
 |roleId|string|是|身份组ID|
-|roleName|string|否|身份组名称|
-|roleColor|string|否|身份组颜色|
-|position|int|否|身份组排序位置|
-|permission|string|否|[身份组权限值（16进制）](../start/permission.md#权限值说明)|
+|roleName|string|否|身份组名称，非必传，不传时默认不改动，不能大于32个字符或16个汉字|
+|roleColor|string|否|身份组颜色，非必传，不传时默认不改动，16进制HEX格式颜色码|
+|position|int|否|身份组排序位置，非必传，不传时默认不改动，不可传比机器人身份组大的排序值|
+|permission|string|否|[身份组权限值（16进制）](../start/permission.md#权限值说明)，非必传，不传时默认不改动|
 
 #### 出参
 
@@ -215,7 +215,7 @@ SetRoleRemove
     "message": "success"
 }
 ```
--->
+
 
 ## 赋予成员身份组
 
