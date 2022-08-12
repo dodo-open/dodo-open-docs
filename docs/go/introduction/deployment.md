@@ -91,7 +91,7 @@ DoDo开放平台提供两种类型的机器人
 - 关键词回复
 - 身份组发放
 
-视频教程：https://www.bilibili.com/video/BV1ga411L7WB
+视频教程：![https://www.bilibili.com/video/BV1ga411L7WB](https://www.bilibili.com/video/BV1ga411L7WB)
 
 #### 4.2.1 进群欢迎语
 后台设置：   
