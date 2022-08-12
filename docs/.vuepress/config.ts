@@ -156,7 +156,8 @@ export default defineUserConfig({
               children: [
                 '/go/',
                 '/go/introduction/platform.md',
-                '/go/introduction/deployment.md'
+                '/go/introduction/deployment.md',
+                '/go/introduction/community.md'
               ],
             },
             {
