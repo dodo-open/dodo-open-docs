@@ -12,30 +12,29 @@
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|card|object|是|[卡片](#卡片-1)，限制10000个字符|
 |content|string|否|附加文本，支持Markdown语法、菱形语法|
+|card|object|是|[卡片](#卡片-1)，限制10000个字符|
 
 #### 卡片
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|类型，固定填写`card`|
+|components|`list<object>`|否|[内容组件](#内容组件)|
 |theme|string|是|卡片风格，grey，red，orange，yellow ，green，indigo，blue，purple，black|
 |title|string|是|卡片标题，只支持普通文本，可以为空字符串|
-|components|`list<object>`|否|[内容组件](#内容组件)|
-
 
 #### JSON
 
 ```json
 {
+    "content": "这是一段卡片外的文字消息，可以附带Markdown语法、@用户、#频道等菱形语法功能，在卡片编辑器中不会实时预览。",
     "card": {
         "type": "card",
-        "theme": "grey",
-        "title": "卡片顶部的标题",
         "components": [],
-    },
-    "content": "附加文本"
+        "theme": "green",
+        "title": "这是一个卡片标题"
+    }
 }
 ```
 
@@ -64,8 +63,8 @@
 {
     "type": "header",
     "text": {
-        "type": "plain-text",
-        "content": "标题内容"
+        "type": "dodo-md",
+        "content": "一个标题字号的文本内容，支持Markdown"
     }
 }
 ```
@@ -93,8 +92,8 @@
 {
     "type": "section",
     "text": {
-        "type": "plain-text",
-        "content": "文本内容"
+        "type": "dodo-md",
+        "content": "一长段文本字号的文本内容，支持Markdown，最大支持字符数2000。"
     }
 }
 ```
@@ -132,16 +131,25 @@
     "type": "section",
     "text": {
         "type": "paragraph",
-        "cols": 3,
+        "cols": 6,
         "fields": [{
-                "type": "plain-text",
-                "content": "A\na1\2\n5"
+                "type": "dodo-md",
+                "content": "第一栏\n内容"
             }, {
-                "type": "plain-text",
-                "content": "B\nb2\n3\n7"
+                "type": "dodo-md",
+                "content": "第二栏\n内容"
             }, {
-                "type": "plain-text",
-                "content": "C\nc1\n4\n8"
+                "type": "dodo-md",
+                "content": "第三栏\n内容"
+            }, {
+                "type": "dodo-md",
+                "content": "第四栏\n内容"
+            }, {
+                "type": "dodo-md",
+                "content": "第五栏\n内容"
+            }, {
+                "type": "dodo-md",
+                "content": "第六栏\n内容"
             }
         ]
     }
@@ -173,10 +181,16 @@
     "type": "remark",
     "elements": [{
             "type": "image",
-            "src": "图片地址"
+            "src": "https://img.imdodo.com/upload/cdn/4803E0BBF8678A657EBD762D7AC45710_1660189645624.png"
         }, {
-            "type": "plain-text",
-            "content": "普通文本"
+            "type": "dodo-md",
+            "content": "BiliBili"
+        }, {
+            "type": "image",
+            "src": "https://img.imdodo.com/upload/cdn/1C274FE42B6C98494A06D674559B2206_1658739484506.png"
+        }, {
+            "type": "dodo-md",
+            "content": "DoDo"
         }
     ]
 }
@@ -197,7 +211,7 @@
 ```json
 {
     "type": "image",
-    "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
+    "src": "https://img.imdodo.com/upload/cdn/09151DF5C726C6E2F5915E5B117EF98E_1660189645615.png"
 }
 ```
 
@@ -225,7 +239,10 @@
     "type": "image-group",
     "elements": [{
             "type": "image",
-            "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
+            "src": "https://img.imdodo.com/upload/cdn/1C274FE42B6C98494A06D674559B2206_1658739484506.png"
+        }, {
+            "type": "image",
+            "src": "https://img.imdodo.com/upload/cdn/09151DF5C726C6E2F5915E5B117EF98E_1660189645615.png"
         }
     ]
 }
@@ -252,9 +269,9 @@
 ```json
 {
     "type": "video",
-    "title": "有本事别笑",
-    "cover": "视频封面",
-    "src": "https://video.imdodo.com/dodo/7f236defb78ec803444057d2b892798c.mp4"
+    "title": "屏幕内覆盖视频地址",
+    "cover": "https://img.imdodo.com/dodo/2493bf9b000b8dc18e77d079ac517bb9.png",
+    "src": "https://video.imdodo.com/dodo/7f0a1979c818fa05cf7bdeae20aad24b.mp4"
 }
 ```
 
@@ -276,8 +293,8 @@
 {
     "type": "countdown",
     "title": "主题",
-    "style": "day",
-    "endTime": 1657613499271
+    "style": "hour",
+    "endTime": 1660644927968
 }
 ```
 
@@ -332,7 +349,7 @@
     "align": "left",
     "text": {
         "type": "plain-text",
-        "content": "没见过这么萌的狗狗吗？"
+        "content": "这是一段文本描述"
     },
     "accessory": {
         "type": "image",
@@ -382,13 +399,28 @@
     "type": "button-group",
     "elements": [{
             "type": "button",
-            "interactCustomId": "交互自定义id",
             "click": {
-                "value": "跳转链接",
+                "value": "https://www.imdodo.com",
                 "action": "link_url"
             },
-            "color": "颜色名称",
-            "name": "按钮1"
+            "color": "blue",
+            "name": "链接跳转"
+        }, {
+            "type": "button",
+            "click": {
+                "value": "value",
+                "action": "call_back"
+            },
+            "color": "green",
+            "name": "回传参数"
+        }, {
+            "type": "button",
+            "click": {
+                "value": "这段话会在点击按钮后复制到剪贴板",
+                "action": "copy_content"
+            },
+            "color": "grey",
+            "name": "复制内容"
         }
     ]
 }
@@ -480,17 +512,19 @@
 {
     "type": "list-selector",
     "interactCustomId": "交互自定义id",
-    "placeholder": "输入框提示",
+    "placeholder": "未选择时显示的文本内容",
     "elements": [{
-            "name": "展示的选项名，必填",
-            "desc": "选项名下面的描述，选填"
+            "name": "选项1",
+            "desc": "可以填一些描述"
         }, {
-            "name": "展示的选项名，必填",
-            "desc": "选项名下面的描述，选填"
+            "name": "选项2"
+        }, {
+            "name": "选项3",
+            "desc": "也可以不填"
         }
     ],
-    "min": "1 数字，最少选中个数",
-    "max": "2 数字，最大选中个数"
+    "min": 1,
+    "max": 1
 }
 ```
 
