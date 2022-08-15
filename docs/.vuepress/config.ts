@@ -124,14 +124,14 @@ export default defineUserConfig({
             activeMatch: '/dev/sdk/.*',
             children: [
               {
+                text: 'Net SDK',
+                link: '/dev/sdk/net',
+                activeMatch: '/dev/sdk/net/.*'
+              },
+              {
                 text: 'Go SDK',
                 link: '/dev/sdk/go',
                 activeMatch: '/dev/sdk/go/.*'
-              },
-              {
-                text: '.Net SDK',
-                link: '/dev/sdk/net',
-                activeMatch: '/dev/sdk/net/.*'
               },
               {
                 text: '易语言 SDK',
