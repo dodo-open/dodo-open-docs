@@ -95,11 +95,13 @@ SetChannelMessageSend
 ```json
 {
     "channelId": "1000101",
-    "messageType": 3,
+    "messageType": 6,
     "messageBody": {
         "content": "卡片外内容",
         "card": {
             "type": "card",
+            "theme": "green",
+            "title": "卡片标题",
             "components": [{
                     "type": "section",
                     "text": {
@@ -107,9 +109,7 @@ SetChannelMessageSend
                         "content": "卡片文本内容"
                     }
                 }
-            ],
-            "theme": "green",
-            "title": "卡片标题"
+            ]
         }
     }
 }
@@ -189,22 +189,22 @@ SetChannelMessageEdit
 
 ```json
 {
-    "channelId": "1000101",
-    "messageType": 3,
+    "messageId": "111111111111111111",
+    "messageType": 6,
     "messageBody": {
         "content": "卡片外内容",
         "card": {
             "type": "card",
+            "theme": "green",
+            "title": "卡片标题",
             "components": [{
                     "type": "section",
                     "text": {
                         "type": "dodo-md",
-                        "content": "编辑后的卡片文本内容"
+                        "content": "卡片文本内容"
                     }
                 }
-            ],
-            "theme": "green",
-            "title": "卡片标题"
+            ]
         }
     }
 }

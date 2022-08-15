@@ -62,16 +62,11 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "header",
-            "text": {
-                "type": "plain-text",
-                "content": "标题内容"
-            }
-        }
-    ]
+    "type": "header",
+    "text": {
+        "type": "plain-text",
+        "content": "标题内容"
+    }
 }
 ```
 
@@ -96,16 +91,11 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "section",
-            "text": {
-                "type": "plain-text",
-                "content": "文本内容"
-            }
-        }
-    ]
+    "type": "section",
+    "text": {
+        "type": "plain-text",
+        "content": "文本内容"
+    }
 }
 ```
 
@@ -139,27 +129,22 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "section",
-            "text": {
-                "type": "paragraph",
-                "cols": 3,
-                "fields": [{
-                        "type": "plain-text",
-                        "content": "A\na1\2\n5"
-                    }, {
-                        "type": "plain-text",
-                        "content": "B\nb2\n3\n7"
-                    }, {
-                        "type": "plain-text",
-                        "content": "C\nc1\n4\n8"
-                    }
-                ]
+    "type": "section",
+    "text": {
+        "type": "paragraph",
+        "cols": 3,
+        "fields": [{
+                "type": "plain-text",
+                "content": "A\na1\2\n5"
+            }, {
+                "type": "plain-text",
+                "content": "B\nb2\n3\n7"
+            }, {
+                "type": "plain-text",
+                "content": "C\nc1\n4\n8"
             }
-        }
-    ]
+        ]
+    }
 }
 ```
 
@@ -185,18 +170,13 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "remark",
-            "elements": [{
-                    "type": "image",
-                    "src": "图片地址"
-                }, {
-                    "type": "plain-text",
-                    "content": "普通文本"
-                }
-            ]
+    "type": "remark",
+    "elements": [{
+            "type": "image",
+            "src": "图片地址"
+        }, {
+            "type": "plain-text",
+            "content": "普通文本"
         }
     ]
 }
@@ -216,13 +196,8 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "image",
-            "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
-        }
-    ]
+    "type": "image",
+    "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
 }
 ```
 
@@ -247,15 +222,10 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "image-group",
-            "elements": [{
-                    "type": "image",
-                    "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
-                }
-            ]
+    "type": "image-group",
+    "elements": [{
+            "type": "image",
+            "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
         }
     ]
 }
@@ -281,15 +251,10 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "video",
-            "title": "有本事别笑",
-            "cover": "视频封面",
-            "src": "https://video.imdodo.com/dodo/7f236defb78ec803444057d2b892798c.mp4"
-        }
-    ]
+    "type": "video",
+    "title": "有本事别笑",
+    "cover": "视频封面",
+    "src": "https://video.imdodo.com/dodo/7f236defb78ec803444057d2b892798c.mp4"
 }
 ```
 
@@ -309,15 +274,10 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "countdown",
-            "title": "主题",
-            "style": "day",
-            "endTime": 1657613499271
-        }
-    ]
+    "type": "countdown",
+    "title": "主题",
+    "style": "day",
+    "endTime": 1657613499271
 }
 ```
 
@@ -373,21 +333,16 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "section",
-            "align": "left",
-            "text": {
-                "type": "plain-text",
-                "content": "没见过这么萌的狗狗吗？"
-            },
-            "accessory": {
-                "type": "image",
-                "src": "https://dodo.cn/assets/2021-01/7kr4FkWpLV0ku0ku.jpeg"
-            }
-        }
-    ]
+    "type": "section",
+    "align": "left",
+    "text": {
+        "type": "plain-text",
+        "content": "没见过这么萌的狗狗吗？"
+    },
+    "accessory": {
+        "type": "image",
+        "src": "https://dodo.cn/assets/2021-01/7kr4FkWpLV0ku0ku.jpeg"
+    }
 }
 ```
 
@@ -429,21 +384,16 @@
 
 ```json
 {
-    "theme": "green",
-    "type": "card",
-    "components": [{
-            "type": "button-group",
-            "elements": [{
-                    "type": "button",
-                    "interactCustomId": "交互自定义id",
-                    "click": {
-                        "value": "跳转链接",
-                        "action": "link_url"
-                    },
-                    "color": "颜色名称",
-                    "name": "按钮1"
-                }
-            ]
+    "type": "button-group",
+    "elements": [{
+            "type": "button",
+            "interactCustomId": "交互自定义id",
+            "click": {
+                "value": "跳转链接",
+                "action": "link_url"
+            },
+            "color": "颜色名称",
+            "name": "按钮1"
         }
     ]
 }
@@ -489,27 +439,22 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "section",
-            "text": {
-                "type": "plain-text",
-                "content": "您是否认为DoDo是最好的语音软件？"
-            },
-            "align": "left",
-            "accessory": {
-                "type": "button",
-                "interactCustomId": "交互自定义id",
-                "click": {
-                    "value": "跳转链接",
-                    "action": "link_url"
-                },
-                "color": "颜色名称",
-                "name": "按钮1"
-            }
-        }
-    ]
+    "type": "section",
+    "text": {
+        "type": "plain-text",
+        "content": "您是否认为DoDo是最好的语音软件？"
+    },
+    "align": "left",
+    "accessory": {
+        "type": "button",
+        "interactCustomId": "交互自定义id",
+        "click": {
+            "value": "跳转链接",
+            "action": "link_url"
+        },
+        "color": "颜色名称",
+        "name": "按钮1"
+    }
 }
 ```
 
@@ -538,24 +483,19 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "list-selector",
-            "interactCustomId": "交互自定义id",
-            "placeholder": "输入框提示",
-            "elements": [{
-                    "name": "展示的选项名，必填",
-                    "desc": "选项名下面的描述，选填"
-                }, {
-                    "name": "展示的选项名，必填",
-                    "desc": "选项名下面的描述，选填"
-                }
-            ],
-            "min": "1 数字，最少选中个数",
-            "max": "2 数字，最大选中个数"
+    "type": "list-selector",
+    "interactCustomId": "交互自定义id",
+    "placeholder": "输入框提示",
+    "elements": [{
+            "name": "展示的选项名，必填",
+            "desc": "选项名下面的描述，选填"
+        }, {
+            "name": "展示的选项名，必填",
+            "desc": "选项名下面的描述，选填"
         }
-    ]
+    ],
+    "min": "1 数字，最少选中个数",
+    "max": "2 数字，最大选中个数"
 }
 ```
 
@@ -609,43 +549,38 @@
 #### JSON
 
 ```json
- {
-    "theme": "green",
-    "type": "card",
-    "components": [{
-            "type": "button-group",
-            "elements": [{
-                    "type": "button",
-                    "interactCustomId": "交互自定义id",
-                    "click": {
-                        "value": "",
-                        "action": "form"
-                    },
-                    "color": "颜色名称",
-                    "name": "按钮1",
-                    "form": {
-                        "title": "dialog 表单 标题",
-                        "elements": [{
-                                "type": "input",
-                                "key": "选项自定义id",
-                                "title": "第1个问题",
-                                "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-                                "placeholder": "输入框提示",
-                                "minChar": "数字, 大于等于0",
-                                "maxChar": "数字, 大于0"
-                            }, {
-                                "type": "input",
-                                "key": "选项自定义id",
-                                "title": "第2个问题",
-                                "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-                                "placeholder": "输入框提示",
-                                "minChar": 0,
-                                "maxChar": 4000
-                            }
-                        ]
+{
+    "type": "button-group",
+    "elements": [{
+            "type": "button",
+            "interactCustomId": "交互自定义id",
+            "click": {
+                "value": "",
+                "action": "form"
+            },
+            "color": "颜色名称",
+            "name": "按钮1",
+            "form": {
+                "title": "dialog 表单 标题",
+                "elements": [{
+                        "type": "input",
+                        "key": "选项自定义id",
+                        "title": "第1个问题",
+                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+                        "placeholder": "输入框提示",
+                        "minChar": "数字, 大于等于0",
+                        "maxChar": "数字, 大于0"
+                    }, {
+                        "type": "input",
+                        "key": "选项自定义id",
+                        "title": "第2个问题",
+                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+                        "placeholder": "输入框提示",
+                        "minChar": 0,
+                        "maxChar": 4000
                     }
-                }
-            ]
+                ]
+            }
         }
     ]
 }
