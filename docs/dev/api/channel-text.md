@@ -100,7 +100,7 @@ SetChannelMessageSend
         "content": "卡片外内容",
         "card": {
             "type": "card",
-            "theme": "green",
+            "theme": "grey",
             "title": "卡片标题",
             "components": [{
                     "type": "section",
@@ -195,7 +195,7 @@ SetChannelMessageEdit
         "content": "卡片外内容",
         "card": {
             "type": "card",
-            "theme": "green",
+            "theme": "grey",
             "title": "卡片标题",
             "components": [{
                     "type": "section",

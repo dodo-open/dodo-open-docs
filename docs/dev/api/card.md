@@ -12,7 +12,7 @@
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|card|string|是|[卡片](#卡片-1)|
+|card|object|是|[卡片](#卡片-1)，限制10000个字符|
 |content|string|否|附加文本，支持Markdown语法、菱形语法|
 
 #### 卡片
@@ -20,9 +20,9 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|类型，固定填写`card`|
-|theme|string|是|卡片风格，[枚举值](https://img.imdodo.com/dodo/57d77e71a772161395aff96dd946a536.png)|
-|title|string|否|卡片标题，只支持普通文本|
-|components|list|否|[内容组件](#内容组件)|
+|theme|string|是|卡片风格，grey，red，orange，yellow ，green，indigo，blue，purple，black|
+|title|string|是|卡片标题，只支持普通文本，可以为空字符串|
+|components|`list<object>`|否|[内容组件](#内容组件)|
 
 
 #### JSON
@@ -31,7 +31,7 @@
 {
     "card": {
         "type": "card",
-        "theme": "green",
+        "theme": "grey",
         "title": "卡片顶部的标题",
         "components": [],
     },
@@ -56,7 +56,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法，限制200个字符，最多显示2行|
+|content|string|是|文本内容，支持Markdown语法，最多显示2行|
 
 #### JSON
 
@@ -85,7 +85,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法，限制2000个字符|
+|content|string|是|文本内容，支持Markdown语法|
 
 #### JSON
 
@@ -117,7 +117,7 @@
 |cols|string|是|栏数，2~6栏|
 |fields|`list<object>`|是|数据列表|
 
-#### 字段
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -158,7 +158,7 @@
 |type|string|是|组件类型，当前填写`remark`|
 |elements|`list<object>`|是|数据列表|
 
-#### 数据
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -197,12 +197,12 @@
 ```json
 {
     "type": "image",
-    "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
+    "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
 }
 ```
 
 
-### 多栏图片
+### 多图
 
 #### 字段
 
@@ -211,7 +211,7 @@
 |type|string|是|组件类型，当前填写`image-group`|
 |elements|`list<object>`|是|数据列表，最多9条|
 
-#### 数据
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -225,7 +225,7 @@
     "type": "image-group",
     "elements": [{
             "type": "image",
-            "src": "https://img.dodo.cn/assets/2021-01/AybvLWYQgA0dw0dw.jpg"
+            "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
         }
     ]
 }
@@ -235,7 +235,7 @@
 ### 视频
 
 :::tip
-视频需要先调用文件上传接口。获取到DoDo的视频链接再发送卡片消息
+视频链接，必须是官方的链接，**后期会提供视频上传接口，前期可通过DoDo群内上传视频，从[消息事件](../event/channel-text.md#消息事件)内获得视频链接**
 :::
 
 #### 字段
@@ -267,7 +267,7 @@
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|组件类型，当前填写`countdown`|
 |title|string|是|倒计时主题|
-|style|string|是|显示样式，day：按天显示，hour ：按小时显示，second：按秒显示|
+|style|string|是|显示样式，day：按天显示，hour ：按小时显示|
 |endTime|long|是|结束时间戳|
 
 #### JSON
@@ -294,12 +294,7 @@
 
 ```json
 {
-    "type": "card",
-    "theme": "green",
-    "components": [{
-            "type": "divider"
-        }
-    ]
+    "type": "divider"
 }
 ```
 
@@ -320,7 +315,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法，限制2000个字符
+|content|string|是|文本内容，支持Markdown语法|
 
 #### 附件
 
@@ -341,7 +336,7 @@
     },
     "accessory": {
         "type": "image",
-        "src": "https://dodo.cn/assets/2021-01/7kr4FkWpLV0ku0ku.jpeg"
+        "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
     }
 }
 ```
@@ -363,7 +358,7 @@
 |type|string|是|组件类型，当前填写`button-group`|
 |elements|`list<object>`|是|数据列表|
 
-#### 数据
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -416,7 +411,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法，限制2000个字符|
+|content|string|是|文本内容，支持Markdown语法|
 
 #### 附件
 
@@ -468,11 +463,11 @@
 |type|string|是|组件类型，当前填写`list-selector`|
 |interactCustomId|string|是|交互自定义ID|
 |placeholder|string|是|输入框提示|
-|elements|object|是|数据列表|
+|elements|`list<object>`|是|数据列表|
 |min|int|是|最少选中个数|
 |max|int|是|最大选中个数|
 
-#### 数据
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -509,7 +504,7 @@
 |type|string|是|组件类型，当前填写`button-group`|
 |elements|`list<object>`|是|数据列表|
 
-#### 数据
+#### 数据列表
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
