@@ -337,7 +337,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|数据类型，当前填写`button`|
-|interactCustomId|string|是|自定义按钮ID|
+|interactCustomId|string|否|自定义按钮ID|
 |click|object|是|按钮点击动作|
 |color|string|是|按钮颜色|
 |name|string|是|按钮名称|
@@ -347,7 +347,7 @@
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|value|string|是|Value|
+|value|string|否|Value|
 |action|string|是|按钮动作类型，link_url：跳转链接，call_back：回传参数，copy_content：复制内容，form：回传表单|
 
 #### JSON
