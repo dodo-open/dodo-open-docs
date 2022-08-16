@@ -425,8 +425,8 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|组件类型，当前填写`list-selector`|
-|interactCustomId|string|是|交互自定义ID|
-|placeholder|string|是|输入框提示|
+|interactCustomId|string|否|交互自定义ID|
+|placeholder|string|否|输入框提示|
 |elements|`list<object>`|是|数据列表|
 |min|int|是|最少选中个数|
 |max|int|是|最大选中个数|
@@ -436,7 +436,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |name|string|是|选项名|
-|desc|string|是|选项描述|
+|desc|string|否|选项描述|
 
 #### JSON
 
@@ -520,7 +520,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|组件类型，当前填写`section`|
-|align|string|是|对齐方式，left：左对齐，right：右对齐|
+|align|string|否|对齐方式，left：左对齐，right：右对齐|
 |text|object|是|文本|
 |accessory|object|是|附件|
 
