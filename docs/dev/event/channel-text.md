@@ -73,7 +73,6 @@ EventBodyCardMessageButtonClick
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
-|buttonType|int|按钮类型，1：跳转链接，2：复制内容，3：回传参数，4：回传表单|
 |buttonId|string|按钮ID|
 |value|string|Value|
 
