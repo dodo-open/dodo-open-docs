@@ -381,30 +381,31 @@
             "name": "复制内容"
         }, {
             "type": "button",
+            "interactCustomId": "交互自定义id",
             "click": {
-                "value": "value",
+                "value": "",
                 "action": "form"
             },
-            "color": "颜色名称",
-            "name": "按钮1",
+            "color": "grey",
+            "name": "回传表单",
             "form": {
                 "title": "表单标题",
                 "elements": [{
                         "type": "input",
                         "key": "选项自定义id",
                         "title": "第1个问题",
-                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-                        "placeholder": "输入框提示",
-                        "minChar": "数字, 大于等于0",
-                        "maxChar": "数字, 大于0"
+                        "rows": 4,
+                        "placeholder": "未填写时的默认内容",
+                        "minChar": 1,
+                        "maxChar": 4000
                     }, {
                         "type": "input",
                         "key": "选项自定义id",
                         "title": "第2个问题",
-                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+                        "rows": 1,
                         "placeholder": "输入框提示",
                         "minChar": 0,
-                        "maxChar": 4000
+                        "maxChar": 1000
                     }
                 ]
             }
@@ -491,18 +492,18 @@
             "type": "input",
             "key": "选项自定义id",
             "title": "第1个问题",
-            "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-            "placeholder": "输入框提示",
-            "minChar": "数字, 大于等于0",
-            "maxChar": "数字, 大于0"
+            "rows": 4,
+            "placeholder": "未填写时的默认内容",
+            "minChar": 1,
+            "maxChar": 4000
         }, {
             "type": "input",
             "key": "选项自定义id",
             "title": "第2个问题",
-            "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+            "rows": 1,
             "placeholder": "输入框提示",
             "minChar": 0,
-            "maxChar": 4000
+            "maxChar": 1000
         }
     ]
 }
