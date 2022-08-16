@@ -316,49 +316,6 @@
 ```
 
 
-### 文本图片
-
-#### 字段
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|组件类型，当前填写`section`|
-|align|string|是|对齐方式，left：左对齐，right：右对齐|
-|text|object|是|文本数据|
-|accessory|object|是|附件|
-
-#### 文本数据
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法|
-
-#### 附件
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|数据类型，image：图片|
-|src|string|是|图片链接|
-
-#### JSON
-
-```json
-{
-    "type": "section",
-    "align": "left",
-    "text": {
-        "type": "plain-text",
-        "content": "这是一段文本描述"
-    },
-    "accessory": {
-        "type": "image",
-        "src": "https://img.imdodo.com/upload/cdn/4F665797A56725EC584FFC312E6A751C_1642748845674.png"
-    }
-}
-```
-
-
 ## 交互组件
 
 
@@ -423,65 +380,6 @@
             "name": "复制内容"
         }
     ]
-}
-```
-
-
-### 文本按钮
-
-#### 字段
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|组件类型，当前填写`section`|
-|align|string|是|对齐方式，left：左对齐，right：右对齐|
-|text|object|是|文本数据|
-|accessory|object|是|附件|
-
-#### 文本数据
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|文本类型，plain-text：普通文本，dodo-md：Markdown文本|
-|content|string|是|文本内容，支持Markdown语法|
-
-#### 附件
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|数据类型，button：按钮|
-|interactCustomId|string|是|交互自定义ID|
-|click|object|是|按钮点击动作|
-|color|string|是|按钮颜色|
-|name|string|是|按钮名称|
-
-#### 按钮点击动作
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|value|string|是|Value|
-|action|string|是|按钮动作类型，link_url：跳转链接，call_back：回传参数，copy_content：复制内容，form：回传表单|
-
-#### JSON
-
-```json
-{
-    "type": "section",
-    "text": {
-        "type": "plain-text",
-        "content": "您是否认为DoDo是最好的语音软件？"
-    },
-    "align": "left",
-    "accessory": {
-        "type": "button",
-        "interactCustomId": "交互自定义id",
-        "click": {
-            "value": "跳转链接",
-            "action": "link_url"
-        },
-        "color": "颜色名称",
-        "name": "按钮1"
-    }
 }
 ```
 
@@ -612,5 +510,47 @@
             }
         }
     ]
+}
+```
+
+
+### 文字 + 模块
+
+#### 字段
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|type|string|是|组件类型，当前填写`section`|
+|align|string|是|对齐方式，left：左对齐，right：右对齐|
+|text|object|是|文本|
+|accessory|object|是|附件|
+
+#### 文本
+
+左侧文本可以设置为[文本](#文本)或[多栏文本](#多栏文本)
+
+#### 附件
+
+右侧附件可以设置为[图片](#图片)或[按钮](#按钮)
+
+#### JSON
+
+```json
+{
+    "type": "section",
+    "text": {
+        "type": "dodo-md",
+        "content": "左侧文本可以设置为文本或多栏文本，右侧附件为可以设置图片或按钮"
+    },
+    "align": "right",
+    "accessory": {
+        "type": "button",
+        "click": {
+            "value": "https://www.imdodo.com",
+            "action": "link_url"
+        },
+        "color": "green",
+        "name": "按钮"
+    }
 }
 ```
