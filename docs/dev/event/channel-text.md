@@ -73,7 +73,7 @@ EventBodyCardMessageButtonClick
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
-|buttonId|string|按钮ID|
+|interactCustomId|string|交互自定义ID|
 |value|string|Value|
 
 
@@ -97,15 +97,15 @@ EventBodyCardMessageFormEcho
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
-|formId|string|表单ID|
+|interactCustomId|string|交互自定义ID|
 |formData|`List<object>`|[表单数据](#表单数据)|
 
 #### 表单数据
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|name|string|字段名|
-|value|string|字段值|
+|key|string|选项自定义ID|
+|value|string|Value|
 
 
 ## 卡片消息列表回传事件（Add）
@@ -128,5 +128,12 @@ EventBodyCardMessageListEcho
 |messageId|string|来源消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
-|listId|string|列表ID|
-|listData|`List<string>`|列表数据|
+|interactCustomId|string|交互自定义ID|
+|listData|`List<object>`|列表数据|
+
+#### 表单数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|name|string|选项名|
+|value|string|Value|

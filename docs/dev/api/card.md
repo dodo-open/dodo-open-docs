@@ -392,7 +392,7 @@
                 "title": "表单标题",
                 "elements": [{
                         "type": "input",
-                        "key": "选项自定义id",
+                        "key": "选项自定义id1",
                         "title": "第1个问题",
                         "rows": 4,
                         "placeholder": "未填写时的默认内容",
@@ -400,7 +400,7 @@
                         "maxChar": 4000
                     }, {
                         "type": "input",
-                        "key": "选项自定义id",
+                        "key": "选项自定义id2",
                         "title": "第2个问题",
                         "rows": 1,
                         "placeholder": "输入框提示",
@@ -453,7 +453,7 @@
         }
     ],
     "min": 1,
-    "max": 1
+    "max": 2
 }
 ```
 
@@ -490,7 +490,7 @@
     "title": "表单标题",
     "elements": [{
             "type": "input",
-            "key": "选项自定义id",
+            "key": "选项自定义id1",
             "title": "第1个问题",
             "rows": 4,
             "placeholder": "未填写时的默认内容",
@@ -498,7 +498,7 @@
             "maxChar": 4000
         }, {
             "type": "input",
-            "key": "选项自定义id",
+            "key": "选项自定义id2",
             "title": "第2个问题",
             "rows": 1,
             "placeholder": "输入框提示",
