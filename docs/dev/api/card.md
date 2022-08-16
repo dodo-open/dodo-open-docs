@@ -32,7 +32,7 @@
     "card": {
         "type": "card",
         "components": [],
-        "theme": "green",
+        "theme": "grey",
         "title": "这是一个卡片标题"
     }
 }
