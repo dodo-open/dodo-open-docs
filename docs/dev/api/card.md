@@ -341,6 +341,7 @@
 |click|object|是|按钮点击动作|
 |color|string|是|按钮颜色|
 |name|string|是|按钮名称|
+|form|object|否|[回传表单](#回传表单)，仅当按钮点击动作为form时需要填写|
 
 #### 按钮点击动作
 
@@ -378,6 +379,36 @@
             },
             "color": "grey",
             "name": "复制内容"
+        }, {
+            "type": "button",
+            "click": {
+                "value": "value",
+                "action": "form"
+            },
+            "color": "颜色名称",
+            "name": "按钮1",
+            "form": {
+                "title": "表单标题",
+                "elements": [{
+                        "type": "input",
+                        "key": "选项自定义id",
+                        "title": "第1个问题",
+                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+                        "placeholder": "输入框提示",
+                        "minChar": "数字, 大于等于0",
+                        "maxChar": "数字, 大于0"
+                    }, {
+                        "type": "input",
+                        "key": "选项自定义id",
+                        "title": "第2个问题",
+                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+                        "placeholder": "输入框提示",
+                        "minChar": 0,
+                        "maxChar": 4000
+                    }
+                ]
+            }
+
         }
     ]
 }
@@ -429,39 +460,18 @@
 
 ### 回传表单
 
+::: tip
+表单页面由表单按钮触发，因此外层需要先定义[表单按钮](#按钮)！！！
+:::
+
 #### 字段
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|type|string|是|组件类型，当前填写`button-group`|
+|title|string|是|表单标题|
 |elements|`list<object>`|是|数据列表|
 
 #### 数据列表
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|type|string|是|数据类型，当前填写`button`|
-|interactCustomId|string|是|自定义按钮ID|
-|click|object|是|按钮点击动作|
-|color|string|是|按钮颜色|
-|name|string|是|按钮名称|
-|form|object|是|表单内容|
-
-#### 按钮点击动作
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|value|string|是|Value|
-|action|string|是|按钮动作类型，link_url：跳转链接，call_back：回传参数，copy_content：复制内容，form：回传表单|
-
-#### 表单内容
-
-|字段|类型|必传|说明|
-|:---------------|:-----|:-----|:---------------|
-|title|string|是|表单标题|
-|elements|`list<object>`|是|表单选项列表|
-
-#### 表单选项
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
@@ -477,37 +487,23 @@
 
 ```json
 {
-    "type": "button-group",
+    "title": "表单标题",
     "elements": [{
-            "type": "button",
-            "interactCustomId": "交互自定义id",
-            "click": {
-                "value": "",
-                "action": "form"
-            },
-            "color": "颜色名称",
-            "name": "按钮1",
-            "form": {
-                "title": "dialog 表单 标题",
-                "elements": [{
-                        "type": "input",
-                        "key": "选项自定义id",
-                        "title": "第1个问题",
-                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-                        "placeholder": "输入框提示",
-                        "minChar": "数字, 大于等于0",
-                        "maxChar": "数字, 大于0"
-                    }, {
-                        "type": "input",
-                        "key": "选项自定义id",
-                        "title": "第2个问题",
-                        "rows": "数字,表示输入框高度 1 表示单行，最多4行",
-                        "placeholder": "输入框提示",
-                        "minChar": 0,
-                        "maxChar": 4000
-                    }
-                ]
-            }
+            "type": "input",
+            "key": "选项自定义id",
+            "title": "第1个问题",
+            "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+            "placeholder": "输入框提示",
+            "minChar": "数字, 大于等于0",
+            "maxChar": "数字, 大于0"
+        }, {
+            "type": "input",
+            "key": "选项自定义id",
+            "title": "第2个问题",
+            "rows": "数字,表示输入框高度 1 表示单行，最多4行",
+            "placeholder": "输入框提示",
+            "minChar": 0,
+            "maxChar": 4000
         }
     ]
 }
