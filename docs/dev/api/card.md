@@ -357,6 +357,7 @@
     "type": "button-group",
     "elements": [{
             "type": "button",
+            "interactCustomId": "交互自定义id1",
             "click": {
                 "value": "https://www.imdodo.com",
                 "action": "link_url"
@@ -365,6 +366,7 @@
             "name": "链接跳转"
         }, {
             "type": "button",
+            "interactCustomId": "交互自定义id2",
             "click": {
                 "value": "value",
                 "action": "call_back"
@@ -373,6 +375,7 @@
             "name": "回传参数"
         }, {
             "type": "button",
+            "interactCustomId": "交互自定义id3",
             "click": {
                 "value": "这段话会在点击按钮后复制到剪贴板",
                 "action": "copy_content"
