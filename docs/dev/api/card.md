@@ -479,8 +479,8 @@
 |title|string|是|选项名称|
 |rows|int|是|输入框高度，填1表示单行，最多4行|
 |placeholder|string|是|输入框提示|
-|minChar|int|是|最小字符数，大于等于0|
-|maxChar|int|是|最大字符数，大于0|
+|minChar|int|是|最小字符数，介于0~4000|
+|maxChar|int|是|最大字符数，介于1~4000，且最大字符串不得小于最小字符数|
 
 #### JSON
 
