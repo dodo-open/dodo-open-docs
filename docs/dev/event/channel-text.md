@@ -136,4 +136,3 @@ EventBodyCardMessageListEcho
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |name|string|选项名|
-|value|string|Value|
