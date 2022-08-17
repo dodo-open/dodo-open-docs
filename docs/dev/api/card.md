@@ -21,7 +21,7 @@
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|类型，固定填写`card`|
 |components|`list<object>`|否|[内容组件](#内容组件)|
-|theme|string|是|卡片风格，grey，red，orange，green，blue，purple，default|
+|theme|string|是|卡片风格，grey，red，orange，yellow ，green，indigo，blue，purple，black|
 |title|string|否|卡片标题，只支持普通文本，可以为空字符串|
 
 #### JSON
@@ -339,7 +339,7 @@
 |type|string|是|数据类型，当前填写`button`|
 |interactCustomId|string|否|自定义按钮ID|
 |click|object|是|按钮点击动作|
-|color|string|是|按钮颜色|
+|color|string|是|按钮颜色，grey，red，orange，green，blue，purple，default|
 |name|string|是|按钮名称|
 |form|object|否|[回传表单](#回传表单)，仅当按钮点击动作为form时需要填写|
 
