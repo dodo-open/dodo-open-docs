@@ -20,7 +20,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|类型，固定填写`card`|
-|components|`list<object>`|否|[内容组件](#内容组件)|
+|components|`list<object>`|是|[内容组件](#内容组件)|
 |theme|string|是|卡片风格，grey，red，orange，yellow ，green，indigo，blue，purple，black，default|
 |title|string|否|卡片标题，只支持普通文本，可以为空字符串|
 
