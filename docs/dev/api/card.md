@@ -260,7 +260,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|组件类型，当前填写`video`|
-|title|string|是|视频标题|
+|title|string|否|视频标题|
 |cover|string|是|视频封面|
 |src|string|是|视频地址|
 
@@ -283,7 +283,7 @@
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|string|是|组件类型，当前填写`countdown`|
-|title|string|是|倒计时主题|
+|title|string|否|倒计时标题|
 |style|string|是|显示样式，day：按天显示，hour ：按小时显示|
 |endTime|long|是|结束时间戳|
 
@@ -482,7 +482,7 @@
 |key|string|是|选项自定义ID|
 |title|string|是|选项名称|
 |rows|int|是|输入框高度，填1表示单行，最多4行|
-|placeholder|string|是|输入框提示|
+|placeholder|string|否|输入框提示|
 |minChar|int|是|最小字符数，介于0~4000|
 |maxChar|int|是|最大字符数，介于1~4000，且最大字符数不得小于最小字符数|
 
