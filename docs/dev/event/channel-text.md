@@ -53,7 +53,7 @@ EventBodyMessageReaction
 |reactionType|int|反应类型，0：删除，1：新增|
 
 
-## 卡片消息按钮点击事件（Add）
+## 卡片消息按钮事件（Add）
 
 CardMessageButtonClickEvent
 
