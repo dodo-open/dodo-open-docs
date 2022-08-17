@@ -79,7 +79,7 @@ EventBodyCardMessageButtonClick
 
 ## 卡片消息表单回传事件（Add）
 
-CardMessageFormEchoEvent
+CardMessageFormSubmitEvent
 
 #### 事件类型
 
@@ -87,7 +87,7 @@ CardMessageFormEchoEvent
 
 #### 事件内容
 
-EventBodyCardMessageFormEcho
+EventBodyCardMessageFormSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
@@ -110,7 +110,7 @@ EventBodyCardMessageFormEcho
 
 ## 卡片消息列表回传事件（Add）
 
-CardMessageListEchoEvent
+CardMessageListSubmitEvent
 
 #### 事件类型
 
@@ -118,7 +118,7 @@ CardMessageListEchoEvent
 
 #### 事件内容
 
-EventBodyCardMessageListEcho
+EventBodyCardMessageListSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
