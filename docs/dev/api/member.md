@@ -288,7 +288,7 @@ SetMemberNickNameEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nick/set`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v1/member/nickname/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 入参
 
@@ -333,7 +333,7 @@ SetMemberMuteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/set`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v1/member/mute/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
     
 #### 入参
 
