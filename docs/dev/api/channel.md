@@ -1,4 +1,4 @@
-# 频道API（Modify）
+# 频道API
 
 
 ## 获取频道列表
@@ -133,7 +133,7 @@ GetChannelInfo
  ```
 
 
- ## 创建频道（Add）
+ ## 创建频道
 
 SetChannelAdd
 
@@ -193,7 +193,7 @@ SetChannelAdd
 ```
 
 
-## 编辑频道（Add）
+## 编辑频道
 
 SetChannelEdit
 
@@ -238,7 +238,7 @@ SetChannelEdit
 ```
 
 
-## 删除频道（Add）
+## 删除频道
 
 SetChannelRemove
 

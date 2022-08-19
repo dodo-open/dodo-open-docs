@@ -1,4 +1,4 @@
-# 身份组API（Modify）
+# 身份组API
 
 ## 获取身份组列表
 
@@ -60,7 +60,7 @@ GetRoleList
 ```
 
 
-## 创建身份组（Add）
+## 创建身份组
 
 SetRoleAdd
 
@@ -123,7 +123,7 @@ SetRoleAdd
 ```
 
 
-## 编辑身份组（Add）
+## 编辑身份组
 
 SetRoleEdit
 
@@ -174,7 +174,7 @@ SetRoleEdit
 ```
 
 
-## 删除身份组（Add）
+## 删除身份组
 
 SetRoleRemove
 

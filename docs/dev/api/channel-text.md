@@ -1,7 +1,7 @@
-# 文字频道API（Modify）
+# 文字频道API
 
 
-## 发送消息（Modify）
+## 发送消息
 
 SetChannelMessageSend
 
@@ -132,7 +132,7 @@ SetChannelMessageSend
 ```
 
 
-## 编辑消息（Modify）
+## 编辑消息
 
 SetChannelMessageEdit
 

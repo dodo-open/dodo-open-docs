@@ -1,4 +1,4 @@
-# 文字频道Event（Modify）
+# 文字频道Event
 
 
 ## 消息事件
@@ -30,7 +30,7 @@ EventBodyChannelMessage
 |messageBody|object|[消息内容](../api/message.md#消息内容)|
 
 
-## 消息表情反应事件（Modify）
+## 消息表情反应事件
 
 MessageReactionEvent
 
@@ -53,7 +53,7 @@ EventBodyMessageReaction
 |reactionType|int|反应类型，0：删除，1：新增|
 
 
-## 卡片消息按钮事件（Add）
+## 卡片消息按钮事件
 
 CardMessageButtonClickEvent
 
@@ -77,7 +77,7 @@ EventBodyCardMessageButtonClick
 |value|string|Value|
 
 
-## 卡片消息表单回传事件（Add）
+## 卡片消息表单回传事件
 
 CardMessageFormSubmitEvent
 
@@ -108,7 +108,7 @@ EventBodyCardMessageFormSubmit
 |value|string|Value|
 
 
-## 卡片消息列表回传事件（Add）
+## 卡片消息列表回传事件
 
 CardMessageListSubmitEvent
 
