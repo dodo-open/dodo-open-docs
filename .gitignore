@@ -29,7 +29,5 @@ node_modules/
 *.iml
 
 # build
-yarn.lock
+# yarn.lock
 dockerfiles
-
-/oldapi/
