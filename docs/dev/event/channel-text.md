@@ -39,30 +39,30 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageBody": {
-                "content": "菜单"
-            },
-            "messageId": "349552072708214784",
-            "messageType": 1,
+            "messageId": "349552072708214781",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "reference": {
-                "dodoId": "",
                 "messageId": "",
+                "dodoId": "",
                 "nickName": ""
+            },
+            "messageType": 1,
+            "messageBody": {
+                "content": "菜单"
             }
         },
-        "eventId": "2b02565727ca47c6a03e41204e9833ca",
+        "eventId": "2b02565727ca47c6a03e41204e9833c1",
         "eventType": "2001",
         "timestamp": 1661147708487
     }
@@ -78,35 +78,35 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageBody": {
-                "height": 600,
-                "isOriginal": 1,
-                "url": "https://img.imdodo.com/dodo/8c77d48865bf547a69fb3bba6228760c.png",
-                "width": 600
-            },
-            "messageId": "349573013735694336",
-            "messageType": 2,
+            "messageId": "349552072708214782",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "reference": {
-                "dodoId": "",
                 "messageId": "",
+                "dodoId": "",
                 "nickName": ""
+            },
+            "messageType": 2,
+            "messageBody": {
+                "url": "https://img.imdodo.com/dodo/8c77d48865bf547a69fb3bba6228760c.png",
+                "width": 600,
+                "height": 600,
+                "isOriginal": 1
             }
         },
-        "eventId": "63aa5f9b454143feb40d6e1751bb58ef",
+        "eventId": "2b02565727ca47c6a03e41204e9833c2",
         "eventType": "2001",
-        "timestamp": 1661152700468
+        "timestamp": 1661147708487
     }
 }
 ```
@@ -120,35 +120,35 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageBody": {
-                "coverUrl": "https://video.imdodo.com/dodo/7f0a1979c818fa05cf7bdeae20aad24b.mp4?x-oss-process=video/snapshot,t_1000,f_png,w_0,h_0,m_fast,ar_auto",
-                "duration": 0,
-                "size": 8525133,
-                "url": "https://video.imdodo.com/dodo/7f0a1979c818fa05cf7bdeae20aad24b.mp4"
-            },
-            "messageId": "349573165200400384",
-            "messageType": 3,
+            "messageId": "349552072708214783",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "reference": {
-                "dodoId": "",
                 "messageId": "",
+                "dodoId": "",
                 "nickName": ""
+            },
+            "messageType": 3,
+            "messageBody": {
+                "url": "https://video.imdodo.com/dodo/7f0a1979c818fa05cf7bdeae20aad24b.mp4",
+                "coverUrl": "https://img.imdodo.com/dodo/42c330887d2f4fa5bebbde53653443cd.png",
+                "duration": 0,
+                "size": 8525133
             }
         },
-        "eventId": "42188777685c4acdb16902c7b795fe49",
+        "eventId": "2b02565727ca47c6a03e41204e9833c3",
         "eventType": "2001",
-        "timestamp": 1661152736477
+        "timestamp": 1661147708487
     }
 }
 ```
@@ -162,32 +162,32 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageBody": {
-                "jumpUrl": "https://www.imdodo.com/s/108015"
-            },
-            "messageId": "349573684677533696",
-            "messageType": 4,
+            "messageId": "349552072708214784",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "reference": {
-                "dodoId": "",
                 "messageId": "",
+                "dodoId": "",
                 "nickName": ""
+            },
+            "messageType": 4,
+            "messageBody": {
+                "jumpUrl": "https://www.imdodo.com/s/108015"
             }
         },
-        "eventId": "5a4392274538441c8d807c10a0120e2c",
+        "eventId": "2b02565727ca47c6a03e41204e9833c4",
         "eventType": "2001",
-        "timestamp": 1661152861187
+        "timestamp": 1661147708487
     }
 }
 ```
@@ -201,34 +201,34 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageBody": {
-                "name": "文件.txt",
-                "size": 11,
-                "url": "https://files.imdodo.com/dodo/06e0e6637d27b2622ab52022db713ce2.txt"
-            },
-            "messageId": "349574259985047552",
-            "messageType": 5,
+            "messageId": "349552072708214785",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "reference": {
-                "dodoId": "",
                 "messageId": "",
+                "dodoId": "",
                 "nickName": ""
+            },
+            "messageType": 5,
+            "messageBody": {
+                "url": "https://files.imdodo.com/dodo/06e0e6637d27b2622ab52022db713ce2.txt",
+                "name": "文件.txt",
+                "size": 11
             }
         },
-        "eventId": "40207e6664e946c6942aaed04c97f039",
+        "eventId": "2b02565727ca47c6a03e41204e9833c5",
         "eventType": "2001",
-        "timestamp": 1661152998344
+        "timestamp": 1661147708487
     }
 }
 ```
@@ -256,6 +256,8 @@ EventBodyMessageReaction
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID|
+|personal|object|[个人信息](../api/message.md#个人信息)|
+|member|object|[成员信息](../api/message.md#成员信息)|
 |reactionTarget|object|[反应对象](../api/message.md#反应对象)|
 |reactionEmoji|object|[反应表情](../api/message.md#消息表情)|
 |reactionType|int|反应类型，0：删除，1：新增|
@@ -267,26 +269,26 @@ EventBodyMessageReaction
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
             "messageId": "349552076344709120",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
-            "reactionEmoji": {
-                "id": "128520",
-                "type": 1
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
             },
             "reactionTarget": {
                 "id": "349552076344709120",
                 "type": 0
+            },
+            "reactionEmoji": {
+                "id": "128520",
+                "type": 1
             },
             "reactionType": 1
         },
@@ -328,20 +330,20 @@ EventBodyCardMessageButtonClick
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
-            "interactCustomId": "交互自定义id2",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
             "messageId": "349574728170024960",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
             },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
+            "interactCustomId": "交互自定义id2",
             "value": "value"
         },
         "eventId": "71e644e163634acb96782ad17916a673",
@@ -389,8 +391,20 @@ EventBodyCardMessageFormSubmit
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
+            "messageId": "349574728170024960",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
+            "interactCustomId": "交互自定义id",
             "formData": [{
                     "key": "选项自定义id1",
                     "value": "111"
@@ -398,19 +412,7 @@ EventBodyCardMessageFormSubmit
                     "key": "选项自定义id2",
                     "value": "222"
                 }
-            ],
-            "interactCustomId": "交互自定义id",
-            "islandId": "44659",
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageId": "349574728170024960",
-            "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
-                "nickName": "测试DoDo昵称",
-                "sex": 1
-            }
+            ]
         },
         "eventId": "d307185efa224cf4913cbe13744da7e5",
         "eventType": "3003",
@@ -435,9 +437,9 @@ EventBodyCardMessageListSubmit
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandId|string|来源群号|
-|channelId|string|来源频道ID，频道私信触发时，返回频道私信消息ID|
+|channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
-|messageId|string|来源消息ID|
+|messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |interactCustomId|string|交互自定义ID|
@@ -456,26 +458,26 @@ EventBodyCardMessageListSubmit
     "type": 0,
     "data": {
         "eventBody": {
+            "islandId": "44659",
             "channelId": "118506",
             "dodoId": "681856",
+            "messageId": "349574728170024960",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
             "interactCustomId": "交互自定义id",
-            "islandId": "44659",
             "listData": [{
                     "name": "选项1"
                 }, {
                     "name": "选项2"
                 }
             ],
-            "member": {
-                "joinTime": "2022-07-20 10:27:24",
-                "nickName": "测试群昵称"
-            },
-            "messageId": "349574728170024960",
-            "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
-                "nickName": "测试DoDo昵称",
-                "sex": 1
-            }
         },
         "eventId": "ab74cff21b0c4d4f86e86f1a7228c5f0",
         "eventType": "3004",

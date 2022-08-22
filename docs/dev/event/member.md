@@ -26,8 +26,8 @@ EventBodyMemberJoin
     "type": 0,
     "data": {
         "eventBody": {
-            "dodoId": "681856",
             "islandId": "44659",
+            "dodoId": "681856",
             "modifyTime": "2022-08-22 15:28:49"
         },
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898e",
@@ -65,16 +65,16 @@ EventBodyMemberLeave
     "type": 0,
     "data": {
         "eventBody": {
-            "dodoId": "681856",
             "islandId": "44659",
-            "leaveType": 1,
-            "modifyTime": "2022-08-22 15:28:04",
-            "operateDoDoId": "",
+            "dodoId": "681856",
             "personal": {
-                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
                 "sex": 1
-            }
+            },
+            "leaveType": 1,
+            "operateDoDoId": "",
+            "modifyTime": "2022-08-22 15:28:04"
         },
         "eventId": "095ff9a42c8347758af963d37ea52073",
         "eventType": "4002",
