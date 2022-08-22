@@ -26,7 +26,7 @@ EventBodyChannelMessage
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |reference|object|[回复信息](../api/message.md#回复信息)|
-|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息|
+|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息|
 |messageBody|object|[消息内容](../api/message.md#消息内容)|
 
 #### 事件示例
