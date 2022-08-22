@@ -235,6 +235,14 @@ EventBodyChannelMessage
 
   </CodeGroupItem>
 
+   <CodeGroupItem title="6 - 卡片消息">
+
+```json
+当前暂不支持接收卡片消息，后期会加上，敬请期待！
+```
+
+  </CodeGroupItem>
+
 </CodeGroup>
 
 
