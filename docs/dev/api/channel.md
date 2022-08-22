@@ -132,9 +132,8 @@ GetChannelInfo
 }
  ```
 
-<!--
 
- ## 创建频道（Add）
+ ## 创建频道
 
 SetChannelAdd
 
@@ -153,8 +152,8 @@ SetChannelAdd
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群号|
-|channelName|string|是|频道名称|
-|channelType|int|是|频道类型，1：文字频道，2：语音频道，4：帖子频道|
+|channelName|string|是|频道名称，非必传，不传时设置`新的频道`，不能大于32个字符或16个汉字|
+|channelType|int|是|频道类型，1：文字频道，2：语音频道（默认自由模式），4：帖子频道（默认详细模式）|
 
 #### 出参
 
@@ -194,7 +193,7 @@ SetChannelAdd
 ```
 
 
-## 编辑频道（Add）
+## 编辑频道
 
 SetChannelEdit
 
@@ -210,7 +209,7 @@ SetChannelEdit
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群号|
 |channelId|string|是|频道ID|
-|channelName|string|否|频道名称|
+|channelName|string|否|频道名称，非必传，不传时默认不改动，不能大于32个字符或16个汉字|
 
 #### 出参
 
@@ -239,7 +238,7 @@ SetChannelEdit
 ```
 
 
-## 删除频道（Add）
+## 删除频道
 
 SetChannelRemove
 
@@ -284,4 +283,3 @@ SetChannelRemove
     "message": "success"
 }
 ```
---> 

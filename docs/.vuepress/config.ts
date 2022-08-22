@@ -124,14 +124,14 @@ export default defineUserConfig({
             activeMatch: '/dev/sdk/.*',
             children: [
               {
+                text: 'Net SDK',
+                link: '/dev/sdk/net',
+                activeMatch: '/dev/sdk/net/.*'
+              },
+              {
                 text: 'Go SDK',
                 link: '/dev/sdk/go',
                 activeMatch: '/dev/sdk/go/.*'
-              },
-              {
-                text: '.Net SDK',
-                link: '/dev/sdk/net',
-                activeMatch: '/dev/sdk/net/.*'
               },
               {
                 text: '易语言 SDK',
@@ -156,7 +156,8 @@ export default defineUserConfig({
               children: [
                 '/go/',
                 '/go/introduction/platform.md',
-                '/go/introduction/deployment.md'
+                '/go/introduction/deployment.md',
+                '/go/introduction/community.md'
               ],
             },
             {
@@ -215,7 +216,7 @@ export default defineUserConfig({
                 '/dev/api/personal.md',
                 '/dev/api/resource.md',
                 '/dev/api/message.md',
-                // '/dev/api/card.md'
+                '/dev/api/card.md'
               ],
             },
             {
