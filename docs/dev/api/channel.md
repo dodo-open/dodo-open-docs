@@ -11,6 +11,10 @@ GetChannelList
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
 
+#### 描述
+
+用于获取指定群下所有频道的集合
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -80,6 +84,10 @@ GetChannelInfo
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
 
+#### 描述
+
+用于获取指定频道的详细信息
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -137,15 +145,19 @@ GetChannelInfo
 
 SetChannelAdd
 
-:::tip
-按DoDo群限制，10次/30秒
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组|
+
+#### 描述
+
+用于在指定群下创建指定频道
+
+:::tip
+按DoDo群限制，10次/30秒
+:::
 
 #### 入参
 
@@ -203,6 +215,10 @@ SetChannelEdit
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组 或 通用权限-编辑频道、通用权限-查看频道|
 
+#### 描述
+
+用于在指定群下编辑指定频道信息
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -242,15 +258,19 @@ SetChannelEdit
 
 SetChannelRemove
 
-:::tip
-按DoDo群限制，1次/10秒
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组、通用权限-查看频道|
+
+#### 描述
+
+用于在指定群下删除指定频道
+
+:::tip
+按DoDo群限制，1次/10秒
+:::
 
 #### 入参
 
