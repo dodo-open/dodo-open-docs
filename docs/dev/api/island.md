@@ -10,7 +10,11 @@ GetIslandList
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/island/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
+
+#### 描述
+
+用于获取当前机器人加入的所有群的集合
+
 #### 入参
 
 无
@@ -64,7 +68,11 @@ GetIslandInfo
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/island/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
+
+#### 描述
+
+用于获取指定群的详细信息
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -124,16 +132,20 @@ GetIslandInfo
 
 GetIslandLevelRankList
 
-::: tip
-只对开通了群等级的群有效
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/island/level/rank/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
+
+#### 描述
+
+用于获取指定群的群等级排行榜
+
+::: tip
+只对开通了群等级的群有效
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -191,7 +203,11 @@ GetIslandMuteList
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/island/mute/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
- 
+
+#### 描述
+
+用于获取指定群的群禁言名单
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -249,7 +265,11 @@ GetIslandBanList
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/island/ban/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
- 
+
+#### 描述
+
+用于获取指定群的群封禁名单
+
 #### 入参
 
 |字段|类型|必传|说明|

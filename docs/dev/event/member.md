@@ -5,6 +5,10 @@
 
 MemberJoinEvent
 
+#### 触发时机
+
+新用户加群时
+
 #### 事件类型
 
 4001
@@ -40,6 +44,10 @@ EventBodyMemberJoin
 ## 成员退出事件
 
 MemberLeaveEvent
+
+#### 触发时机
+
+用户离开群 / 被踢出群 / 被封禁时
 
 #### 事件类型
 

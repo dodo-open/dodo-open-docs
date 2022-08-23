@@ -11,6 +11,10 @@ GetBotInfo
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/bot/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
  
+#### 描述
+
+用于获取当前机器人基础信息
+
 #### 入参
 
 无
@@ -57,7 +61,11 @@ SetBotIslandLeave
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/bot/island/leave`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
-    
+
+#### 描述
+
+用于操作当前机器人退出指定群
+
 #### 入参
 
 |字段|类型|必传|说明|
