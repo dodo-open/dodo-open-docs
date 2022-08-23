@@ -164,6 +164,11 @@ export default defineUserConfig({
                     text: 'Net SDK',
                     link: '/dev/sdk/thirdparty#net',
                     activeMatch: '/dev/sdk/thirdparty/.*'
+                  },
+                  {
+                    text: '易语言 SDK',
+                    link: '/dev/sdk/thirdparty#net',
+                    activeMatch: '/dev/sdk/thirdparty/.*'
                   }
                 ]
               }
