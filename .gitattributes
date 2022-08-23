@@ -1,3 +1,4 @@
+*.md linguist-language=Markdown
 * text eol=lf
 *.txt text eol=crlf
 
@@ -8,5 +9,3 @@
 *.tff binary
 *.woff binary
 *.woff2 binary
-
-*.md linguist-language=Markdown
