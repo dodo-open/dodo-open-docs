@@ -145,33 +145,33 @@ export default defineUserConfig({
                   }
                 ]
               },
-              {
-                text: '第三方 SDK',
-                link: '/dev/sdk/thirdparty',
-                activeMatch: '/dev/sdk/thirdparty/.*',
-                children: [
-                  {
-                    text: 'Python SDK',
-                    link: '/dev/sdk/thirdparty#python',
-                    activeMatch: '/dev/sdk/thirdparty/.*'
-                  },
-                  {
-                    text: 'Java SDK',
-                    link: '/dev/sdk/thirdparty#java',
-                    activeMatch: '/dev/sdk/thirdparty/.*'
-                  },
-                  {
-                    text: 'Net SDK',
-                    link: '/dev/sdk/thirdparty#net',
-                    activeMatch: '/dev/sdk/thirdparty/.*'
-                  },
-                  {
-                    text: '易语言 SDK',
-                    link: '/dev/sdk/thirdparty#net',
-                    activeMatch: '/dev/sdk/thirdparty/.*'
-                  }
-                ]
-              }
+              // {
+              //   text: '第三方 SDK',
+              //   link: '/dev/sdk/thirdparty',
+              //   activeMatch: '/dev/sdk/thirdparty/.*',
+              //   children: [
+              //     {
+              //       text: 'Python SDK',
+              //       link: '/dev/sdk/thirdparty#python',
+              //       activeMatch: '/dev/sdk/thirdparty/.*'
+              //     },
+              //     {
+              //       text: 'Java SDK',
+              //       link: '/dev/sdk/thirdparty#java',
+              //       activeMatch: '/dev/sdk/thirdparty/.*'
+              //     },
+              //     {
+              //       text: 'Net SDK',
+              //       link: '/dev/sdk/thirdparty#net',
+              //       activeMatch: '/dev/sdk/thirdparty/.*'
+              //     },
+              //     {
+              //       text: '易语言 SDK',
+              //       link: '/dev/sdk/thirdparty#net',
+              //       activeMatch: '/dev/sdk/thirdparty/.*'
+              //     }
+              //   ]
+              // }
             ]
           },
           {
@@ -268,7 +268,7 @@ export default defineUserConfig({
               text: 'SDK',
               children: [
                 '/dev/sdk/official.md',
-                '/dev/sdk/thirdparty.md'
+                // '/dev/sdk/thirdparty.md'
               ],
             },
           ]
