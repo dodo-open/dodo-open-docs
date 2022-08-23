@@ -22,7 +22,7 @@ DoDo账号注册登录入口[开发者平台](https://doker.imdodo.com)。
 预估在两个工作日之内审核认证通过。
 
 ![](https://img.imdodo.com/upload/cdn/B21B785631590BB85207BA13639ACC0A_1642596269417.png)
-也可进入DoDo开发者社区：https://imdodo.com/s/108015    
+也可进入DoDo开发者社区：<https://imdodo.com/s/108015>  
 找到DoDo官方人员申请认证，加快认证进度。
 
 
