@@ -5,15 +5,21 @@
 
 SetChannelMessageSend
 
-:::tip
-按频道限制，60次/30秒，该群已被限制发言频率处罚时，1分钟内仅可发送1条消息
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/message/send`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
+
+#### 描述
+
+用于向指定频道发送频道消息 / 频道私信
+
+:::tip
+按频道限制，60次/30秒
+
+该群已被限制发言频率处罚时，1分钟内仅可发送1条消息
+:::
 
 #### 入参
 
@@ -136,21 +142,29 @@ SetChannelMessageSend
 
 SetChannelMessageEdit
 
-:::tip
-按频道限制，1次/秒，该群已被限制发言频率处罚时，1分钟内仅可编辑1条消息
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/message/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
 
+#### 描述
+
+用于编辑指定消息ID的频道消息
+
+:::tip
+不可编辑频道私信
+
+按频道限制，1次/秒
+
+该群已被限制发言频率处罚时，1分钟内仅可编辑1条消息
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|messageId|string|是|待编辑的消息ID，不可编辑频道私信消息ID|
+|messageId|string|是|待编辑的消息ID，不可编辑频道私信|
 |messageType|int|是|消息类型，1：文字消息，6：卡片消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 
@@ -233,12 +247,20 @@ SetChannelMessageWithdraw
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/message/withdraw`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
-    
+
+#### 描述
+
+用于撤回指定消息ID的频道消息
+
+:::tip
+不可撤回频道私信
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|messageId|string|是|消息ID|
+|messageId|string|是|消息ID，不可撤回频道私信|
 |reason|string|否|撤回理由，理由不能大于64个字符或32个汉字|
 
 #### 出参
@@ -271,16 +293,20 @@ SetChannelMessageWithdraw
 
 SetChannelMessageReactionAdd
 
-:::tip
-在指定频道消息上添加反应表情，只能添加机器人自身的，按频道限制，60次/30秒
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/message/reaction/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-添加新反应|
-    
+
+#### 描述
+
+用于操作机器人在自身的频道消息上添加指定反应表情
+
+:::tip
+按频道限制，60次/30秒
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -321,16 +347,22 @@ SetChannelMessageReactionAdd
 
 SetChannelMessageReactionRemove
 
-:::tip
-移除指定频道消息上的反应表情，可移除其他成员的、机器人自身的，按频道限制，60次/30秒
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/channel/message/reaction/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
-    
+
+#### 描述
+
+用于操作机器人在自身的频道消息上移除指定反应表情
+
+:::tip
+既可以移除机器人自身的反应表情，也可以移除其他成员的反应表情
+
+按频道限制，60次/30秒
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
