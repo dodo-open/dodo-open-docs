@@ -10,7 +10,15 @@ GetMemberList
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
- 
+
+#### 描述
+
+用于获取指定群的成员集合
+
+::: tip
+群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -94,6 +102,14 @@ GetMemberInfo
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
+#### 描述
+
+用于获取指定群下指定成员的详细信息
+
+::: tip
+群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -166,7 +182,11 @@ GetMemberRoleList
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
+
+#### 描述
+
+用于获取指定群下指定成员拥有的身份组集合
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -223,16 +243,20 @@ GetMemberRoleList
 
 GetMemberInvitationInfo
 
-::: tip
-只对开通了邀请系统的群有效
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/invitation/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|高级权限-超级管理员|
- 
+
+#### 描述
+
+用于获取指定群下指定成员的邀请信息
+
+::: tip
+只对开通了邀请系统的群有效
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -290,6 +314,10 @@ SetMemberNickNameEdit
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/nickname/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
 
+#### 描述
+
+用于在指定群下编辑指定成员的群昵称
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -334,7 +362,11 @@ SetMemberMuteAdd
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/mute/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
-    
+
+#### 描述
+
+用于在指定群下禁言指定成员
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -380,7 +412,11 @@ SetMemberMuteRemove
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/mute/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
-    
+
+#### 描述
+
+用于在指定群下取消指定成员的禁言
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -418,16 +454,20 @@ SetMemberMuteRemove
 
 SetMemberBanAdd
 
-::: tip
-按群限制，1次/10秒
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/ban/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
-    
+
+#### 描述
+
+用于在指定群下永久封禁指定成员
+
+::: tip
+按群限制，1次/10秒
+:::
+
 #### 入参
 
 |字段|类型|必传|说明|
@@ -474,7 +514,11 @@ SetMemberBanRemove
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/member/ban/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
-    
+
+#### 描述
+
+用于在指定群下取消指定成员的永久封禁
+
 #### 入参
 
 |字段|类型|必传|说明|
