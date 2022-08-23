@@ -5,6 +5,10 @@
 
 PersonalMessageEvent
 
+#### 触发时机
+
+用户私聊机器人时
+
 #### 事件类型
 
 1001

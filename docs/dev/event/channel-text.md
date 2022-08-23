@@ -5,6 +5,10 @@
 
 ChannelMessageEvent
 
+#### 触发时机
+
+用户在文字频道内发送消息 / 回复消息 / 分享内容时
+
 ::: tip
 不接收其他机器人的频道消息，即机器人之间不会互相触发消息事件！
 :::
@@ -250,6 +254,14 @@ EventBodyChannelMessage
 
 MessageReactionEvent
 
+#### 触发时机
+
+用户在机器人发送的消息上添加表情反应时
+
+::: tip
+当前机器人消息上添加反应触发的事件只会推送给当前机器人！
+:::
+
 #### 事件类型
 
 3001
@@ -312,6 +324,14 @@ EventBodyMessageReaction
 
 CardMessageButtonClickEvent
 
+#### 触发时机
+
+用户在机器人发送的卡片消息上点击了某个按钮时
+
+::: tip
+当前机器人消息上点击按钮触发的事件只会推送给当前机器人！
+:::
+
 #### 事件类型
 
 3002
@@ -365,6 +385,14 @@ EventBodyCardMessageButtonClick
 ## 卡片消息表单回传事件
 
 CardMessageFormSubmitEvent
+
+#### 触发时机
+
+用户在机器人发送的卡片消息上提交了某个表单时
+
+::: tip
+当前机器人消息上提交表单触发的事件只会推送给当前机器人！
+:::
 
 #### 事件类型
 
@@ -433,6 +461,14 @@ EventBodyCardMessageFormSubmit
 ## 卡片消息列表回传事件
 
 CardMessageListSubmitEvent
+
+#### 触发时机
+
+用户在机器人发送的卡片消息上提交了某个列表时
+
+::: tip
+当前机器人消息上提交列表触发的事件只会推送给当前机器人！
+:::
 
 #### 事件类型
 
