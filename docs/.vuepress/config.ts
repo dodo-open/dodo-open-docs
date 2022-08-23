@@ -124,19 +124,48 @@ export default defineUserConfig({
             activeMatch: '/dev/sdk/.*',
             children: [
               {
-                text: 'Net SDK',
-                link: '/dev/sdk/net',
-                activeMatch: '/dev/sdk/net/.*'
+                text: '官方 SDK',
+                link: '/dev/sdk/official',
+                activeMatch: '/dev/sdk/official/.*',
+                children: [
+                  {
+                    text: 'Net SDK',
+                    link: '/dev/sdk/official#net',
+                    activeMatch: '/dev/sdk/official/.*'
+                  },
+                  {
+                    text: 'Go SDK',
+                    link: '/dev/sdk/official#go',
+                    activeMatch: '/dev/sdk/official/.*'
+                  },
+                  {
+                    text: '易语言 SDK',
+                    link: '/dev/sdk/official#易语言',
+                    activeMatch: '/dev/sdk/official/.*'
+                  }
+                ]
               },
               {
-                text: 'Go SDK',
-                link: '/dev/sdk/go',
-                activeMatch: '/dev/sdk/go/.*'
-              },
-              {
-                text: '易语言 SDK',
-                link: '/dev/sdk/eyy',
-                activeMatch: '/dev/sdk/eyy/.*'
+                text: '第三方 SDK',
+                link: '/dev/sdk/thirdparty',
+                activeMatch: '/dev/sdk/thirdparty/.*',
+                children: [
+                  {
+                    text: 'Python SDK',
+                    link: '/dev/sdk/thirdparty#python',
+                    activeMatch: '/dev/sdk/thirdparty/.*'
+                  },
+                  {
+                    text: 'Java SDK',
+                    link: '/dev/sdk/thirdparty#java',
+                    activeMatch: '/dev/sdk/thirdparty/.*'
+                  },
+                  {
+                    text: 'Net SDK',
+                    link: '/dev/sdk/thirdparty#net',
+                    activeMatch: '/dev/sdk/thirdparty/.*'
+                  }
+                ]
               }
             ]
           },
@@ -232,9 +261,8 @@ export default defineUserConfig({
             {
               text: 'SDK',
               children: [
-                '/dev/sdk/net.md',
-                '/dev/sdk/go.md',
-                '/dev/sdk/eyy.md'
+                '/dev/sdk/official.md',
+                '/dev/sdk/thirdparty.md'
               ],
             },
           ]
