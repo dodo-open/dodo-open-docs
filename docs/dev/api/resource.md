@@ -5,19 +5,25 @@
 
 SetResourcePictureUpload
 
-:::tip
-按图片格式限制，支持JPG、JPEG、GIF、PNG、WEBP；按图片大小限制，20MB/张；按图片张数限制，1000张/天
-:::
-
 #### 接口
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/resource/picture/upload`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
-#### 请求头
 
-**必须通过表单方式提交，请求头需要如下变更**
+#### 描述
+
+用于上传本地资源图片置DoDo服务器，从而可获取到官方图片链接
+
+:::tip
+按图片格式限制，支持JPG、JPEG、GIF、PNG、WEBP
+
+按图片大小限制，20MB/张；按图片张数限制，1000张/天
+
+当前接口必须通过表单方式提交，请求头需要进行相应变更，具体可参考[置图片上传接口如何调用？](https://imdodo.com/p/318104269603635200)
+:::
+
+#### 请求头
 
 ```
 Content-Type: multipart/form-data

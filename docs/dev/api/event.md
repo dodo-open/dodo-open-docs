@@ -10,7 +10,11 @@ GetWebSocketConnection
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
 |`/api/v1/websocket/connection`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
- 
+
+#### 描述
+
+用于获取当前机器人的WebSocket连接，具体连接方式请参考[WebSocket](../event/websocket.md)
+
 #### 入参
 
 无
