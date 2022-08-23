@@ -112,7 +112,7 @@ GetIslandInfo
         "onlineMemberCount": 500,
         "description": "这个是一个测试群",
         "defaultChannelId": "1000101",
-        "systemChannelId": "1000102",
+        "systemChannelId": "1000102"
     },
     "status": 0,
     "message": "success"
@@ -175,7 +175,7 @@ GetIslandLevelRankList
             "dodoId": "666666",
             "nickName": "测试群昵称",
             "level": 1,
-            "rank": 1,
+            "rank": 1
         }
     ]
 }
@@ -219,7 +219,7 @@ GetIslandMuteList
 {
     "islandId": "10001",
     "pageSize": 100,
-    "maxId": 0,
+    "maxId": 0
 }
 ```
 
@@ -277,7 +277,7 @@ GetIslandBanList
 {
     "islandId": "10001",
     "pageSize": 100,
-    "maxId": 0,
+    "maxId": 0
 }
 ```
 
