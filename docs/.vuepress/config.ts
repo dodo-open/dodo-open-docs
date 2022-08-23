@@ -249,6 +249,7 @@ export default defineUserConfig({
                 '/dev/api/nft.md',
                 '/dev/api/personal.md',
                 '/dev/api/resource.md',
+                '/dev/api/event.md',
                 '/dev/api/message.md',
                 '/dev/api/card.md'
               ],
