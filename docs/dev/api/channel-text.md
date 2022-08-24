@@ -55,7 +55,7 @@ SetChannelMessageSend
     "channelId": "1000101",
     "messageType": 1,
     "messageBody": {
-        "content": "测试文字消息"
+        "content": "发送文字消息"
     }
 }
 ```
@@ -103,11 +103,11 @@ SetChannelMessageSend
     "channelId": "1000101",
     "messageType": 6,
     "messageBody": {
-        "content": "卡片外内容",
+        "content": "附加文本",
         "card": {
             "type": "card",
             "theme": "grey",
-            "title": "卡片标题",
+            "title": "发送卡片消息",
             "components": [{
                     "type": "section",
                     "text": {
@@ -183,7 +183,7 @@ SetChannelMessageEdit
 {
     "messageId": "111111111111111111",
     "messageBody": {
-        "content": "编辑后的测试文字消息"
+        "content": "编辑文字消息"
     }
 }
 ```
@@ -196,16 +196,16 @@ SetChannelMessageEdit
 {
     "messageId": "111111111111111111",
     "messageBody": {
-        "content": "卡片外内容",
+        "content": "附加文本2",
         "card": {
             "type": "card",
             "theme": "grey",
-            "title": "卡片标题",
+            "title": "编辑卡片消息",
             "components": [{
                     "type": "section",
                     "text": {
                         "type": "dodo-md",
-                        "content": "卡片文本内容"
+                        "content": "卡片文本内容2"
                     }
                 }
             ]
