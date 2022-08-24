@@ -153,7 +153,7 @@ SetChannelMessageEdit
 用于编辑指定消息ID的频道消息
 
 :::tip
-不可编辑频道私信
+不可编辑频道私信，不可变更消息类型
 
 按频道限制，1次/秒
 
@@ -164,8 +164,7 @@ SetChannelMessageEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|messageId|string|是|待编辑的消息ID，不可编辑频道私信|
-|messageType|int|是|消息类型，1：文字消息，6：卡片消息|
+|messageId|string|是|待编辑的消息ID，不可编辑频道私信，不可变更消息类型|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 
 #### 出参
@@ -174,23 +173,15 @@ SetChannelMessageEdit
 |:---------------|:-----|:---------------|
 |status|int|[返回码](../start/status.md)|
 |message|string|返回信息|
-|data|object|返回数据|
-
-#### 数据
-
-|字段|类型|说明|
-|:---------------|:-----|:---------------|
-|messageId|string|待编辑的消息ID|
 
 #### 入参示例
 
 <CodeGroup>
-  <CodeGroupItem title="1 - 文字消息" active>
+  <CodeGroupItem title="文字消息" active>
 
 ```json
 {
     "messageId": "111111111111111111",
-    "messageType": 1,
     "messageBody": {
         "content": "编辑后的测试文字消息"
     }
@@ -199,12 +190,11 @@ SetChannelMessageEdit
 
   </CodeGroupItem>
 
-   <CodeGroupItem title="6 - 卡片消息">
+   <CodeGroupItem title="卡片消息">
 
 ```json
 {
     "messageId": "111111111111111111",
-    "messageType": 6,
     "messageBody": {
         "content": "卡片外内容",
         "card": {
