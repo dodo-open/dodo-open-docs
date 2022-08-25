@@ -27,7 +27,6 @@ SetResourcePictureUpload
 
 ```
 Content-Type: multipart/form-data
-Content-Length: 文件大小
 ```
 
 #### 入参
