@@ -180,7 +180,7 @@ SetBotInviteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/bot/invite/add`|<Badge type="warning" text="v1" vertical="middle" />|POST||
+|`/api/v1/bot/invite/add`|<Badge type="warning" text="v1" vertical="middle" />|POST||
 
 #### 描述
 
@@ -229,7 +229,7 @@ SetBotInviteRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/bot/invite/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST||
+|`/api/v1/bot/invite/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST||
 
 #### 描述
 
