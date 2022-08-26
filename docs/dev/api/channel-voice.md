@@ -1,6 +1,6 @@
 # 语音频道API（Add）
 
-## 获取语音频道成员状态（Add）
+## 获取成员语音频道状态（Add）
 
 GetChannelVoiceMemberStatus
 
@@ -38,8 +38,8 @@ GetChannelVoiceMemberStatus
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |channelId|string|语音频道ID|
-|micStatus|int|语音输入状态（麦的状态），0：关闭，1：开启|
 |spkStatus|int|语音输出状态（扬声器的状态），0：关闭，1：开启|
+|micStatus|int|语音输入状态（麦的状态），0：关闭，1：开启|
 |micSortStatus|int|麦序模式状态，1：在麦下，2：请求上麦，3：在麦上，自由模式时统一为在麦上|
 
 #### 入参示例
@@ -119,7 +119,7 @@ SetChannelVoiceMemberMove
 ```
 
 
-## 管理语音频道成员（Add）
+## 管理语音中的成员（Add）
 
 SetChannelVoiceMemberEdit
 
