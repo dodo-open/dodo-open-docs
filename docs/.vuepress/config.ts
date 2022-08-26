@@ -244,6 +244,7 @@ export default defineUserConfig({
                 '/dev/api/island.md',
                 '/dev/api/channel.md',
                 '/dev/api/channel-text.md',
+                '/dev/api/channel-voice.md',
                 '/dev/api/role.md',
                 '/dev/api/member.md',
                 '/dev/api/nft.md',
@@ -260,6 +261,7 @@ export default defineUserConfig({
                 '/dev/event/websocket.md',
                 '/dev/event/event.md',
                 '/dev/event/channel-text.md',
+                '/dev/event/channel-voice.md',
                 '/dev/event/member.md',
                 '/dev/event/personal.md'
               ],
