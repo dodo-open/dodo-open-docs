@@ -37,7 +37,7 @@ GetChannelVoiceMemberStatus
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|channelId|string|语音频道ID|
+|channelId|string|所在语音频道ID|
 |spkStatus|int|语音输出状态（扬声器的状态），0：关闭，1：开启|
 |micStatus|int|语音输入状态（麦的状态），0：关闭，1：开启|
 |micSortStatus|int|麦序模式状态，1：在麦下，2：请求上麦，3：在麦上，自由模式时统一为在麦上|
@@ -91,7 +91,7 @@ SetChannelVoiceMemberMove
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群号|
 |dodoId|string|是|DoDo号|
-|channelId|string|是|语音频道ID|
+|channelId|string|是|目标语音频道ID|
 
 #### 出参
 
@@ -105,7 +105,8 @@ SetChannelVoiceMemberMove
 ```json
 {
     "islandId": "10001",
-    "dodoId": "666666"
+    "dodoId": "666666",
+    "dodoId": "1000101"
 }
 ```
 
