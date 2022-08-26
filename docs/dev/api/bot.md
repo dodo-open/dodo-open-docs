@@ -141,7 +141,7 @@ GetBotInviteList
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |dodoId|string|DoDo号|
-|nickName|string|DoDo昵称|
+|personal|object|[个人信息](./message.md#个人信息)|
 
 #### 入参示例
 
@@ -160,7 +160,11 @@ GetBotInviteList
         "maxId": 12345,
         "list": [{
                 "dodoId": "666666",
-                "nickName": "测试DoDo昵称"
+                "personal": {
+                    "nickName": "测试DoDo昵称",
+                    "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                    "sex": 1
+                }
             }
         ]
     },
