@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://open.imdodo.com">
-    <img src="https://open.imdodo.com/hero.png" width="200" height="200" alt="dodo-open">
+    <img src="https://avatars.githubusercontent.com/u/96616694" width="200" height="200" alt="dodo-open">
   </a>
 </p>
 
