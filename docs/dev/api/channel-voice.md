@@ -106,7 +106,7 @@ SetChannelVoiceMemberMove
 {
     "islandId": "10001",
     "dodoId": "666666",
-    "dodoId": "1000101"
+    "channelId": "1000101"
 }
 ```
 
