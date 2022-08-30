@@ -20,7 +20,7 @@ SetChannelArticleAdd
 |:---------------|:-----|:-----|:---------------|
 |channelId|string|是|帖子频道ID|
 |title|string|是|标题，60个字符限制|
-|content|string|否|内容，50000字符限制|
+|content|string|否|内容，10000字符限制，支持[菱形语法](./message.md#菱形语法)|
 |imageUrl|string|否|图片链接，必须是官方的链接，通过[上传资源图片](./resource.md#上传资源图片)接口可获得图片链接|
 
 #### 出参
