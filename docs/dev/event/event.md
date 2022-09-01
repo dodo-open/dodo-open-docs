@@ -36,8 +36,13 @@ EventSubjectDataBusiness
 
 #### 语音频道
 
-- 5001：[成员加入语音频道事件](./channel-text.md#成员加入语音频道事件)
-- 5002：[成员退出语音频道事件](./channel-text.md#成员退出语音频道事件)
+- 5001：[成员加入语音频道事件](./channel-voice.md#成员加入语音频道事件)
+- 5002：[成员退出语音频道事件](./channel-voice.md#成员退出语音频道事件)
+
+#### 帖子频道
+
+- 6001：[帖子发布事件](./channel-article.md#帖子发布事件)
+- 6002：[帖子评论回复事件](./channel-article.md#帖子评论回复事件)
 
 #### 成员
 
