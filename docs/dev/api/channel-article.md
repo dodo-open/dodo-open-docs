@@ -29,6 +29,13 @@ SetChannelArticleAdd
 |:---------------|:-----|:---------------|
 |status|int|[返回码](../start/status.md)|
 |message|string|返回信息|
+|data|object|返回数据|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|articleId|string|帖子ID|
 
 #### 入参示例
 
@@ -46,7 +53,10 @@ SetChannelArticleAdd
 ```json
 {
     "status": 0,
-    "message": "success"
+    "message": "success",
+    "data": {
+        "articleId": "111111111111111111"
+    }
 }
 ```
 
