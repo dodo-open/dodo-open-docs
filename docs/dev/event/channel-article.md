@@ -15,7 +15,7 @@ ChannelArticleEvent
 
 #### 事件内容
 
-EventBodyChannelArticleEvent
+EventBodyChannelArticle
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
