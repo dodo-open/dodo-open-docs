@@ -27,7 +27,7 @@ EventBodyChannelArticle
 |articleId|string|帖子ID|
 |title|string|标题|
 |imageList|`list<string>`|图片列表|
-|content|string|文本内容|
+|content|string|文本内容，支持 [菱形语法](../api/message.md#菱形语法)内容的接收|
 
 #### 事件示例
 
@@ -88,7 +88,7 @@ EventBodyChannelArticleComment
 |commentId|string|帖子评论ID|
 |replyId|string|帖子评论回复ID，为空时：为评论事件，不为空时：为评论回复事件|
 |imageList|`list<string>`|图片列表|
-|content|string|文本内容|
+|content|string|文本内容，支持 [菱形语法](../api/message.md#菱形语法)内容的接收|
 
 #### 事件示例
 
