@@ -34,6 +34,16 @@ EventSubjectDataBusiness
 - 3003：[卡片消息表单回传事件](./channel-text.md#卡片消息表单回传事件)
 - 3004：[卡片消息列表回传事件](./channel-text.md#卡片消息列表回传事件)
 
+#### 语音频道
+
+- 5001：[成员加入语音频道事件](./channel-voice.md#成员加入语音频道事件)
+- 5002：[成员退出语音频道事件](./channel-voice.md#成员退出语音频道事件)
+
+#### 帖子频道
+
+- 6001：[帖子发布事件](./channel-article.md#帖子发布事件)
+- 6002：[帖子评论回复事件](./channel-article.md#帖子评论回复事件)
+
 #### 成员
 
 - 4001：[成员加入事件](./member.md#成员加入事件)

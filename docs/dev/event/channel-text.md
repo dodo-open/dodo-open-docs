@@ -10,7 +10,7 @@ ChannelMessageEvent
 用户在文字频道内发送消息 / 回复消息 / 分享内容时
 
 ::: tip
-不接收其他机器人的频道消息，即机器人之间不会互相触发消息事件！
+不接收机器人的频道消息，机器人之间不会互相触发消息事件！
 :::
 
 #### 事件类型
@@ -242,7 +242,51 @@ EventBodyChannelMessage
    <CodeGroupItem title="6 - 卡片消息">
 
 ```json
-当前暂不支持接收卡片消息，后期会加上，敬请期待！
+{
+    "type": 0,
+    "data": {
+        "eventBody": {
+            "islandId": "44659",
+            "channelId": "118506",
+            "dodoId": "681856",
+            "messageId": "349552072708214786",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
+            "reference": {
+                "messageId": "",
+                "dodoId": "",
+                "nickName": ""
+            },
+            "messageType": 6,
+            "messageBody": {
+                "content": "附加文本",
+                "card": {
+                    "type": "card",
+                    "theme": "grey",
+                    "title": "发送卡片消息",
+                    "components": [{
+                            "type": "section",
+                            "text": {
+                                "type": "dodo-md",
+                                "content": "卡片文本内容"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "eventId": "2b02565727ca47c6a03e41204e9833c6",
+        "eventType": "2001",
+        "timestamp": 1661147708487
+    }
+}
 ```
 
   </CodeGroupItem>
