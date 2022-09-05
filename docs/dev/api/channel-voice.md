@@ -1,6 +1,6 @@
-# 语音频道API（Add）
+# 语音频道API
 
-## 获取成员语音频道状态（Add）
+## 获取成员语音频道状态
 
 GetChannelVoiceMemberStatus
 
@@ -67,7 +67,7 @@ GetChannelVoiceMemberStatus
 ```
 
 
-## 移动语音频道成员（Add）
+## 移动语音频道成员
 
 SetChannelVoiceMemberMove
 
@@ -120,7 +120,7 @@ SetChannelVoiceMemberMove
 ```
 
 
-## 管理语音中的成员（Add）
+## 管理语音中的成员
 
 SetChannelVoiceMemberEdit
 

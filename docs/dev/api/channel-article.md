@@ -1,6 +1,6 @@
-# 帖子频道API（Add）
+# 帖子频道API
 
-## 发布帖子（Add）
+## 发布帖子
 
 SetChannelArticleAdd
 
@@ -61,7 +61,7 @@ SetChannelArticleAdd
 ```
 
 
-## 删除帖子评论回复（Add）
+## 删除帖子评论回复
 
 SetChannelArticleRemove
 

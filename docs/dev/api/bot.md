@@ -1,4 +1,4 @@
-# 机器人API（Modify）
+# 机器人API
 
 
 ## 获取机器人信息
@@ -97,7 +97,7 @@ SetBotIslandLeave
 ```
 
 
-## 获取机器人邀请列表（Add）
+## 获取机器人邀请列表
 
 GetBotInviteList
 
@@ -172,7 +172,7 @@ GetBotInviteList
 ```
 
 
-## 添加成员到机器人邀请列表（Add）
+## 添加成员到机器人邀请列表
 
 SetBotInviteAdd
 
@@ -221,7 +221,7 @@ SetBotInviteAdd
 ```
 
 
-## 移除成员出机器人邀请列表（Add）
+## 移除成员出机器人邀请列表
 
 SetBotInviteRemove
 

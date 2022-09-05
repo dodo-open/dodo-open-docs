@@ -1,7 +1,7 @@
-# 语音频道Event（Add）
+# 语音频道Event
 
 
-## 成员加入语音频道事件（Add）
+## 成员加入语音频道事件
 
 ChannelVoiceMemberJoinEvent
 
@@ -53,7 +53,7 @@ EventBodyChannelVoiceMemberJoin
 ```
 
 
-## 成员退出语音频道事件（Add）
+## 成员退出语音频道事件
 
 ChannelVoiceMemberLeaveEvent
 

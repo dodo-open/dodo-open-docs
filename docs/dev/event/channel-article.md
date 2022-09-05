@@ -1,7 +1,7 @@
-# 帖子频道Event（Add）
+# 帖子频道Event
 
 
-## 帖子发布事件（Add）
+## 帖子发布事件
 
 ChannelArticleEvent
 
@@ -61,7 +61,7 @@ EventBodyChannelArticle
 ```
 
 
-## 帖子评论回复事件（Add）
+## 帖子评论回复事件
 
 ChannelArticleCommentEvent
 
