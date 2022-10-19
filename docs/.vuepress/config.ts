@@ -275,6 +275,60 @@ export default defineUserConfig({
                 // '/dev/sdk/thirdparty.md'
               ],
             },
+          ],
+          '/dev/v1/': [
+            {
+              text: '简介',
+              children: [
+                '/dev/v1/'
+              ],
+            },
+            {
+              text: '开始',
+              children: [
+                '/dev/v1/start/development.md',
+                '/dev/v1/start/permission.md',
+                '/dev/v1/start/status.md'
+              ],
+            },
+            {
+              text: '接口',
+              children: [
+                '/dev/v1/api/bot.md',
+                '/dev/v1/api/island.md',
+                '/dev/v1/api/channel.md',
+                '/dev/v1/api/channel-text.md',
+                '/dev/v1/api/channel-voice.md',
+                '/dev/v1/api/channel-article.md',
+                '/dev/v1/api/role.md',
+                '/dev/v1/api/member.md',
+                '/dev/v1/api/nft.md',
+                '/dev/v1/api/personal.md',
+                '/dev/v1/api/resource.md',
+                '/dev/v1/api/event.md',
+                '/dev/v1/api/message.md',
+                '/dev/v1/api/card.md'
+              ],
+            },
+            {
+              text: '事件',
+              children: [
+                '/dev/v1/event/websocket.md',
+                '/dev/v1/event/event.md',
+                '/dev/v1/event/channel-text.md',
+                '/dev/v1/event/channel-voice.md',
+                '/dev/v1/event/channel-article.md',
+                '/dev/v1/event/member.md',
+                '/dev/v1/event/personal.md'
+              ],
+            },
+            {
+              text: 'SDK',
+              children: [
+                '/dev/v1/sdk/official.md',
+                // '/dev/v1/sdk/thirdparty.md'
+              ],
+            }
           ]
         }
       }
