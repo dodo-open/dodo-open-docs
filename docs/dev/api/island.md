@@ -9,7 +9,7 @@ GetIslandList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -31,7 +31,8 @@ GetIslandList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
+|islandId|string|群ID|
+|islandNo|string|群号|
 |islandName|string|群名称|
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
@@ -47,6 +48,7 @@ GetIslandList
     "message": "success",
     "data": [{
             "islandId": "10001",
+            "islandNo": "100011",
             "islandName": "测试群",
             "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
             "memberCount": 1000,
@@ -67,7 +69,7 @@ GetIslandInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -77,7 +79,7 @@ GetIslandInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 
 #### 出参
 
@@ -91,7 +93,7 @@ GetIslandInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
+|islandNo|string|群号|
 |islandName|string|群名称|
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
@@ -113,7 +115,7 @@ GetIslandInfo
 ```json
 {
     "data": {
-        "islandId": "10001",
+        "islandNo": "100011",
         "islandName": "测试群",
         "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
         "memberCount": 1000,
@@ -136,7 +138,7 @@ GetIslandLevelRankList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/level/rank/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/level/rank/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -150,7 +152,7 @@ GetIslandLevelRankList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 
 #### 出参
 
@@ -202,7 +204,7 @@ GetIslandMuteList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/mute/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/island/mute/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -212,7 +214,7 @@ GetIslandMuteList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -264,7 +266,7 @@ GetIslandBanList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/ban/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/island/ban/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -274,7 +276,7 @@ GetIslandBanList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 

@@ -19,7 +19,7 @@ EventBodyMemberJoin
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |dodoId|string|来源DoDo号|
 |modifyTime|string|变动时间|
 
@@ -59,7 +59,7 @@ EventBodyMemberLeave
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |dodoId|string|来源DoDo号|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |leaveType|int|退出类型，1：主动，2：被踢|

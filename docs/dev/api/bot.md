@@ -9,7 +9,7 @@ GetBotInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/bot/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/bot/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
  
 #### 描述
 
@@ -60,7 +60,7 @@ SetBotIslandLeave
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/bot/island/leave`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/bot/island/leave`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -70,7 +70,7 @@ SetBotIslandLeave
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 
 #### 出参
 
@@ -105,7 +105,7 @@ GetBotInviteList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/bot/invite/list`|<Badge type="warning" text="v1" vertical="middle" />|POST||
+|`/api/v2/bot/invite/list`|<Badge type="warning" text="v2" vertical="middle" />|POST||
 
 #### 描述
 
@@ -180,7 +180,7 @@ SetBotInviteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/bot/invite/add`|<Badge type="warning" text="v1" vertical="middle" />|POST||
+|`/api/v2/bot/invite/add`|<Badge type="warning" text="v2" vertical="middle" />|POST||
 
 #### 描述
 
@@ -229,7 +229,7 @@ SetBotInviteRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/bot/invite/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST||
+|`/api/v2/bot/invite/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST||
 
 #### 描述
 

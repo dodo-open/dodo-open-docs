@@ -8,7 +8,7 @@ GetChannelVoiceMemberStatus
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/status`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
+|`/api/v2/channel/voice/member/status`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -22,7 +22,7 @@ GetChannelVoiceMemberStatus
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参
@@ -75,7 +75,7 @@ SetChannelVoiceMemberMove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/move`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、语音频道-移动成员|
+|`/api/v2/channel/voice/member/move`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、语音频道-移动成员|
 
 #### 描述
 
@@ -89,7 +89,7 @@ SetChannelVoiceMemberMove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 |channelId|string|是|目标语音频道ID|
 
@@ -128,7 +128,7 @@ SetChannelVoiceMemberEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、语音频道-管理语音|
+|`/api/v2/channel/voice/member/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、语音频道-管理语音|
 
 #### 描述
 

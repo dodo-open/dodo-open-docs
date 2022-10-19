@@ -23,7 +23,7 @@ EventBodyChannelMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|消息ID|
@@ -316,7 +316,7 @@ EventBodyMessageReaction
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID|
@@ -386,7 +386,7 @@ EventBodyCardMessageButtonClick
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
@@ -448,7 +448,7 @@ EventBodyCardMessageFormSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
@@ -524,7 +524,7 @@ EventBodyCardMessageListSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源频道ID|
 |dodoId|string|来源DoDo号|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|

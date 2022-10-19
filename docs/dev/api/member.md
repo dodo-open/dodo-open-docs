@@ -9,7 +9,7 @@ GetMemberList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -23,7 +23,7 @@ GetMemberList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -100,7 +100,7 @@ GetMemberInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -114,7 +114,7 @@ GetMemberInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参
@@ -129,7 +129,7 @@ GetMemberInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
+|islandNo|string|群号|
 |dodoId|string|DoDo号|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
@@ -155,7 +155,7 @@ GetMemberInfo
 ```json
 {
     "data": {
-        "islandId": "10001",
+        "islandNo": "100011",
         "dodoId": "666666",
         "nickName": "测试群昵称",
         "personalNickName": "测试DoDo昵称",
@@ -181,7 +181,7 @@ GetMemberRoleList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/member/role/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -191,7 +191,7 @@ GetMemberRoleList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参
@@ -247,7 +247,7 @@ GetMemberInvitationInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/invitation/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|高级权限-超级管理员|
+|`/api/v2/member/invitation/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|高级权限-超级管理员|
 
 #### 描述
 
@@ -261,7 +261,7 @@ GetMemberInvitationInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参
@@ -312,7 +312,7 @@ SetMemberNickNameEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nickname/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/nickname/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -322,7 +322,7 @@ SetMemberNickNameEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 |nickName|string|是|群昵称，昵称不能大于32个字符或16个汉字|
 
@@ -361,7 +361,7 @@ SetMemberMuteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -371,7 +371,7 @@ SetMemberMuteAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 |duration|int|是|禁言时长（秒），最长7天|
 |reason|string|否|禁言原因，原因不能大于64个字符或32个汉字|
@@ -411,7 +411,7 @@ SetMemberMuteRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -421,7 +421,7 @@ SetMemberMuteRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参
@@ -458,7 +458,7 @@ SetMemberBanAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -472,7 +472,7 @@ SetMemberBanAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 |noticeChannelId|string|否|通知频道ID|
 |reason|string|否|封禁理由，理由不能大于64个字符或32个汉字|
@@ -513,7 +513,7 @@ SetMemberBanRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -523,7 +523,7 @@ SetMemberBanRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 
 #### 出参

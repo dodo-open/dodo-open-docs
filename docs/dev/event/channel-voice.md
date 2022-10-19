@@ -19,7 +19,7 @@ EventBodyChannelVoiceMemberJoin
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源语音频道ID|
 |dodoId|string|来源DoDo号|
 |personal|object|[个人信息](../api/message.md#个人信息)|
@@ -71,7 +71,7 @@ EventBodyChannelVoiceMemberLeave
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandId|string|来源群ID|
 |channelId|string|来源语音频道ID|
 |dodoId|string|来源DoDo号|
 |personal|object|[个人信息](../api/message.md#个人信息)|

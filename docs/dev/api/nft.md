@@ -9,7 +9,7 @@ GetMemberNftStatus
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nft/status`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员权限|
+|`/api/v2/member/nft/status`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员权限|
 
 #### 描述
 
@@ -23,7 +23,7 @@ GetMemberNftStatus
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandId|string|是|群ID|
 |dodoId|string|是|DoDo号|
 |platform|string|是|数藏平台，`upower`：[高能链](https://img.imdodo.com/dodo/0286c607eb8435235d6525c3f5a621d7.png)，`ubanquan`：优版权，`metamask`：Opensea|
 |issuer|string|否|发行方，若填写了系列，则发行方必填|

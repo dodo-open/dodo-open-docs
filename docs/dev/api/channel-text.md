@@ -9,7 +9,7 @@ SetChannelMessageSend
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/send`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
+|`/api/v2/channel/message/send`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
 
 #### 描述
 
@@ -146,7 +146,7 @@ SetChannelMessageEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
+|`/api/v2/channel/message/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
 
 #### 描述
 
@@ -236,7 +236,7 @@ SetChannelMessageWithdraw
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/withdraw`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
+|`/api/v2/channel/message/withdraw`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
 
 #### 描述
 
@@ -287,7 +287,7 @@ SetChannelMessageReactionAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/reaction/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-添加新反应|
+|`/api/v2/channel/message/reaction/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-添加新反应|
 
 #### 描述
 
@@ -341,7 +341,7 @@ SetChannelMessageReactionRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/reaction/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
+|`/api/v2/channel/message/reaction/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
 
 #### 描述
 
