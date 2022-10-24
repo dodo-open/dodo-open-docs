@@ -19,7 +19,7 @@ EventBodyPersonalMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|来源DoDo号|
+|dodoId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |messageId|string|消息ID|
 |messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息|

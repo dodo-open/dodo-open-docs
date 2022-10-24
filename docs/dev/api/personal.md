@@ -24,7 +24,7 @@ SetPersonalMessageSend
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 

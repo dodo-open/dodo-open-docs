@@ -32,7 +32,7 @@ GetBotInfo
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |clientId|string|机器人唯一标识|
-|dodoId|string|机器人DoDo号|
+|dodoId|string|机器人DoDoID|
 |nickName|string|机器人昵称|
 |avatarUrl|string|机器人头像|
 
@@ -140,7 +140,7 @@ GetBotInviteList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 |nickName|string|DoDo昵称|
 |avatarUrl|string|头像|
 
@@ -194,7 +194,7 @@ SetBotInviteAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 
@@ -243,7 +243,7 @@ SetBotInviteRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 

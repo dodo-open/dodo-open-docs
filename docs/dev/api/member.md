@@ -45,7 +45,7 @@ GetMemberList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -115,7 +115,7 @@ GetMemberInfo
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 
@@ -130,7 +130,7 @@ GetMemberInfo
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandNo|string|群号|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -192,7 +192,7 @@ GetMemberRoleList
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 
@@ -262,7 +262,7 @@ GetMemberInvitationInfo
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 
@@ -276,7 +276,7 @@ GetMemberInvitationInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 |nickName|string|群昵称|
 |invitationCount|int|邀请人数|
 
@@ -323,7 +323,7 @@ SetMemberNickNameEdit
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |nickName|string|是|群昵称，昵称不能大于32个字符或16个汉字|
 
 #### 出参
@@ -372,7 +372,7 @@ SetMemberMuteAdd
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |duration|int|是|禁言时长（秒），最长7天|
 |reason|string|否|禁言原因，原因不能大于64个字符或32个汉字|
 
@@ -422,7 +422,7 @@ SetMemberMuteRemove
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 
@@ -473,7 +473,7 @@ SetMemberBanAdd
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |noticeChannelId|string|否|通知频道ID|
 |reason|string|否|封禁理由，理由不能大于64个字符或32个汉字|
 
@@ -524,7 +524,7 @@ SetMemberBanRemove
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 
 #### 出参
 

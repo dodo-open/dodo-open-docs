@@ -252,7 +252,7 @@ SetRoleMemberAdd
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |roleId|string|是|身份组ID|
 
 #### 出参
@@ -301,7 +301,7 @@ SetRoleMemberRemove
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |roleId|string|是|身份组ID|
 
 #### 出参

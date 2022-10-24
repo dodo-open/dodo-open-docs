@@ -24,7 +24,7 @@ GetMemberNftStatus
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |islandId|string|是|群ID|
-|dodoId|string|是|DoDo号|
+|dodoId|string|是|DoDoID|
 |platform|string|是|数藏平台，`upower`：[高能链](https://img.imdodo.com/dodo/0286c607eb8435235d6525c3f5a621d7.png)，`ubanquan`：优版权，`metamask`：Opensea|
 |issuer|string|否|发行方，若填写了系列，则发行方必填|
 |series|string|否|系列|

@@ -21,7 +21,7 @@ EventBodyChannelArticle
 |:---------------|:-----|:---------------|
 |islandId|string|来源群ID|
 |channelId|string|来源帖子频道ID|
-|dodoId|string|来源DoDo号|
+|dodoId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |articleId|string|帖子ID|
@@ -81,7 +81,7 @@ EventBodyChannelArticleComment
 |:---------------|:-----|:---------------|
 |islandId|string|来源群ID|
 |channelId|string|来源帖子频道ID|
-|dodoId|string|来源DoDo号|
+|dodoId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |articleId|string|帖子ID|

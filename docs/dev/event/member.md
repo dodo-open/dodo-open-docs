@@ -20,7 +20,7 @@ EventBodyMemberJoin
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandId|string|来源群ID|
-|dodoId|string|来源DoDo号|
+|dodoId|string|来源DoDoID|
 |modifyTime|string|变动时间|
 
 #### 事件示例
@@ -60,10 +60,10 @@ EventBodyMemberLeave
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandId|string|来源群ID|
-|dodoId|string|来源DoDo号|
+|dodoId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |leaveType|int|退出类型，1：主动，2：被踢|
-|operateDoDoId|string|操作者DoDo号（执行踢出操作的人）|
+|operateDoDoId|string|操作者DoDoID（执行踢出操作的人）|
 |modifyTime|string|变动时间|
 
 #### 事件示例

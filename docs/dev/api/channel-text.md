@@ -29,7 +29,7 @@ SetChannelMessageSend
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息，6：卡片消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 |referencedMessageId|string|否|回复消息ID|
-|dodoId|string|否|DoDo号，非必传，如果传了，则给该成员发送频道私信|
+|dodoId|string|否|DoDoID，非必传，如果传了，则给该成员发送频道私信|
 
 #### 出参
 
@@ -43,7 +43,7 @@ SetChannelMessageSend
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|messageId|string|消息ID，如入参传了DoDo号，则返回频道私信消息ID|
+|messageId|string|消息ID，如入参传了DoDoID，则返回频道私信消息ID|
 
 #### 入参示例
 
@@ -359,7 +359,7 @@ SetChannelMessageReactionRemove
 |:---------------|:-----|:-----|:---------------|
 |messageId|string|是|消息ID|
 |emoji|object|是|[反应表情](./message.md#消息表情)|
-|dodoId|string|否|DoDo号，不传或传空时表示移除机器人自身的反应|
+|dodoId|string|否|DoDoID，不传或传空时表示移除机器人自身的反应|
 
 #### 出参
 

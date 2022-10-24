@@ -166,7 +166,7 @@ GetIslandLevelRankList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 |nickName|string|群昵称|
 |level|int|等级|
 |rank|int|排名，返回前100名|
@@ -229,7 +229,7 @@ GetIslandMuteList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 
 #### 入参示例
 
@@ -291,7 +291,7 @@ GetIslandBanList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoId|string|DoDoID|
 
 #### 入参示例
 

@@ -115,13 +115,21 @@ export default defineUserConfig({
           },
           {
             text: '开发文档',
-            link: '/dev/',
-            activeMatch: '/dev/.*'
+            children: [
+              {
+                text: 'v2 版本',
+                link: '/dev/',
+                activeMatch: '/dev/.*'
+              },
+              {
+                text: 'v1 版本',
+                link: '/devs/v1/',
+                activeMatch: '/devs/v1/.*'
+              }
+            ]
           },
           {
             text: 'SDK文档',
-            link: '/dev/sdk/',
-            activeMatch: '/dev/sdk/.*',
             children: [
               {
                 text: '官方 SDK',
