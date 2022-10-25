@@ -31,7 +31,7 @@ GetIslandList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
+|islandSourceId|string|群ID|
 |islandName|string|群名称|
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
@@ -46,7 +46,7 @@ GetIslandList
     "status": 0,
     "message": "success",
     "data": [{
-            "islandId": "10001",
+            "islandSourceId": "10001",
             "islandName": "测试群",
             "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
             "memberCount": 1000,
@@ -77,7 +77,7 @@ GetIslandInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 
 #### 出参
 
@@ -91,7 +91,7 @@ GetIslandInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
+|islandSourceId|string|群ID|
 |islandName|string|群名称|
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
@@ -104,7 +104,7 @@ GetIslandInfo
 
 ```json
 {
-    "islandId": "10001"
+    "islandSourceId": "10001"
 }
 ```
 
@@ -113,7 +113,7 @@ GetIslandInfo
 ```json
 {
     "data": {
-        "islandId": "10001",
+        "islandSourceId": "10001",
         "islandName": "测试群",
         "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
         "memberCount": 1000,
@@ -150,7 +150,7 @@ GetIslandLevelRankList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 
 #### 出参
 
@@ -164,7 +164,7 @@ GetIslandLevelRankList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |level|int|等级|
 |rank|int|排名，返回前100名|
@@ -173,7 +173,7 @@ GetIslandLevelRankList
 
 ```json
 {
-    "islandId": "10001"
+    "islandSourceId": "10001"
 }
 ```
 
@@ -184,7 +184,7 @@ GetIslandLevelRankList
     "status": 0,
     "message": "success",
     "data": [{
-            "dodoId": "666666",
+            "dodoSourceId": "666666",
             "nickName": "测试群昵称",
             "level": 1,
             "rank": 1
@@ -212,7 +212,7 @@ GetIslandMuteList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -227,13 +227,13 @@ GetIslandMuteList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 
 #### 入参示例
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "pageSize": 100,
     "maxId": 0
 }
@@ -246,7 +246,7 @@ GetIslandMuteList
     "data": {
         "maxId": 12345,
         "list": [{
-                "dodoId": "666666"
+                "dodoSourceId": "666666"
             }
         ]
     },
@@ -274,7 +274,7 @@ GetIslandBanList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -289,13 +289,13 @@ GetIslandBanList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 
 #### 入参示例
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "pageSize": 100,
     "maxId": 0
 }
@@ -308,7 +308,7 @@ GetIslandBanList
     "data": {
         "maxId": 12345,
         "list": [{
-                "dodoId": "666666"
+                "dodoSourceId": "666666"
             }
         ]
     },

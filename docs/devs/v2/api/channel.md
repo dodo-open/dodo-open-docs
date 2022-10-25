@@ -19,7 +19,7 @@ GetChannelList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 
 #### 出参
 
@@ -44,7 +44,7 @@ GetChannelList
 
 ```json
 {
-    "islandId": "10001"
+    "islandSourceId": "10001"
 }
 ```
 
@@ -109,7 +109,7 @@ GetChannelInfo
 |channelId|string|频道ID|
 |channelName|string|频道名称|
 |channelType|int|频道类型，1：文字频道，2：语音频道，4：帖子频道，5：链接频道，6：资料频道|
-|islandId|string|群号|
+|islandSourceId|string|群ID|
 |defaultFlag|int|默认访问频道标识，0：否，1：是|
 |groupId|string|分组ID|
 |groupName|string|分组名称|
@@ -132,7 +132,7 @@ GetChannelInfo
         "channelId": "1234501",
         "channelName": "测试频道1",
         "channelType": 1,
-        "islandId": "10001",
+        "islandSourceId": "10001",
         "defaultFlag": 1,
         "groupId": "123450101",
         "groupName": "测试分组"
@@ -163,7 +163,7 @@ SetChannelAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |channelName|string|否|频道名称，非必传，不传时设置`新的频道`，不能大于32个字符或16个汉字|
 |channelType|int|是|频道类型，1：文字频道，2：语音频道（默认自由模式），4：帖子频道（默认详细模式）|
 
@@ -186,7 +186,7 @@ SetChannelAdd
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "channelName": "测试频道1",
     "channelType": 1
 }
@@ -223,7 +223,7 @@ SetChannelEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |channelId|string|是|频道ID|
 |channelName|string|否|频道名称，非必传，不传时默认不改动，不能大于32个字符或16个汉字|
 
@@ -238,7 +238,7 @@ SetChannelEdit
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "channelId": "1234501",
     "channelName": "测试频道1"
 }
@@ -276,7 +276,7 @@ SetChannelRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |channelId|string|是|频道ID|
 
 #### 出参
@@ -290,7 +290,7 @@ SetChannelRemove
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "channelId": "1234501"
 }
 ```

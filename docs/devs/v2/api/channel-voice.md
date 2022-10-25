@@ -22,8 +22,8 @@ GetChannelVoiceMemberStatus
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -46,8 +46,8 @@ GetChannelVoiceMemberStatus
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -89,8 +89,8 @@ SetChannelVoiceMemberMove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |channelId|string|是|目标语音频道ID|
 
 #### 出参
@@ -104,8 +104,8 @@ SetChannelVoiceMemberMove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "channelId": "1000101"
 }
 ```
@@ -143,7 +143,7 @@ SetChannelVoiceMemberEdit
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |channelId|string|是|语音频道ID|
-|dodoId|string|是|DoDo号|
+|dodoSourceId|string|是|DoDoID|
 |operateType|int|是|执行管理<br/>0：下麦，自由模式：无作用；麦序模式：设置下麦或拒绝上麦<br/>1：上麦，自由模式：无作用；麦序模式：同意上麦或邀请上麦<br/>2：闭麦，自由模式：闭麦该成员；麦序模式：闭麦该成员<br/>3：移出语音频道|
 
 #### 出参
@@ -158,7 +158,7 @@ SetChannelVoiceMemberEdit
 ```json
 {
     "channelId": "1000101",
-    "dodoId": "666666",
+    "dodoSourceId": "666666",
     "operateType": 0
 }
 ```

@@ -132,7 +132,7 @@ ReferenceModelMember
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |messageId|string|被回复消息ID|
-|dodoId|string|被回复者DoDo号|
+|dodoSourceId|string|被回复者DoDoID|
 |nickName|string|被回复者群昵称|
 
 #### 反应对象
@@ -171,7 +171,7 @@ MessageModelReactionTarget
 
 |名称|语法|示例|效果|
 |:------|:------|:---------------|:---------------|
-|艾特用户|<@!DoDO号>|<@!666666>|DoDo内发送可见|
+|艾特用户|<@!DoDoID>|<@!666666>|DoDo内发送可见|
 |艾特身份组|<@&身份组ID>|<@&88888>|DoDo内发送可见，机器人仅支持接收，不支持发送|
 |艾特所有人|<@all>|<@all>|DoDo内发送可见，机器人仅支持接收，不支持发送|
 |跳转频道|<#频道ID>|<#1000101>|DoDo内发送可见|

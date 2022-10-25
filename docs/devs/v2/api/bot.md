@@ -32,7 +32,7 @@ GetBotInfo
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |clientId|string|机器人唯一标识|
-|dodoId|string|机器人DoDo号|
+|dodoSourceId|string|机器人DoDoID|
 |nickName|string|机器人昵称|
 |avatarUrl|string|机器人头像|
 
@@ -44,7 +44,7 @@ GetBotInfo
     "message": "success",
     "data": {
         "clientId": "88888888",
-        "dodoId": "555555",
+        "dodoSourceId": "555555",
         "nickName": "测试机器人",
         "avatarUrl": "https://img.imdodo.com/dodo/465752845d9c99055716816f364537e4.png"
     }
@@ -70,7 +70,7 @@ SetBotIslandLeave
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 
 #### 出参
 
@@ -83,7 +83,7 @@ SetBotIslandLeave
 
 ```json
 {
-    "islandId": "10001"
+    "islandSourceId": "10001"
 }
 ```
 
@@ -140,7 +140,7 @@ GetBotInviteList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|DoDo昵称|
 |avatarUrl|string|头像|
 
@@ -160,7 +160,7 @@ GetBotInviteList
     "data": {
         "maxId": 12345,
         "list": [{
-                "dodoId": "666666",
+                "dodoSourceId": "666666",
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png"
             }
@@ -194,7 +194,7 @@ SetBotInviteAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -207,7 +207,7 @@ SetBotInviteAdd
 
 ```json
 {
-    "dodoId": "666666"
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -243,7 +243,7 @@ SetBotInviteRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -256,7 +256,7 @@ SetBotInviteRemove
 
 ```json
 {
-    "dodoId": "666666"
+    "dodoSourceId": "666666"
 }
 ```
 

@@ -23,7 +23,7 @@ GetMemberList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -45,7 +45,7 @@ GetMemberList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -60,7 +60,7 @@ GetMemberList
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "pageSize": 100,
     "maxId": 0,
 }
@@ -73,7 +73,7 @@ GetMemberList
     "data": {
         "maxId": 12345,
         "list": [{
-                "dodoId": "666666",
+                "dodoSourceId": "666666",
                 "nickName": "测试群昵称",
                 "personalNickName": "测试DoDo昵称",
                 "avatarUrl": "https://img.doufan.tv/dodo/71922683339a16fa6958bd00263f81ea.png",
@@ -114,8 +114,8 @@ GetMemberInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -129,8 +129,8 @@ GetMemberInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
-|dodoId|string|DoDo号|
+|islandSourceId|string|群ID|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -145,8 +145,8 @@ GetMemberInfo
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -155,8 +155,8 @@ GetMemberInfo
 ```json
 {
     "data": {
-        "islandId": "10001",
-        "dodoId": "666666",
+        "islandSourceId": "10001",
+        "dodoSourceId": "666666",
         "nickName": "测试群昵称",
         "personalNickName": "测试DoDo昵称",
         "avatarUrl": "https://img.doufan.tv/dodo/71922683339a16fa6958bd00263f81ea.png",
@@ -191,8 +191,8 @@ GetMemberRoleList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -216,8 +216,8 @@ GetMemberRoleList
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -261,8 +261,8 @@ GetMemberInvitationInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -276,7 +276,7 @@ GetMemberInvitationInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |invitationCount|int|邀请人数|
 
@@ -284,8 +284,8 @@ GetMemberInvitationInfo
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -294,7 +294,7 @@ GetMemberInvitationInfo
 ```json
 {
     "data": {
-        "dodoId": "666666",
+        "dodoSourceId": "666666",
         "nickName": "测试群昵称",
         "invitationCount": 100
     },
@@ -322,8 +322,8 @@ SetMemberNickNameEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |nickName|string|是|群昵称，昵称不能大于32个字符或16个汉字|
 
 #### 出参
@@ -337,8 +337,8 @@ SetMemberNickNameEdit
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "nickName": "群昵称编辑测试"
 }
 ```
@@ -371,8 +371,8 @@ SetMemberMuteAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |duration|int|是|禁言时长（秒），最长7天|
 |reason|string|否|禁言原因，原因不能大于64个字符或32个汉字|
 
@@ -387,8 +387,8 @@ SetMemberMuteAdd
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "duration": 30,
     "reason": "禁言测试"
 }
@@ -421,8 +421,8 @@ SetMemberMuteRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -435,8 +435,8 @@ SetMemberMuteRemove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -472,8 +472,8 @@ SetMemberBanAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |noticeChannelId|string|否|通知频道ID|
 |reason|string|否|封禁理由，理由不能大于64个字符或32个汉字|
 
@@ -488,8 +488,8 @@ SetMemberBanAdd
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "noticeChannelId": "12345",
     "reason": "封禁测试"
 }
@@ -523,8 +523,8 @@ SetMemberBanRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -537,8 +537,8 @@ SetMemberBanRemove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 

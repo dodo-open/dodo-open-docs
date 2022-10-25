@@ -19,9 +19,9 @@ EventBodyChannelVoiceMemberJoin
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源语音频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 
@@ -32,9 +32,9 @@ EventBodyChannelVoiceMemberJoin
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "123456",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -71,9 +71,9 @@ EventBodyChannelVoiceMemberLeave
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源语音频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 
@@ -84,9 +84,9 @@ EventBodyChannelVoiceMemberLeave
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "123456",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
