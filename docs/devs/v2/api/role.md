@@ -8,7 +8,7 @@ GetRoleList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/role/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -72,7 +72,7 @@ SetRoleAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -139,7 +139,7 @@ SetRoleEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -194,7 +194,7 @@ SetRoleRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -241,7 +241,7 @@ SetRoleMemberAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/member/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/member/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -290,7 +290,7 @@ SetRoleMemberRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/member/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/member/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 

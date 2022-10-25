@@ -9,7 +9,7 @@ GetIslandList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -67,7 +67,7 @@ GetIslandInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -136,7 +136,7 @@ GetIslandLevelRankList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/level/rank/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/island/level/rank/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -202,7 +202,7 @@ GetIslandMuteList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/mute/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/island/mute/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -264,7 +264,7 @@ GetIslandBanList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/island/ban/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/island/ban/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 

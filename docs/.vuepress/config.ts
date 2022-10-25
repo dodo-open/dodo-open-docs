@@ -274,56 +274,56 @@ export default defineUserConfig({
               ],
             },
           ],
-          '/devs/v1/': [
+          '/devs/v2/': [
             {
               text: '简介',
               children: [
-                '/devs/v1/'
+                '/devs/v2/'
               ],
             },
             {
               text: '开始',
               children: [
-                '/devs/v1/start/development.md',
-                '/devs/v1/start/permission.md',
-                '/devs/v1/start/status.md'
+                '/devs/v2/start/development.md',
+                '/devs/v2/start/permission.md',
+                '/devs/v2/start/status.md'
               ],
             },
             {
               text: '接口',
               children: [
-                '/devs/v1/api/bot.md',
-                '/devs/v1/api/island.md',
-                '/devs/v1/api/channel.md',
-                '/devs/v1/api/channel-text.md',
-                '/devs/v1/api/channel-voice.md',
-                '/devs/v1/api/channel-article.md',
-                '/devs/v1/api/role.md',
-                '/devs/v1/api/member.md',
-                '/devs/v1/api/nft.md',
-                '/devs/v1/api/personal.md',
-                '/devs/v1/api/resource.md',
-                '/devs/v1/api/event.md',
-                '/devs/v1/api/message.md',
-                '/devs/v1/api/card.md'
+                '/devs/v2/api/bot.md',
+                '/devs/v2/api/island.md',
+                '/devs/v2/api/channel.md',
+                '/devs/v2/api/channel-text.md',
+                '/devs/v2/api/channel-voice.md',
+                '/devs/v2/api/channel-article.md',
+                '/devs/v2/api/role.md',
+                '/devs/v2/api/member.md',
+                '/devs/v2/api/nft.md',
+                '/devs/v2/api/personal.md',
+                '/devs/v2/api/resource.md',
+                '/devs/v2/api/event.md',
+                '/devs/v2/api/message.md',
+                '/devs/v2/api/card.md'
               ],
             },
             {
               text: '事件',
               children: [
-                '/devs/v1/event/websocket.md',
-                '/devs/v1/event/event.md',
-                '/devs/v1/event/channel-text.md',
-                '/devs/v1/event/channel-voice.md',
-                '/devs/v1/event/channel-article.md',
-                '/devs/v1/event/member.md',
-                '/devs/v1/event/personal.md'
+                '/devs/v2/event/websocket.md',
+                '/devs/v2/event/event.md',
+                '/devs/v2/event/channel-text.md',
+                '/devs/v2/event/channel-voice.md',
+                '/devs/v2/event/channel-article.md',
+                '/devs/v2/event/member.md',
+                '/devs/v2/event/personal.md'
               ],
             },
             {
               text: 'SDK',
               children: [
-                '/devs/v1/sdk/official.md'
+                '/devs/v2/sdk/official.md'
               ],
             }
           ]

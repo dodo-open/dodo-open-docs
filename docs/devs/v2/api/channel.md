@@ -9,7 +9,7 @@ GetChannelList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
+|`/api/v2/channel/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -82,7 +82,7 @@ GetChannelInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
+|`/api/v2/channel/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -149,7 +149,7 @@ SetChannelAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组|
+|`/api/v2/channel/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理频道与分组|
 
 #### 描述
 
@@ -213,7 +213,7 @@ SetChannelEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组 或 通用权限-编辑频道、通用权限-查看频道|
+|`/api/v2/channel/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理频道与分组 或 通用权限-编辑频道、通用权限-查看频道|
 
 #### 描述
 
@@ -262,7 +262,7 @@ SetChannelRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理频道与分组、通用权限-查看频道|
+|`/api/v2/channel/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理频道与分组、通用权限-查看频道|
 
 #### 描述
 

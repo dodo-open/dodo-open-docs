@@ -8,7 +8,7 @@ SetPersonalMessageSend
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/personal/message/send`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/personal/message/send`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 

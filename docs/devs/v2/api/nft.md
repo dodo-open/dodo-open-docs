@@ -9,7 +9,7 @@ GetMemberNftStatus
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nft/status`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员权限|
+|`/api/v2/member/nft/status`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员权限|
 
 #### 描述
 

@@ -8,7 +8,7 @@ GetChannelVoiceMemberStatus
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/status`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道|
+|`/api/v2/channel/voice/member/status`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -75,7 +75,7 @@ SetChannelVoiceMemberMove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/move`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、语音频道-移动成员|
+|`/api/v2/channel/voice/member/move`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、语音频道-移动成员|
 
 #### 描述
 
@@ -128,7 +128,7 @@ SetChannelVoiceMemberEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/voice/member/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、语音频道-管理语音|
+|`/api/v2/channel/voice/member/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、语音频道-管理语音|
 
 #### 描述
 

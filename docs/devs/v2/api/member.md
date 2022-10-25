@@ -9,7 +9,7 @@ GetMemberList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -100,7 +100,7 @@ GetMemberInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -181,7 +181,7 @@ GetMemberRoleList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/member/role/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -247,7 +247,7 @@ GetMemberInvitationInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/invitation/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|高级权限-超级管理员|
+|`/api/v2/member/invitation/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|高级权限-超级管理员|
 
 #### 描述
 
@@ -312,7 +312,7 @@ SetMemberNickNameEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nickname/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/nickname/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -361,7 +361,7 @@ SetMemberMuteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -411,7 +411,7 @@ SetMemberMuteRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -458,7 +458,7 @@ SetMemberBanAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -513,7 +513,7 @@ SetMemberBanRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
