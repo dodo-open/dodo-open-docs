@@ -32,6 +32,7 @@ GetIslandList
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandSourceId|string|群ID|
+|islandId|string|群号|
 |islandName|string|群名称|
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
@@ -47,6 +48,7 @@ GetIslandList
     "message": "success",
     "data": [{
             "islandSourceId": "10001",
+            "islandId": "100010",
             "islandName": "测试群",
             "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
             "memberCount": 1000,
