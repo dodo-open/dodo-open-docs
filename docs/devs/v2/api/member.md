@@ -304,6 +304,67 @@ GetMemberInvitationInfo
 ```
 
 
+## 获取成员DoDoID映射列表
+
+GetMemberDodoIdMapList
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/member/dodoid/map/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
+
+#### 描述
+
+用于批量获取DoDo号对应的DoDoID（DoDo唯一标识），返回结果会进行去重处理，另外，若某个DoDo号没有匹配到映射关系，则不展示该结果项
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|dodoIdList|`List<string>`|是|DoDo号列表|
+
+#### 出参
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|status|int|[返回码](../start/status.md)|
+|message|string|返回信息|
+|data|`list<object>`|数据列表|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID（DoDO唯一标识）|
+
+#### 入参示例
+
+```json
+{
+    "dodoIdList": ["1001", "1002"]
+}
+```
+
+#### 出参示例
+
+```json
+{
+    "status": 0,
+    "message": "success",
+    "data": [{
+            "dodoId": "1001",
+            "dodoSourceId": "10010"
+        }, {
+            "dodoId": "1002",
+            "dodoSourceId": "10020"
+        }
+    ]
+}
+```
+
+
 ## 编辑成员群昵称
 
 SetMemberNickNameEdit
