@@ -301,7 +301,7 @@ export default defineUserConfig({
                 '/devs/v2/api/role.md',
                 '/devs/v2/api/member.md',
                 '/devs/v2/api/nft.md',
-                '/devs/v2/api/personal.md',
+                // '/devs/v2/api/personal.md',
                 '/devs/v2/api/resource.md',
                 '/devs/v2/api/event.md',
                 '/devs/v2/api/message.md',
@@ -317,7 +317,7 @@ export default defineUserConfig({
                 '/devs/v2/event/channel-voice.md',
                 '/devs/v2/event/channel-article.md',
                 '/devs/v2/event/member.md',
-                '/devs/v2/event/personal.md'
+                // '/devs/v2/event/personal.md'
               ],
             },
             {

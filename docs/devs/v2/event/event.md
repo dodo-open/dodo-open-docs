@@ -49,6 +49,6 @@ EventSubjectDataBusiness
 - 4001：[成员加入事件](./member.md#成员加入事件)
 - 4002：[成员退出事件](./member.md#成员退出事件)
 
-#### 私信
+<!-- #### 私信
 
-- 1001：[私信事件](./personal.md#私信事件)
+- 1001：[私信事件](./personal.md#私信事件) -->
