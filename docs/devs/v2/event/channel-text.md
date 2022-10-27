@@ -347,12 +347,12 @@ EventBodyMessageReaction
                 "joinTime": "2022-07-20 10:27:24"
             },
             "reactionTarget": {
-                "id": "349552076344709120",
-                "type": 0
+                "type": 0,
+                "id": "349552076344709120"
             },
             "reactionEmoji": {
-                "id": "128520",
-                "type": 1
+                "type": 1,
+                "id": "128520"
             },
             "reactionType": 1
         },
