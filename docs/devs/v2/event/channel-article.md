@@ -56,7 +56,8 @@ EventBodyChannelArticle
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898a",
         "eventType": "6001",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -118,6 +119,7 @@ EventBodyChannelArticleComment
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898b",
         "eventType": "6002",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```

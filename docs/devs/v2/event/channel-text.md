@@ -69,7 +69,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c1",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -111,7 +112,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c2",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -153,7 +155,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c3",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -192,7 +195,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c4",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -233,7 +237,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c5",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -285,7 +290,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c6",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -359,7 +365,8 @@ EventBodyMessageReaction
         "eventId": "c168e88cfd95435286806f04ec605d2f",
         "eventType": "3001",
         "timestamp": 1661147785397
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -421,7 +428,8 @@ EventBodyCardMessageButtonClick
         "eventId": "71e644e163634acb96782ad17916a673",
         "eventType": "3002",
         "timestamp": 1661153117437
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -497,7 +505,8 @@ EventBodyCardMessageFormSubmit
         "eventId": "d307185efa224cf4913cbe13744da7e5",
         "eventType": "3003",
         "timestamp": 1661153143834
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -570,6 +579,7 @@ EventBodyCardMessageListSubmit
         "eventId": "ab74cff21b0c4d4f86e86f1a7228c5f0",
         "eventType": "3004",
         "timestamp": 1661153160993
-    }
+    },
+    "version": "v2"
 }
 ```

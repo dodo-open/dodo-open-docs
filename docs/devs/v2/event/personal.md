@@ -50,7 +50,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4051",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -81,7 +82,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4052",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -112,7 +114,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4053",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 
