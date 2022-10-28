@@ -21,6 +21,7 @@ EventBodyMemberJoin
 |:---------------|:-----|:---------------|
 |islandSourceId|string|来源群ID|
 |dodoSourceId|string|来源DoDoID|
+|personal|object|[个人信息](../api/message.md#个人信息)|
 |modifyTime|string|变动时间|
 
 #### 事件示例
@@ -32,6 +33,11 @@ EventBodyMemberJoin
         "eventBody": {
             "islandSourceId": "44659",
             "dodoSourceId": "681856",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
             "modifyTime": "2022-08-22 15:28:49"
         },
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898e",
