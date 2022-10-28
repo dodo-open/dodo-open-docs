@@ -120,8 +120,6 @@ export default defineUserConfig({
           },
           {
             text: 'SDK文档',
-            link: '/dev/sdk/',
-            activeMatch: '/dev/sdk/.*',
             children: [
               {
                 text: '官方 SDK',
@@ -275,6 +273,59 @@ export default defineUserConfig({
                 // '/dev/sdk/thirdparty.md'
               ],
             },
+          ],
+          '/devs/v2/': [
+            {
+              text: '简介',
+              children: [
+                '/devs/v2/'
+              ],
+            },
+            {
+              text: '开始',
+              children: [
+                '/devs/v2/start/development.md',
+                '/devs/v2/start/permission.md',
+                '/devs/v2/start/status.md'
+              ],
+            },
+            {
+              text: '接口',
+              children: [
+                '/devs/v2/api/bot.md',
+                '/devs/v2/api/island.md',
+                '/devs/v2/api/channel.md',
+                '/devs/v2/api/channel-text.md',
+                '/devs/v2/api/channel-voice.md',
+                '/devs/v2/api/channel-article.md',
+                '/devs/v2/api/role.md',
+                '/devs/v2/api/member.md',
+                '/devs/v2/api/nft.md',
+                // '/devs/v2/api/personal.md',
+                '/devs/v2/api/resource.md',
+                '/devs/v2/api/event.md',
+                '/devs/v2/api/message.md',
+                '/devs/v2/api/card.md'
+              ],
+            },
+            {
+              text: '事件',
+              children: [
+                '/devs/v2/event/websocket.md',
+                '/devs/v2/event/event.md',
+                '/devs/v2/event/channel-text.md',
+                '/devs/v2/event/channel-voice.md',
+                '/devs/v2/event/channel-article.md',
+                '/devs/v2/event/member.md',
+                // '/devs/v2/event/personal.md'
+              ],
+            },
+            {
+              text: 'SDK',
+              children: [
+                '/devs/v2/sdk/official.md'
+              ],
+            }
           ]
         }
       }
