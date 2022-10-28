@@ -43,7 +43,8 @@ EventBodyMemberJoin
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898e",
         "eventType": "4001",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -93,6 +94,7 @@ EventBodyMemberLeave
         "eventId": "095ff9a42c8347758af963d37ea52073",
         "eventType": "4002",
         "timestamp": 1661153284690
-    }
+    },
+    "version": "v2"
 }
 ```

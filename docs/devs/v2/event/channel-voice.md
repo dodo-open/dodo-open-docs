@@ -48,7 +48,8 @@ EventBodyChannelVoiceMemberJoin
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898e",
         "eventType": "5001",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -100,6 +101,7 @@ EventBodyChannelVoiceMemberLeave
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898e",
         "eventType": "5002",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```
