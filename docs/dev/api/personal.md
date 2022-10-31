@@ -8,7 +8,7 @@ SetPersonalMessageSend
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/personal/message/send`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/personal/message/send`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -24,7 +24,7 @@ SetPersonalMessageSend
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|dodoId|string|是|DoDo号|
+|dodoSourceId|string|是|DoDoID|
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 
@@ -49,7 +49,7 @@ SetPersonalMessageSend
 
 ```json
 {
-    "dodoId": "1000101",
+    "dodoSourceId": "1000101",
     "messageType": 1,
     "messageBody": {
         "content": "测试文字消息"
@@ -63,7 +63,7 @@ SetPersonalMessageSend
 
 ```json
 {
-    "dodoId": "1000101",
+    "dodoSourceId": "1000101",
     "messageType": 2,
     "messageBody": {
         "url": "https://img.imdodo.com/dodo/8c77d48865bf547a69fb3bba6228760c.png",
@@ -80,7 +80,7 @@ SetPersonalMessageSend
 
 ```json
 {
-    "dodoId": "1000101",
+    "dodoSourceId": "1000101",
     "messageType": 3,
     "messageBody": {
         "url": "https://video.imdodo.com/dodo/ff85c752daf7d67884cb9ad3921a5d01.mp4",

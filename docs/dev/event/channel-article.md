@@ -19,9 +19,9 @@ EventBodyChannelArticle
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源帖子频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |articleId|string|帖子ID|
@@ -36,9 +36,9 @@ EventBodyChannelArticle
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "123456",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -56,7 +56,8 @@ EventBodyChannelArticle
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898a",
         "eventType": "6001",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -79,9 +80,9 @@ EventBodyChannelArticleComment
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源帖子频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |articleId|string|帖子ID|
@@ -97,9 +98,9 @@ EventBodyChannelArticleComment
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "123456",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -118,6 +119,7 @@ EventBodyChannelArticleComment
         "eventId": "3dcf80c0a3244661a6c65dd9ba37898b",
         "eventType": "6002",
         "timestamp": 1661153329922
-    }
+    },
+    "version": "v2"
 }
 ```

@@ -23,9 +23,9 @@ EventBodyChannelMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |messageId|string|消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
@@ -43,9 +43,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214781",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -58,7 +58,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 1,
@@ -69,7 +69,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c1",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -82,9 +83,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214782",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -97,7 +98,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 2,
@@ -111,7 +112,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c2",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -124,9 +126,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214783",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -139,7 +141,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 3,
@@ -153,7 +155,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c3",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -166,9 +169,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214784",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -181,7 +184,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 4,
@@ -192,7 +195,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c4",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -205,9 +209,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214785",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -220,7 +224,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 5,
@@ -233,7 +237,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c5",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -246,9 +251,9 @@ EventBodyChannelMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552072708214786",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -261,7 +266,7 @@ EventBodyChannelMessage
             },
             "reference": {
                 "messageId": "",
-                "dodoId": "",
+                "dodoSourceId": "",
                 "nickName": ""
             },
             "messageType": 6,
@@ -285,7 +290,8 @@ EventBodyChannelMessage
         "eventId": "2b02565727ca47c6a03e41204e9833c6",
         "eventType": "2001",
         "timestamp": 1661147708487
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -316,9 +322,9 @@ EventBodyMessageReaction
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |messageId|string|来源消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
@@ -333,9 +339,9 @@ EventBodyMessageReaction
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349552076344709120",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -347,19 +353,20 @@ EventBodyMessageReaction
                 "joinTime": "2022-07-20 10:27:24"
             },
             "reactionTarget": {
-                "id": "349552076344709120",
-                "type": 0
+                "type": 0,
+                "id": "349552076344709120"
             },
             "reactionEmoji": {
-                "id": "128520",
-                "type": 1
+                "type": 1,
+                "id": "128520"
             },
             "reactionType": 1
         },
         "eventId": "c168e88cfd95435286806f04ec605d2f",
         "eventType": "3001",
         "timestamp": 1661147785397
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -386,9 +393,9 @@ EventBodyCardMessageButtonClick
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
@@ -402,9 +409,9 @@ EventBodyCardMessageButtonClick
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349574728170024960",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -421,7 +428,8 @@ EventBodyCardMessageButtonClick
         "eventId": "71e644e163634acb96782ad17916a673",
         "eventType": "3002",
         "timestamp": 1661153117437
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -448,9 +456,9 @@ EventBodyCardMessageFormSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
@@ -471,9 +479,9 @@ EventBodyCardMessageFormSubmit
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349574728170024960",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -497,7 +505,8 @@ EventBodyCardMessageFormSubmit
         "eventId": "d307185efa224cf4913cbe13744da7e5",
         "eventType": "3003",
         "timestamp": 1661153143834
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -524,9 +533,9 @@ EventBodyCardMessageListSubmit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|来源群号|
+|islandSourceId|string|来源群ID|
 |channelId|string|来源频道ID|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |messageId|string|来源消息ID，频道私信触发时，返回频道私信消息ID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
@@ -546,9 +555,9 @@ EventBodyCardMessageListSubmit
     "type": 0,
     "data": {
         "eventBody": {
-            "islandId": "44659",
+            "islandSourceId": "44659",
             "channelId": "118506",
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "messageId": "349574728170024960",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -570,6 +579,7 @@ EventBodyCardMessageListSubmit
         "eventId": "ab74cff21b0c4d4f86e86f1a7228c5f0",
         "eventType": "3004",
         "timestamp": 1661153160993
-    }
+    },
+    "version": "v2"
 }
 ```

@@ -8,7 +8,7 @@ GetRoleList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/role/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -18,7 +18,7 @@ GetRoleList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 
 #### 出参
 
@@ -42,7 +42,7 @@ GetRoleList
 
 ```json
 {
-    "islandId": "10001"
+    "islandSourceId": "10001"
 }
 ```
 
@@ -72,7 +72,7 @@ SetRoleAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -86,7 +86,7 @@ SetRoleAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |roleName|string|否|身份组名称，非必传，不传时设置为`新的身份组`，不能大于32个字符或16个汉字|
 |roleColor|string|否|身份组颜色，非必传，不传时默认为`#333333`，16进制HEX格式颜色码|
 |position|int|否|身份组排序位置，非必传，不传时默认为1，不可传比机器人身份组大的排序值|
@@ -110,7 +110,7 @@ SetRoleAdd
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "roleName": "测试身份组",
     "roleColor": "#ffffff",
     "position": 1,
@@ -139,7 +139,7 @@ SetRoleEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -149,7 +149,7 @@ SetRoleEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |roleId|string|是|身份组ID|
 |roleName|string|否|身份组名称，非必传，不传时默认不改动，不能大于32个字符或16个汉字|
 |roleColor|string|否|身份组颜色，非必传，不传时默认不改动，16进制HEX格式颜色码|
@@ -167,7 +167,7 @@ SetRoleEdit
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "roleId": "12345678",
     "roleName": "测试身份组",
     "roleColor": "#ffffff",
@@ -194,7 +194,7 @@ SetRoleRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -204,7 +204,7 @@ SetRoleRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |roleId|string|是|身份组ID|
 
 #### 出参
@@ -218,7 +218,7 @@ SetRoleRemove
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "roleId": "12345678"
 }
 ```
@@ -241,7 +241,7 @@ SetRoleMemberAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/member/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/member/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -251,8 +251,8 @@ SetRoleMemberAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |roleId|string|是|身份组ID|
 
 #### 出参
@@ -266,8 +266,8 @@ SetRoleMemberAdd
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "roleId": "12345678"
 }
 ```
@@ -290,7 +290,7 @@ SetRoleMemberRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/role/member/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-管理权限与身份组|
+|`/api/v2/role/member/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
 
 #### 描述
 
@@ -300,8 +300,8 @@ SetRoleMemberRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |roleId|string|是|身份组ID|
 
 #### 出参
@@ -315,8 +315,8 @@ SetRoleMemberRemove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "roleId": "12345678"
 }
 ```

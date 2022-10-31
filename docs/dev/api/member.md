@@ -9,7 +9,7 @@ GetMemberList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -23,7 +23,7 @@ GetMemberList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
+|islandSourceId|string|是|群ID|
 |pageSize|int|是|页大小，最大100|
 |maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
 
@@ -45,7 +45,7 @@ GetMemberList
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -60,7 +60,7 @@ GetMemberList
 
 ```json
 {
-    "islandId": "10001",
+    "islandSourceId": "10001",
     "pageSize": 100,
     "maxId": 0,
 }
@@ -73,7 +73,7 @@ GetMemberList
     "data": {
         "maxId": 12345,
         "list": [{
-                "dodoId": "666666",
+                "dodoSourceId": "666666",
                 "nickName": "测试群昵称",
                 "personalNickName": "测试DoDo昵称",
                 "avatarUrl": "https://img.doufan.tv/dodo/71922683339a16fa6958bd00263f81ea.png",
@@ -100,7 +100,7 @@ GetMemberInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
+|`/api/v2/member/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|群内开通成员隐私保护模式时，需要拥有成员管理-管理成员权限|
 
 #### 描述
 
@@ -114,8 +114,8 @@ GetMemberInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -129,8 +129,8 @@ GetMemberInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|islandId|string|群号|
-|dodoId|string|DoDo号|
+|islandSourceId|string|群ID|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |personalNickName|string|DoDo昵称|
 |avatarUrl|string|头像|
@@ -145,8 +145,8 @@ GetMemberInfo
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -155,8 +155,8 @@ GetMemberInfo
 ```json
 {
     "data": {
-        "islandId": "10001",
-        "dodoId": "666666",
+        "islandSourceId": "10001",
+        "dodoSourceId": "666666",
         "nickName": "测试群昵称",
         "personalNickName": "测试DoDo昵称",
         "avatarUrl": "https://img.doufan.tv/dodo/71922683339a16fa6958bd00263f81ea.png",
@@ -181,7 +181,7 @@ GetMemberRoleList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/role/list`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/member/role/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 
@@ -191,8 +191,8 @@ GetMemberRoleList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -216,8 +216,8 @@ GetMemberRoleList
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -247,7 +247,7 @@ GetMemberInvitationInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/invitation/info`|<Badge type="warning" text="v1" vertical="middle" />|POST|高级权限-超级管理员|
+|`/api/v2/member/invitation/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|高级权限-超级管理员|
 
 #### 描述
 
@@ -261,8 +261,8 @@ GetMemberInvitationInfo
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -276,7 +276,7 @@ GetMemberInvitationInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID|
 |nickName|string|群昵称|
 |invitationCount|int|邀请人数|
 
@@ -284,8 +284,8 @@ GetMemberInvitationInfo
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -294,12 +294,73 @@ GetMemberInvitationInfo
 ```json
 {
     "data": {
-        "dodoId": "666666",
+        "dodoSourceId": "666666",
         "nickName": "测试群昵称",
         "invitationCount": 100
     },
     "status": 0,
     "message": "success"
+}
+```
+
+
+## 获取成员DoDoID映射列表
+
+GetMemberDodoIdMapList
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/member/dodoid/map/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
+
+#### 描述
+
+用于批量获取DoDo号对应的DoDoID（DoDo唯一标识），返回结果会进行去重处理，另外，若某个DoDo号没有匹配到映射关系，则不展示该结果项
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|dodoIdList|`List<string>`|是|DoDo号列表，每次最多可查询1000个|
+
+#### 出参
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|status|int|[返回码](../start/status.md)|
+|message|string|返回信息|
+|data|`list<object>`|数据列表|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|dodoId|string|DoDo号|
+|dodoSourceId|string|DoDoID（DoDO唯一标识）|
+
+#### 入参示例
+
+```json
+{
+    "dodoIdList": ["1001", "1002"]
+}
+```
+
+#### 出参示例
+
+```json
+{
+    "status": 0,
+    "message": "success",
+    "data": [{
+            "dodoId": "1001",
+            "dodoSourceId": "10010"
+        }, {
+            "dodoId": "1002",
+            "dodoSourceId": "10020"
+        }
+    ]
 }
 ```
 
@@ -312,7 +373,7 @@ SetMemberNickNameEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/nickname/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/nickname/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -322,8 +383,8 @@ SetMemberNickNameEdit
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |nickName|string|是|群昵称，昵称不能大于32个字符或16个汉字|
 
 #### 出参
@@ -337,8 +398,8 @@ SetMemberNickNameEdit
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "nickName": "群昵称编辑测试"
 }
 ```
@@ -361,7 +422,7 @@ SetMemberMuteAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -371,8 +432,8 @@ SetMemberMuteAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |duration|int|是|禁言时长（秒），最长7天|
 |reason|string|否|禁言原因，原因不能大于64个字符或32个汉字|
 
@@ -387,8 +448,8 @@ SetMemberMuteAdd
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "duration": 30,
     "reason": "禁言测试"
 }
@@ -411,7 +472,7 @@ SetMemberMuteRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/mute/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/mute/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -421,8 +482,8 @@ SetMemberMuteRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -435,8 +496,8 @@ SetMemberMuteRemove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
@@ -458,7 +519,7 @@ SetMemberBanAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -472,8 +533,8 @@ SetMemberBanAdd
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 |noticeChannelId|string|否|通知频道ID|
 |reason|string|否|封禁理由，理由不能大于64个字符或32个汉字|
 
@@ -488,8 +549,8 @@ SetMemberBanAdd
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666",
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666",
     "noticeChannelId": "12345",
     "reason": "封禁测试"
 }
@@ -513,7 +574,7 @@ SetMemberBanRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/member/ban/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/member/ban/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
 
 #### 描述
 
@@ -523,8 +584,8 @@ SetMemberBanRemove
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandId|string|是|群号|
-|dodoId|string|是|DoDo号|
+|islandSourceId|string|是|群ID|
+|dodoSourceId|string|是|DoDoID|
 
 #### 出参
 
@@ -537,8 +598,8 @@ SetMemberBanRemove
 
 ```json
 {
-    "islandId": "10001",
-    "dodoId": "666666"
+    "islandSourceId": "10001",
+    "dodoSourceId": "666666"
 }
 ```
 
