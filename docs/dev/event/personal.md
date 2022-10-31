@@ -19,7 +19,7 @@ EventBodyPersonalMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|dodoId|string|来源DoDo号|
+|dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |messageId|string|消息ID|
 |messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息|
@@ -35,7 +35,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -50,7 +50,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4051",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -63,7 +64,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -81,7 +82,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4052",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 
@@ -94,7 +96,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
-            "dodoId": "681856",
+            "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
                 "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
@@ -112,7 +114,8 @@ EventBodyPersonalMessage
         "eventId": "14ba9d75b8d744c3a9b0a343ea1b4053",
         "eventType": "1001",
         "timestamp": 1661153248945
-    }
+    },
+    "version": "v2"
 }
 ```
 

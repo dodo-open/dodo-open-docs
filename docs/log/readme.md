@@ -4,6 +4,22 @@ sidebar: auto
 
 # 更新日志
 
+## 2022-10-31 0.1.6
+
+### 接口
+
+- 新增 v2版本，将所有接口的群号（islandId）全部调整为群ID（islandSourceId）
+- 新增 v2版本，将所有接口的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
+- 新增 v2版本，将所有消息内容中棱形语法的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
+- 新增 v2版本，获取成员DoDoID映射列表接口
+- 完善 编辑成员群昵称接口，增加不可对身份组排序比自己高的人修改群昵称限制
+
+### 事件
+
+- 新增 v2版本，将所有事件的群号（islandId）全部调整为群ID（islandSourceId）
+- 新增 v2版本，将所有事件的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
+- 新增 v2版本，将所有事件内容中棱形语法的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
+
 ## 2022-09-23 0.1.5
 
 ### 平台

@@ -9,7 +9,7 @@ SetResourcePictureUpload
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/resource/picture/upload`|<Badge type="warning" text="v1" vertical="middle" />|POST|不需要权限|
+|`/api/v2/resource/picture/upload`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
 
 #### 描述
 

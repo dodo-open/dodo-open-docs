@@ -8,7 +8,7 @@ SetChannelArticleAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/article/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、帖子频道-发布帖子|
+|`/api/v2/channel/article/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、帖子频道-发布帖子|
 
 #### 描述
 
@@ -69,7 +69,7 @@ SetChannelArticleRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/article/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、帖子频道-删除帖子|
+|`/api/v2/channel/article/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、帖子频道-删除帖子|
 
 #### 描述
 

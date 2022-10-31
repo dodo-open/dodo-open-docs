@@ -10,8 +10,9 @@ EventSubject
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|type|int|数据类型，0：[业务数据](#业务数据)|
-|data|object|数据内容|
+|type|int|数据类型，0：业务数据|
+|data|object|业务数据|
+|version|string|业务版本|
 
 ## 业务数据
 
@@ -19,10 +20,10 @@ EventSubjectDataBusiness
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|eventBody|object|事件内容|
 |eventId|string|事件ID|
 |eventType|string|[事件类型](#事件类型)|
-|eventBody|object|事件内容|
-|timestamp|long|发送时间戳|
+|timestamp|long|接收时间戳|
 
 ## 事件类型
 
@@ -49,6 +50,6 @@ EventSubjectDataBusiness
 - 4001：[成员加入事件](./member.md#成员加入事件)
 - 4002：[成员退出事件](./member.md#成员退出事件)
 
-#### 私信
+<!-- #### 私信
 
-- 1001：[私信事件](./personal.md#私信事件)
+- 1001：[私信事件](./personal.md#私信事件) -->

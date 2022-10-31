@@ -9,7 +9,7 @@ SetChannelMessageSend
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/send`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
+|`/api/v2/channel/message/send`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
 
 #### 描述
 
@@ -29,7 +29,7 @@ SetChannelMessageSend
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息，6：卡片消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
 |referencedMessageId|string|否|回复消息ID|
-|dodoId|string|否|DoDo号，非必传，如果传了，则给该成员发送频道私信|
+|dodoSourceId|string|否|DoDoID，非必传，如果传了，则给该成员发送频道私信|
 
 #### 出参
 
@@ -43,7 +43,7 @@ SetChannelMessageSend
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|messageId|string|消息ID，如入参传了DoDo号，则返回频道私信消息ID|
+|messageId|string|消息ID，如入参传了DoDoID，则返回频道私信消息ID|
 
 #### 入参示例
 
@@ -146,7 +146,7 @@ SetChannelMessageEdit
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/edit`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
+|`/api/v2/channel/message/edit`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-发送消息|
 
 #### 描述
 
@@ -236,7 +236,7 @@ SetChannelMessageWithdraw
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/withdraw`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
+|`/api/v2/channel/message/withdraw`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
 
 #### 描述
 
@@ -287,7 +287,7 @@ SetChannelMessageReactionAdd
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/reaction/add`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-添加新反应|
+|`/api/v2/channel/message/reaction/add`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-添加新反应|
 
 #### 描述
 
@@ -341,7 +341,7 @@ SetChannelMessageReactionRemove
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v1/channel/message/reaction/remove`|<Badge type="warning" text="v1" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
+|`/api/v2/channel/message/reaction/remove`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
 
 #### 描述
 
@@ -359,7 +359,7 @@ SetChannelMessageReactionRemove
 |:---------------|:-----|:-----|:---------------|
 |messageId|string|是|消息ID|
 |emoji|object|是|[反应表情](./message.md#消息表情)|
-|dodoId|string|否|DoDo号，不传或传空时表示移除机器人自身的反应|
+|dodoSourceId|string|否|DoDoID，不传或传空时表示移除机器人自身的反应|
 
 #### 出参
 
@@ -377,7 +377,7 @@ SetChannelMessageReactionRemove
         "type": 1,
         "id": "128516"
     },
-    "dodoId": "666666"
+    "dodoSourceId": "666666"
 }
 ```
 
