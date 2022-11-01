@@ -9,7 +9,7 @@ v1 到 v2 迁移须知
 
 islandId（群号）替换成了islandSourceId（群ID，即群唯一标识），[islandId和islandSourceId映射关系接口](./api/island.md#获取群列表)
 
-dodoId（DoDo号）替换成了dodoSourceId（DoDoID，即DoDo唯一标识），[dodoId和dodoSourceId映射关系接口](./api/member.md#获取成员dodoid映射列表)
+dodoId（DoDo号）替换成了dodoSourceId（DoDoID，即DoDo唯一标识），[dodoId和dodoSourceId映射关系接口](./api/member.md#获取成员DoDo号映射列表)
 
 - **接口升级**
 
