@@ -304,7 +304,7 @@ GetMemberInvitationInfo
 ```
 
 
-## 获取成员DoDoID映射列表
+## 获取成员DoDo号映射列表
 
 GetMemberDodoIdMapList
 
@@ -317,6 +317,10 @@ GetMemberDodoIdMapList
 #### 描述
 
 用于批量获取DoDo号对应的DoDoID（DoDo唯一标识），返回结果会进行去重处理，另外，若某个DoDo号没有匹配到映射关系，则不展示该结果项
+
+:::tip
+临时接口，待v1版本接口弃用后，此接口也将弃用
+:::
 
 #### 入参
 
@@ -356,9 +360,11 @@ GetMemberDodoIdMapList
     "data": [{
             "dodoId": "1001",
             "dodoSourceId": "10010"
+
         }, {
             "dodoId": "1002",
             "dodoSourceId": "10020"
+
         }
     ]
 }
