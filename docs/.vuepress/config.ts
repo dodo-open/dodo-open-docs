@@ -257,7 +257,7 @@ export default defineUserConfig({
                 '/dev/api/role.md',
                 '/dev/api/member.md',
                 '/dev/api/nft.md',
-                // '/dev/api/personal.md',
+                '/dev/api/personal.md',
                 '/dev/api/resource.md',
                 '/dev/api/event.md',
                 '/dev/api/message.md',
