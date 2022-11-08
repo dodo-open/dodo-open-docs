@@ -273,6 +273,7 @@ export default defineUserConfig({
                 '/dev/event/channel-voice.md',
                 '/dev/event/channel-article.md',
                 '/dev/event/member.md',
+                '/dev/event/gift.md',
                 // '/dev/event/personal.md'
               ],
             },
