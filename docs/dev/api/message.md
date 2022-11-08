@@ -152,7 +152,7 @@ MessageModelGift
 |:---------------|:-----|:---------------|
 |id|String|礼物ID|
 |name|string|礼物名称|
-|count|int|礼物数量|
+|count|long|礼物数量|
 
 ## 消息语法
 
