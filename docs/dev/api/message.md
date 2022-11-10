@@ -127,7 +127,7 @@ MessageModelMember
 
 #### 回复信息
 
-ReferenceModelMember
+MessageModelReference
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
@@ -144,6 +144,15 @@ MessageModelReactionTarget
 |type|int|对象类型，0：消息|
 |id|string|对象ID，若对象类型为0，则代表消息ID|
 
+#### 礼物信息
+
+MessageModelGift
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|id|String|礼物ID|
+|name|string|礼物名称|
+|count|long|礼物数量|
 
 ## 消息语法
 
