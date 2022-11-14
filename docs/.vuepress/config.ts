@@ -256,6 +256,7 @@ export default defineUserConfig({
                 '/dev/api/channel-article.md',
                 '/dev/api/role.md',
                 '/dev/api/member.md',
+                '/dev/api/gift.md',
                 // '/dev/api/nft.md',
                 // '/dev/api/personal.md',
                 '/dev/api/resource.md',
