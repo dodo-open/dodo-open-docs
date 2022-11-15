@@ -9,7 +9,7 @@ GetGiftAccount
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v2/gift/account/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
+|`/api/v2/gift/account/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|高级权限-超级管理员|
 
 #### 描述
 
@@ -72,7 +72,7 @@ GetGiftShareRatioInfo
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v2/gift/share/ratio/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
+|`/api/v2/gift/share/ratio/info`|<Badge type="warning" text="v2" vertical="middle" />|POST|高级权限-超级管理员|
 
 #### 描述
 
@@ -168,7 +168,7 @@ GetGiftList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v2/gift/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|不需要权限|
+|`/api/v2/gift/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -238,7 +238,7 @@ GetGiftMemberList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v2/gift/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/gift/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
@@ -317,7 +317,7 @@ GetGiftGrossValueList
 
 |地址|版本|方式|权限|
 |:-----|:---------------|:-----|:---------------|
-|`/api/v2/gift/gross/value/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|成员管理-管理成员|
+|`/api/v2/gift/gross/value/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
 
 #### 描述
 
