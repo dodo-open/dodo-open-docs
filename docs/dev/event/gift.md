@@ -52,9 +52,9 @@ EventBodyGiftSend
                 "name": "飞机",
                 "count": 1
             },
-            "totalAmount": 1,
+            "totalAmount": 1.00,
             "islandRatio": 3.00,
-            "islandIncome": 0.3,
+            "islandIncome": 0.30,
             "dodoSourceId": "5868",
             "dodoIslandNickName": "测试群昵称",
             "toDodoSourceId": "6252",

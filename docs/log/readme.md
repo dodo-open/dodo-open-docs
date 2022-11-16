@@ -4,6 +4,21 @@ sidebar: auto
 
 # 更新日志
 
+## 2022-11-16 0.1.7
+
+### 接口
+
+- 新增 赠礼系统API-获取群收入
+- 新增 赠礼系统API-获取成员分成管理
+- 新增 赠礼系统API-获取内容礼物列表
+- 新增 赠礼系统API-获取内容礼物内成员列表
+- 新增 赠礼系统API-获取内容礼物总值列表
+
+### 事件
+
+- 完善 赠礼系统Event-赠礼成功事件
+
+
 ## 2022-10-31 0.1.6
 
 ### 接口
@@ -19,6 +34,7 @@ sidebar: auto
 - 新增 v2版本，将所有事件的群号（islandId）全部调整为群ID（islandSourceId）
 - 新增 v2版本，将所有事件的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
 - 新增 v2版本，将所有事件内容中棱形语法的DoDo号（dodoId）全部调整为DoDoID（dodoSourceId）
+
 
 ## 2022-09-23 0.1.5
 
