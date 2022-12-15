@@ -35,7 +35,7 @@ GetRoleList
 |roleId|string|身份组ID|
 |roleName|string|身份组名称|
 |roleColor|string|身份组颜色|
-|position|int|身份组排序位置|
+|position|int|身份组排序位置，数值越大，身份组等级越高|
 |permission|string|[身份组权限值（16进制）](../start/permission.md#权限值说明)|
 
 #### 入参示例
