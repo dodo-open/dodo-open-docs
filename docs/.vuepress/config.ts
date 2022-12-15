@@ -135,11 +135,11 @@ export default defineUserConfig({
                     link: '/dev/sdk/official#go',
                     activeMatch: '/dev/sdk/official/.*'
                   },
-                  {
-                    text: '易语言 SDK',
-                    link: '/dev/sdk/official#易语言',
-                    activeMatch: '/dev/sdk/official/.*'
-                  }
+                  // {
+                  //   text: '易语言 SDK',
+                  //   link: '/dev/sdk/official#易语言',
+                  //   activeMatch: '/dev/sdk/official/.*'
+                  // }
                 ]
               },
               // {

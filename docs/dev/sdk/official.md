@@ -26,16 +26,3 @@
 #### 项目
 
 [dodo-open-go](https://github.com/dodo-open/dodo-open-go)
-
-
-## 易语言
-
-<Badge type="warning" text="官方" vertical="middle" />
-
-#### 简介
-
-本SDK基于最新 易语言 开发，中文编程极大的降低了开发门槛。
-
-#### 项目
-
-[dodo-open-eyy](https://github.com/dodo-open/dodo-open-eyy)
