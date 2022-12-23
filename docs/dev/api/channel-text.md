@@ -1,4 +1,4 @@
-# 文字频道API
+# 文字频道API（Modify）
 
 
 ## 发送消息
@@ -275,6 +275,192 @@ SetChannelMessageWithdraw
 {
     "status": 0,
     "message": "success"
+}
+```
+
+
+## 置顶消息（Add）
+
+SetChannelMessageTop
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/channel/message/top`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道、文字频道-管理消息|
+
+#### 描述
+
+用于置顶指定消息ID的频道消息
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|messageId|string|是|消息ID|
+|operateType|int|是|操作类型，0：取消置顶，1：置顶|
+
+#### 出参
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|status|int|[返回码](../start/status.md)|
+|message|string|返回信息|
+
+#### 入参示例
+
+```json
+{
+    "messageId": "111111111111111111",
+    "operateType": 1
+}
+```
+
+#### 出参示例
+ 
+```json
+{
+    "status": 0,
+    "message": "success"
+}
+```
+
+
+## 获取消息反应列表（Add）
+
+GetChannelMessageReactionList
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/channel/message/reaction/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
+
+#### 描述
+
+用于获取指定消息的反应列表
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|messageId|int|是|消息ID|
+
+#### 出参
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|status|int|[返回码](../start/status.md)|
+|message|string|返回信息|
+|data|`list<object>`|数据列表|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|emoji|object|[反应表情](./message.md#消息表情)|
+|count|long|反应数量|
+
+#### 入参示例
+
+```json
+{
+    "messageId": "392699157019774976"
+}
+```
+
+#### 出参示例
+
+```json
+{
+    "data": [{
+            "count": 2,
+            "emoji": {
+                "id": "11014",
+                "type": 1
+            }
+        }, {
+            "count": 2,
+            "emoji": {
+                "id": "49",
+                "type": 1
+            }
+        }
+    ],
+    "message": "success",
+    "status": 0
+}
+```
+
+
+## 获取消息反应内成员列表（Add）
+
+GetChannelMessageReactionMemberList
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/channel/message/reaction/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-查看频道|
+
+#### 描述
+
+用于获取指定消息的成员列表
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|messageId|string|是|消息Id|
+|emoji|object|是|[反应表情](./message.md#消息表情)|
+|pageSize|int|是|页大小，最大100|
+|maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|maxId|object|最大ID值|
+|list|`list<object>`|数据列表|
+
+#### 列表项
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|dodoSourceId|string|DoDoID|
+|nickName|string|群昵称|
+
+#### 入参示例
+
+```json
+{
+    "messageId": "392699157019774976",
+    "emoji": {
+        "type": 1,
+        "id": "11014"
+    },
+    "pageSize": 2,
+    "maxId": 0
+}
+```
+
+#### 出参示例
+
+```json
+{
+    "data": {
+        "list": [{
+                "dodoSourceId": "5868",
+                "nickName": "测试群昵称1"
+            }, {
+                "dodoSourceId": "6328",
+                "nickName": "测试群昵称2"
+            }
+        ],
+        "maxId": 23686
+    },
+    "message": "success",
+    "status": 0
 }
 ```
 

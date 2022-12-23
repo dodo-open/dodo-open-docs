@@ -1,7 +1,7 @@
-# 私信Event
+# 私信Event（Add）
 
 
-## 私信事件
+## 私信事件（Add）
 
 PersonalMessageEvent
 
@@ -19,6 +19,7 @@ EventBodyPersonalMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|islandSourceId|string|来源群ID|
 |dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |messageId|string|消息ID|
@@ -35,6 +36,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -64,6 +66,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -96,6 +99,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",

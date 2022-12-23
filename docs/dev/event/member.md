@@ -1,4 +1,4 @@
-# 成员Event
+# 成员Event（Modify）
 
 
 ## 成员加入事件
@@ -94,6 +94,52 @@ EventBodyMemberLeave
         "eventId": "095ff9a42c8347758af963d37ea52073",
         "eventType": "4002",
         "timestamp": 1661153284690
+    },
+    "version": "v2"
+}
+```
+
+
+## 成员邀请事件（Add）
+
+MemberInviteEvent
+
+#### 触发时机
+
+成员通过邀请链接进群 / 主动填写邀请码时
+
+#### 事件类型
+
+4003
+
+#### 事件内容
+
+EventBodyMemberInvite
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|islandSourceId|string|来源群ID|
+|dodoSourceId|string|邀请人DoDoID|
+|dodoIslandNickName|string|邀请人群昵称|
+|toDodoSourceId|string|被邀请人DoDoID|
+|toDodoIslandNickName|string|被邀请人群昵称|
+
+#### 事件示例
+
+```json
+{
+    "type": 0,
+    "data": {
+        "eventBody": {
+            "islandSourceId": "101745",
+            "dodoSourceId": "5868",
+            "dodoIslandNickName": "测试群昵称1",
+            "toDodoSourceId": "6252",
+            "toDodoIslandNickName": "测试群昵称2"
+        },
+        "eventId": "b8049ac1b2ae4e72ae51da9d4f8b522e",
+        "eventType": "4003",
+        "timestamp": 1671785377140
     },
     "version": "v2"
 }
