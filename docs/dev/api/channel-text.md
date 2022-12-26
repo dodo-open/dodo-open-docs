@@ -1,4 +1,4 @@
-# 文字频道API（Modify）
+# 文字频道API
 
 
 ## 发送消息
@@ -279,7 +279,7 @@ SetChannelMessageWithdraw
 ```
 
 
-## 置顶消息（Add）
+## 置顶消息
 
 SetChannelMessageTop
 
@@ -326,7 +326,7 @@ SetChannelMessageTop
 ```
 
 
-## 获取消息反应列表（Add）
+## 获取消息反应列表
 
 GetChannelMessageReactionList
 
@@ -393,7 +393,7 @@ GetChannelMessageReactionList
 ```
 
 
-## 获取消息反应内成员列表（Add）
+## 获取消息反应内成员列表
 
 GetChannelMessageReactionMemberList
 

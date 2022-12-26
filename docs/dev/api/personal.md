@@ -1,6 +1,6 @@
-# 私信API（Add）
+# 私信API
 
-## 发送私信（Add）
+## 发送私信
 
 SetPersonalMessageSend
 
@@ -28,7 +28,7 @@ SetPersonalMessageSend
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|islandSourceId|string|是|群ID|
+|islandSourceId|string|是|来源群ID，可自行指定，亦可从[私信事件](../event/personal.md#私信事件)中获取|
 |dodoSourceId|string|是|DoDoID|
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|

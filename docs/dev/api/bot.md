@@ -1,7 +1,7 @@
-# 机器人API（Modify）
+# 机器人API
 
 
-## 获取机器人信息（Modify）
+## 获取机器人信息
 
 GetBotInfo
 

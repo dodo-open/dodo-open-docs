@@ -1,4 +1,4 @@
-# 成员Event（Modify）
+# 成员Event
 
 
 ## 成员加入事件
@@ -100,7 +100,7 @@ EventBodyMemberLeave
 ```
 
 
-## 成员邀请事件（Add）
+## 成员邀请事件
 
 MemberInviteEvent
 

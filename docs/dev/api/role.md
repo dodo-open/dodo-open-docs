@@ -1,6 +1,6 @@
-# 身份组API（Modify）
+# 身份组API
 
-## 获取身份组列表（Modify）
+## 获取身份组列表
 
 GetRoleList
 
@@ -235,7 +235,7 @@ SetRoleRemove
 ```
 
 
-## 获取身份组成员列表（Add）
+## 获取身份组成员列表
 
 GetRoleMemberList
 
