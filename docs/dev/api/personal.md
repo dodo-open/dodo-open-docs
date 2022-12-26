@@ -69,6 +69,7 @@ SetPersonalMessageSend
 
 ```json
 {
+    "islandSourceId": "10001",
     "dodoSourceId": "1000101",
     "messageType": 2,
     "messageBody": {
@@ -86,6 +87,7 @@ SetPersonalMessageSend
 
 ```json
 {
+    "islandSourceId": "10001",
     "dodoSourceId": "1000101",
     "messageType": 3,
     "messageBody": {
