@@ -27,6 +27,10 @@ EventSubjectDataBusiness
 
 ## 事件类型
 
+#### 私信
+
+- 1001：[私信事件](./personal.md#私信事件)
+
 #### 文字频道
 
 - 2001：[消息事件](./channel-text.md#消息事件)
@@ -49,12 +53,8 @@ EventSubjectDataBusiness
 
 - 4001：[成员加入事件](./member.md#成员加入事件)
 - 4002：[成员退出事件](./member.md#成员退出事件)
+- 4003：[成员邀请事件](./member.md#成员邀请事件)
 
 #### 赠礼系统
 
 - 7001：[赠礼成功事件](./gift.md#赠礼成功事件)
-
-
-<!-- #### 私信
-
-- 1001：[私信事件](./personal.md#私信事件) -->

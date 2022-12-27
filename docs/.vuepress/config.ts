@@ -258,12 +258,12 @@ export default defineUserConfig({
               children: [
                 '/dev/event/websocket.md',
                 '/dev/event/event.md',
+                '/dev/event/personal.md',
                 '/dev/event/channel-text.md',
                 '/dev/event/channel-voice.md',
                 '/dev/event/channel-article.md',
                 '/dev/event/member.md',
-                '/dev/event/gift.md',
-                '/dev/event/personal.md'
+                '/dev/event/gift.md'
               ],
             },
             {
