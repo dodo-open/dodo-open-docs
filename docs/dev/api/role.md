@@ -37,6 +37,7 @@ GetRoleList
 |roleColor|string|身份组颜色|
 |position|int|身份组排序位置，数值越大，身份组等级越高|
 |permission|string|[身份组权限值（16进制）](../start/permission.md#权限值说明)|
+|memberCount|long|身份组成员数|
 
 #### 入参示例
 
@@ -57,7 +58,8 @@ GetRoleList
             "roleName": "测试身份组",
             "roleColor": "#ffffff",
             "position": 1,
-            "permission": "1f"
+            "permission": "1f",
+            "memberCount": 100
         }
     ]
 }
@@ -229,6 +231,76 @@ SetRoleRemove
 {
     "status": 0,
     "message": "success"
+}
+```
+
+
+## 获取身份组成员列表
+
+GetRoleMemberList
+
+#### 接口
+
+|地址|版本|方式|权限|
+|:-----|:---------------|:-----|:---------------|
+|`/api/v2/role/member/list`|<Badge type="warning" text="v2" vertical="middle" />|POST|通用权限-管理权限与身份组|
+
+#### 描述
+
+用于获取指定身份组的成员列表
+
+#### 入参
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|islandSourceId|string|是|群ID|
+|roleId|string|是|身份组ID|
+|pageSize|int|是|页大小，最大100|
+|maxId|long|是|上一页最大ID值，为提升分页查询性能，需要传入上一页查询记录中的最大ID值，首页请传0|
+
+#### 数据
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|maxId|object|最大ID值|
+|list|`list<object>`|数据列表|
+
+#### 列表项
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|dodoSourceId|string|DoDoID|
+|nickName|string|群昵称|
+
+#### 入参示例
+
+```json
+{
+    "islandSourceId": "10001",
+    "roleId": "12345678",
+    "pageSize": 20,
+    "maxId": 0,
+}
+```
+
+#### 出参示例
+
+```json
+{
+    "data": {
+        "list": [{
+                "dodoSourceId": "5868",
+                "nickName": "测试群昵称"
+            },
+            {
+                "dodoSourceId": "5869",
+                "nickName": "测试群昵称2"
+            }
+        ],
+        "maxId": 2
+    },
+    "message": "success",
+    "status": 0
 }
 ```
 

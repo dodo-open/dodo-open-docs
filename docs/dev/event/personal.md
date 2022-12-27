@@ -7,7 +7,11 @@ PersonalMessageEvent
 
 #### 触发时机
 
-用户私聊机器人时
+用户通过私聊会话 / 通过群进入私聊会话私聊机器人时
+
+::: tip
+通过群进入机器人私信会话时，才会有来源群ID
+:::
 
 #### 事件类型
 
@@ -19,6 +23,7 @@ EventBodyPersonalMessage
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|islandSourceId|string|来源群ID|
 |dodoSourceId|string|来源DoDoID|
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |messageId|string|消息ID|
@@ -35,6 +40,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -64,6 +70,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",
@@ -96,6 +103,7 @@ EventBodyPersonalMessage
     "type": 0,
     "data": {
         "eventBody": {
+            "islandSourceId": "101566",
             "dodoSourceId": "681856",
             "personal": {
                 "nickName": "测试DoDo昵称",

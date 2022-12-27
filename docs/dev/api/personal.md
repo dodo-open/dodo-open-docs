@@ -15,6 +15,10 @@ SetPersonalMessageSend
 用于向指定用户发送私信消息
 
 :::tip
+机器人和私信成员都必须同时位于来源群
+
+当来源群开启`成员隐私保护模式`时，机器人需要拥有`管理成员`权限才可私信
+
 按私聊对象限制，10次/30秒
 
 按机器人限制，1W次/天
@@ -24,6 +28,7 @@ SetPersonalMessageSend
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
+|islandSourceId|string|是|来源群ID，可自行指定，亦可从[私信事件](../event/personal.md#私信事件)中获取|
 |dodoSourceId|string|是|DoDoID|
 |messageType|int|是|消息类型，1：文字消息，2：图片消息，3：视频消息|
 |messageBody|object|是|[消息内容](./message.md#消息内容)|
@@ -49,6 +54,7 @@ SetPersonalMessageSend
 
 ```json
 {
+    "islandSourceId": "10001",
     "dodoSourceId": "1000101",
     "messageType": 1,
     "messageBody": {
@@ -63,6 +69,7 @@ SetPersonalMessageSend
 
 ```json
 {
+    "islandSourceId": "10001",
     "dodoSourceId": "1000101",
     "messageType": 2,
     "messageBody": {
@@ -80,6 +87,7 @@ SetPersonalMessageSend
 
 ```json
 {
+    "islandSourceId": "10001",
     "dodoSourceId": "1000101",
     "messageType": 3,
     "messageBody": {
