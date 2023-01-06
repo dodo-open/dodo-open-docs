@@ -102,6 +102,26 @@ MessageBodyCard
 
 卡片消息，限制10000个字符，支持多种 [卡片结构](./card.md)
 
+
+### 红包消息
+
+#### 消息类型
+
+7
+
+#### 消息内容
+
+MessageBodyRedPackage
+
+|字段|类型|必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|type|int|是|红包类型，1：拼手气红包，2：普通红包|
+|amount|decimal|是|金额|
+|count|long|是|数量|
+|receiverType|int|是|领取对象类型，1：全体成员，2：身份组|
+|roleIdList|`list<string>`|否|身份组ID列表|
+
+
 ## 消息模型
 
 MessageModel

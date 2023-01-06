@@ -246,6 +246,7 @@ export default defineUserConfig({
                 '/dev/api/role.md',
                 '/dev/api/member.md',
                 '/dev/api/gift.md',
+                '/dev/api/integral.md',
                 '/dev/api/personal.md',
                 '/dev/api/resource.md',
                 '/dev/api/event.md',
@@ -263,7 +264,9 @@ export default defineUserConfig({
                 '/dev/event/channel-voice.md',
                 '/dev/event/channel-article.md',
                 '/dev/event/member.md',
-                '/dev/event/gift.md'
+                '/dev/event/gift.md',
+                '/dev/event/integral.md',
+                '/dev/event/shop.md'
               ],
             },
             {

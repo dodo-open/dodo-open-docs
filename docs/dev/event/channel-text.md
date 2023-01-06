@@ -1,7 +1,7 @@
-# 文字频道Event
+# 文字频道Event（Modify）
 
 
-## 消息事件
+## 消息事件（Modify）
 
 ChannelMessageEvent
 
@@ -30,7 +30,7 @@ EventBodyChannelMessage
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |reference|object|[回复信息](../api/message.md#回复信息)|
-|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息|
+|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息，7：红包消息|
 |messageBody|object|[消息内容](../api/message.md#消息内容)|
 
 #### 事件示例
@@ -288,6 +288,50 @@ EventBodyChannelMessage
             }
         },
         "eventId": "2b02565727ca47c6a03e41204e9833c6",
+        "eventType": "2001",
+        "timestamp": 1661147708487
+    },
+    "version": "v2"
+}
+```
+
+  </CodeGroupItem>
+
+   <CodeGroupItem title="7 - 红包消息">
+
+```json
+{
+    "type": 0,
+    "data": {
+        "eventBody": {
+            "islandSourceId": "44659",
+            "channelId": "118506",
+            "dodoSourceId": "681856",
+            "messageId": "349552072708214784",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
+            "reference": {
+                "messageId": "",
+                "dodoSourceId": "",
+                "nickName": ""
+            },
+            "messageType": 4,
+            "messageBody": {
+                "type": 1,
+                "amount": 10.00,
+                "count": 2,
+                "receiverType": 2,
+                "roleIdList":["10000","20000"]
+            }
+        },
+        "eventId": "2b02565727ca47c6a03e41204e9833c7",
         "eventType": "2001",
         "timestamp": 1661147708487
     },
