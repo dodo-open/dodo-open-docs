@@ -111,7 +111,7 @@ MessageBodyCard
 
 #### 消息内容
 
-MessageBodyRedPackage
+MessageBodyRedPacket
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|

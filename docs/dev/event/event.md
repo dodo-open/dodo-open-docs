@@ -65,4 +65,4 @@ EventSubjectDataBusiness
 
 #### 商城系统
 
-- 9001：[购买成功事件](./shop.md#购买成功事件)
+- 9001：[商品购买成功事件](./shop.md#商品购买成功事件)

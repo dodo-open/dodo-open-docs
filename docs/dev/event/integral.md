@@ -10,7 +10,7 @@ IntegralChangeEvent
 
 #### 事件类型
 
-7001
+8001
 
 #### 事件内容
 
