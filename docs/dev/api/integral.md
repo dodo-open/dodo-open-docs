@@ -34,7 +34,7 @@ GetIntegralInfo
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|integralBalance|decimal|积分余额|
+|integralBalance|long|积分余额|
 
 #### 入参示例
 
@@ -50,7 +50,7 @@ GetIntegralInfo
 ```json
 {
     "data": {
-        "integralBalance": 100.00
+        "integralBalance": 100
     },
     "status": 0,
     "message": "success"
@@ -79,7 +79,7 @@ SetIntegralEdit
 |islandSourceId|string|是|群ID|
 |dodoSourceId|string|是|DoDoID|
 |operateType|int|是|管理类型，1：发放积分，2：扣除积分|
-|integral|decimal|是|积分，零和正整数1千亿内|
+|integral|long|是|积分，零和正整数1千亿内|
 
 #### 出参
 
@@ -93,7 +93,7 @@ SetIntegralEdit
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|integralBalance|decimal|积分余额|
+|integralBalance|long|积分余额|
 
 #### 入参示例
 
@@ -102,7 +102,7 @@ SetIntegralEdit
     "islandSourceId": "10001",
     "dodoSourceId": "666666",
     "operateType": 1,
-    "integral": 1000.00
+    "integral": 1000
 }
 ```
 
@@ -111,7 +111,7 @@ SetIntegralEdit
 ```json
 {
     "data": {
-        "integralBalance": 2000.00
+        "integralBalance": 2000
     },
     "status": 0,
     "message": "success"
