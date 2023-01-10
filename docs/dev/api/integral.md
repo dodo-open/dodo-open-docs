@@ -1,7 +1,7 @@
 # 积分系统API（Add）
 
 
-## 获取成员积分信息（Add）
+## 查询成员积分（Add）
 
 GetIntegralInfo
 
