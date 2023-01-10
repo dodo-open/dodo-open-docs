@@ -27,10 +27,6 @@ EventSubjectDataBusiness
 
 ## 事件类型
 
-#### 私信
-
-- 1001：[私信事件](./personal.md#私信事件)
-
 #### 文字频道
 
 - 2001：[消息事件](./channel-text.md#消息事件)
@@ -66,3 +62,7 @@ EventSubjectDataBusiness
 #### 商城系统
 
 - 9001：[商品购买成功事件](./shop.md#商品购买成功事件)
+
+#### 私信
+
+- 1001：[私信事件](./personal.md#私信事件)
