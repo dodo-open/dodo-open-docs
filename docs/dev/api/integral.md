@@ -79,7 +79,7 @@ SetIntegralEdit
 |islandSourceId|string|是|群ID|
 |dodoSourceId|string|是|DoDoID|
 |operateType|int|是|管理类型，1：发放积分，2：扣除积分|
-|integral|long|是|积分，零和正整数1千亿内|
+|integral|long|是|积分，必须是正整数且小于1千亿|
 
 #### 出参
 
