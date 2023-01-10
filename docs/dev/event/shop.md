@@ -25,7 +25,7 @@ EventBodyGoodsPurchase
 |islandSourceId|string|来源群ID|
 |dodoSourceId|string|来源DoDoID|
 |orderNo|string|订单号|
-|goodsType|int|商品类型，1：自定义商品，2：身份组|
+|goodsType|int|商品类型，1：身份组，2：自定义商品|
 |goodsId|string|商品ID|
 |goodsName|string|商品名称|
 |goodsImageList|`list<string>`|商品图片列表|
@@ -40,7 +40,7 @@ EventBodyGoodsPurchase
             "islandSourceId": "44659",
             "dodoSourceId": "681856",
             "orderNo": "1001",
-            "goodsType": 1,
+            "goodsType": 2,
             "goodsId": "10",
             "goodsName": "测试商品",
             "goodsImageList": ["https://img.imdodo.com/dodo/8c77d48865bf547a69fb3bba6228760c.png"]
