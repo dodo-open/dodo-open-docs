@@ -28,7 +28,7 @@ EventBodyGoodsPurchase
 |goodsType|int|商品类型，1：身份组，2：自定义商品|
 |goodsId|string|商品ID|
 |goodsName|string|商品名称|
-|goodsImageList|`list<string>`|商品图片列表|
+|goodsImageList|`list<string>`|商品图片列表，链接[后接参数](https://help.aliyun.com/document_detail/183902.html)可以调整图片样式|
 
 #### 事件示例
 

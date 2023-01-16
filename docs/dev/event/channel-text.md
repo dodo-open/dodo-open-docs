@@ -326,11 +326,11 @@ EventBodyChannelMessage
                 "dodoSourceId": "",
                 "nickName": ""
             },
-            "messageType": 4,
+            "messageType": 7,
             "messageBody": {
                 "type": 1,
-                "amount": 10.00,
                 "count": 2,
+                "totalAmount": 10.00,
                 "receiverType": 2,
                 "roleIdList":["10000","20000"]
             }

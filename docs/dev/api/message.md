@@ -116,8 +116,8 @@ MessageBodyRedPacket
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
 |type|int|是|红包类型，1：拼手气红包，2：普通红包|
-|amount|decimal|是|金额（分）|
-|count|long|是|数量|
+|count|long|是|红包个数|
+|totalAmount|decimal|是|总金额（分）|
 |receiverType|int|是|领取对象类型，1：全体成员，2：身份组|
 |roleIdList|`list<string>`|否|身份组ID列表|
 
