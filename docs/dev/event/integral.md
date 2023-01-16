@@ -25,7 +25,7 @@ EventBodyIntegralChange
 |islandSourceId|string|来源群ID|
 |dodoSourceId|string|来源DoDoID|
 |operateType|int|场景类型，1：签到，2：邀请，3：转账，4：购买商品，5：管理积分，6：退群|
-|integral|long|积分|
+|integral|long|积分，正数时表示积分增加，负数时表示积分减少|
 
 #### 事件示例
 
