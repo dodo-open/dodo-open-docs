@@ -1,7 +1,7 @@
-# 文字频道Event（Modify）
+# 文字频道Event
 
 
-## 消息事件（Modify）
+## 消息事件
 
 ChannelMessageEvent
 

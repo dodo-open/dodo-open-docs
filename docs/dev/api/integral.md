@@ -1,7 +1,7 @@
-# 积分系统API（Add）
+# 积分系统API
 
 
-## 查询成员积分（Add）
+## 查询成员积分
 
 GetIntegralInfo
 
@@ -58,7 +58,7 @@ GetIntegralInfo
 ```
 
 
-## 管理成员积分（Add）
+## 管理成员积分
 
 SetIntegralEdit
 
