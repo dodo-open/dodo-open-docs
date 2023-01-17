@@ -9,6 +9,10 @@ ChannelVoiceMemberJoinEvent
 
 用户加入语音频道时
 
+##### 需要权限
+
+通用权限-查看频道
+
 #### 事件类型
 
 5001
@@ -61,6 +65,10 @@ ChannelVoiceMemberLeaveEvent
 #### 触发时机
 
 用户退出语音频道时
+
+##### 需要权限
+
+通用权限-查看频道
 
 #### 事件类型
 

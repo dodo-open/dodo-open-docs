@@ -1,7 +1,7 @@
-# 文字频道Event
+# 文字频道Event（Modify）
 
 
-## 消息事件
+## 消息事件（Modify）
 
 ChannelMessageEvent
 
@@ -12,6 +12,10 @@ ChannelMessageEvent
 ::: tip
 不接收机器人的频道消息，机器人之间不会互相触发消息事件！
 :::
+
+##### 需要权限
+
+通用权限-查看频道
 
 #### 事件类型
 
@@ -30,7 +34,7 @@ EventBodyChannelMessage
 |personal|object|[个人信息](../api/message.md#个人信息)|
 |member|object|[成员信息](../api/message.md#成员信息)|
 |reference|object|[回复信息](../api/message.md#回复信息)|
-|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息|
+|messageType|int|消息类型，1：文字消息，2：图片消息，3：视频消息，4：分享消息，5：文件消息，6：卡片消息，7：红包消息|
 |messageBody|object|[消息内容](../api/message.md#消息内容)|
 
 #### 事件示例
@@ -297,6 +301,50 @@ EventBodyChannelMessage
 
   </CodeGroupItem>
 
+   <CodeGroupItem title="7 - 红包消息">
+
+```json
+{
+    "type": 0,
+    "data": {
+        "eventBody": {
+            "islandSourceId": "44659",
+            "channelId": "118506",
+            "dodoSourceId": "681856",
+            "messageId": "349552072708214784",
+            "personal": {
+                "nickName": "测试DoDo昵称",
+                "avatarUrl": "https://static.imdodo.com/DoDoRes/Avatar/6.png",
+                "sex": 1
+            },
+            "member": {
+                "nickName": "测试群昵称",
+                "joinTime": "2022-07-20 10:27:24"
+            },
+            "reference": {
+                "messageId": "",
+                "dodoSourceId": "",
+                "nickName": ""
+            },
+            "messageType": 7,
+            "messageBody": {
+                "type": 1,
+                "count": 2,
+                "totalAmount": 10.00,
+                "receiverType": 2,
+                "roleIdList":["10000","20000"]
+            }
+        },
+        "eventId": "2b02565727ca47c6a03e41204e9833c7",
+        "eventType": "2001",
+        "timestamp": 1661147708487
+    },
+    "version": "v2"
+}
+```
+
+  </CodeGroupItem>
+
 </CodeGroup>
 
 
@@ -311,6 +359,10 @@ MessageReactionEvent
 ::: tip
 当前机器人消息上添加反应触发的事件只会推送给当前机器人！
 :::
+
+##### 需要权限
+
+通用权限-查看频道
 
 #### 事件类型
 
@@ -383,6 +435,10 @@ CardMessageButtonClickEvent
 当前机器人消息上点击按钮触发的事件只会推送给当前机器人！
 :::
 
+##### 需要权限
+
+通用权限-查看频道
+
 #### 事件类型
 
 3002
@@ -445,6 +501,10 @@ CardMessageFormSubmitEvent
 ::: tip
 当前机器人消息上提交表单触发的事件只会推送给当前机器人！
 :::
+
+##### 需要权限
+
+通用权限-查看频道
 
 #### 事件类型
 
@@ -522,6 +582,10 @@ CardMessageListSubmitEvent
 ::: tip
 当前机器人消息上提交列表触发的事件只会推送给当前机器人！
 :::
+
+##### 需要权限
+
+通用权限-查看频道
 
 #### 事件类型
 

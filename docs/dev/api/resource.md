@@ -47,7 +47,7 @@ Content-Type: multipart/form-data
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
-|url|string|图片链接|
+|url|string|图片链接，链接[后接参数](https://help.aliyun.com/document_detail/183902.html)可以调整图片样式|
 |width|int|图片宽度|
 |height|int|图片高度|
 

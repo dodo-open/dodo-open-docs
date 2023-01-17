@@ -108,7 +108,7 @@ GetGiftShareRatioInfo
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
 |islandRatio|decimal|群抽成|
-|userRatio|decimal|被打赏用户|
+|userRatio|decimal|被打赏用户抽成|
 |platformRatio|decimal|平台抽成|
 
 #### 身份组抽成列表项
@@ -118,7 +118,7 @@ GetGiftShareRatioInfo
 |roleId|string|身份组ID|
 |roleName|string|身份组名称|
 |islandRatio|decimal|群抽成|
-|userRatio|decimal|被打赏用户|
+|userRatio|decimal|被打赏用户抽成|
 |platformRatio|decimal|平台抽成|
 
 #### 入参示例
