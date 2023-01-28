@@ -344,7 +344,7 @@ GetChannelMessageReactionList
 
 |字段|类型|必传|说明|
 |:---------------|:-----|:-----|:---------------|
-|messageId|int|是|消息ID|
+|messageId|string|是|消息ID|
 
 #### 出参
 
