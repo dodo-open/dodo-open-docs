@@ -62,7 +62,7 @@ message = AESDecrypt(HexStringToBytes(payload), HexStringToBytes(secretKey), {
 
   </CodeGroupItem>
 
-  <CodeGroupItem title="NET代码" active>
+  <CodeGroupItem title="1 - Net" active>
   
 ```C#
 using System;
@@ -124,9 +124,9 @@ namespace DoDo.Open.Sdk.Utils
         }
 
         /// <summary>
-        /// 16进制字符串转Byte数组
+        /// 十六进制字符串转字节数组
         /// </summary>
-        /// <param name="hexStr">16进制字符</param>
+        /// <param name="hexStr">十六进制字符串</param>
         /// <returns></returns>
         private static byte[] HexStringToBytes(string hexStr)
         {
@@ -140,6 +140,86 @@ namespace DoDo.Open.Sdk.Utils
         }
 
     }
+}
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="2 - JAVA" active>
+
+```java
+package dodo.open.sdk.utils;
+
+import java.security.AlgorithmParameters;
+import java.security.Security;
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import org.apache.commons.codec.binary.Hex;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+/**
+ * @Author Rhyheart
+ * @Date 2023/2/6 18:36
+ * @Description
+ */
+public class OpenSecretUtil {
+
+  /**
+   * 初始化Provider，千万别漏了！
+   */
+  static {
+    Security.addProvider(new BouncyCastleProvider());
+  }
+
+  /**
+   * WebHook解密
+   *
+   * @param payload   加密消息
+   * @param secretKey 解密密钥
+   *
+   * @return
+   */
+  public static String WebHookDecrypt(String payload, String secretKey) {
+    try {
+      return AESDecrypt(HexStringToBytes(payload), HexStringToBytes(secretKey), new byte[16], Cipher.getInstance("AES/CBC/PKCS7Padding"));
+    } catch (Exception e) {
+      return null;
+    }
+  }
+
+  /**
+   * AES加密
+   *
+   * @param payload   加密消息
+   * @param secretKey 解密密钥
+   * @param iv        IV向量
+   * @param cipher    AES配置
+   *
+   * @return
+   *
+   * @throws Exception
+   */
+  private static String AESDecrypt(byte[] payload, byte[] secretKey, byte[] iv, Cipher cipher) throws Exception {
+    var sKeySpec = new SecretKeySpec(secretKey, "AES");
+    var params = AlgorithmParameters.getInstance("AES");
+    params.init(new IvParameterSpec(iv));
+    cipher.init(Cipher.DECRYPT_MODE, sKeySpec, params);
+    var result = cipher.doFinal(payload);
+    return new String(result);
+  }
+
+  /**
+   * 十六进制字符串转字节数组
+   *
+   * @param hexStr 十六进制字符串
+   *
+   * @return
+   */
+  private static byte[] HexStringToBytes(String hexStr) throws Exception {
+    return Hex.decodeHex(hexStr.toCharArray());
+  }
+
 }
 ```
 
