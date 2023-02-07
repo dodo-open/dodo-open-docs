@@ -266,7 +266,7 @@ public class OpenSecretUtil {
 ```json
 {
     "clientId": "10001",
-    "payload": "ldsjfldsjaflduiotfjewlrjelw"
+    "payload": "IVAAAAA"
 }
 ```
 我们将`payload`进行[数据解密](#数据解密)，可获得各类[事件消息](./event.md)，解密后事件消息示例：
@@ -286,7 +286,9 @@ public class OpenSecretUtil {
 ```
 数据解密后，我们即可获得各类[事件消息](./event.md)，可以针对事件消息进行相应的处理，可将请求结果返回给开放平台，返回示例：
 :::tip
-请在务必在2s内返回请求结果，请尽量进行异步处理，否则开放平台将会本次WebHook调用定义为失败，失败后，开放平台会进行重试
+请尽量使用异步处理，务必在2s内返回请求结果，否则开放平台将会本次WebHook调用定义为失败！
+
+失败后，开放平台会将请求加入重试队列，重试间隔为 4s，8s，32s，60s，120s 共计5次， 如果5次均失败， 则请求锁定1小时， 1小时内所有请求将丢弃
 :::
 <CodeGroup>
 
