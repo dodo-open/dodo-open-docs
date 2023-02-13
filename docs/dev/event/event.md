@@ -2,7 +2,7 @@
 
 ## 接收方式
 
-开发者当前可通过[WebSocket](./websocket.md)接收各类事件
+开发者当前可通过[WebSocket](./websocket.md)或[WebHook](./WebHook.md)接收各类事件
 
 ## 事件主体
 

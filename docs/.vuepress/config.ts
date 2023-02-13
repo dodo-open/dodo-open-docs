@@ -258,6 +258,7 @@ export default defineUserConfig({
               text: '事件',
               children: [
                 '/dev/event/websocket.md',
+                '/dev/event/webhook.md',
                 '/dev/event/event.md',
                 '/dev/event/channel-text.md',
                 '/dev/event/channel-voice.md',
