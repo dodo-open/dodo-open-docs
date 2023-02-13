@@ -24,10 +24,10 @@
 
 开发者提供的接口格式需要满足以下几点：
 
-- 请求地址必须为http，不要包含特殊字符，其他都ok
-- 请求方式为POST
-- 请求内容为JSON，即请求头：application/json
-- 返回内容为JSON，即返回头：application/json
+- 请求地址必须为https，不要包含特殊字符，其他都ok
+- 请求方式必须为POST
+- 请求内容必须为JSON，即请求头：application/json
+- 返回内容必须为JSON，即返回头：application/json
 
 #### 请求格式
 
