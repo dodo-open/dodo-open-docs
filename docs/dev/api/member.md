@@ -140,6 +140,7 @@ GetMemberInfo
 |isBot|int|是否机器人，0：否，1：是|
 |onlineDevice|int|在线设备，0：无，1：PC在线，2：手机在线|
 |onlineStatus|int|在线状态，0：离线，1：在线，2：请勿打扰，3：离开|
+|inviterDodoSourceId|string|邀请人DoDoID|
 
 #### 入参示例
 
@@ -166,6 +167,7 @@ GetMemberInfo
         "isBot": 0,
         "onlineDevice": 1,
         "onlineStatus": 1,
+        "inviterDodoSourceId": "12345"
     },
     "status": 0,
     "message": "success"
