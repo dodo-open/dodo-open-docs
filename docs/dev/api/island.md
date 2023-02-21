@@ -98,10 +98,10 @@ GetIslandInfo
 |coverUrl|string|群头像|
 |memberCount|int|群总人数|
 |onlineMemberCount|int|群在线人数|
-|ownerDodoSourceId|string|群主DoDoID|
 |description|string|群简介|
 |defaultChannelId|string|默认访问频道ID|
 |systemChannelId|string|系统消息频道ID|
+|ownerDodoSourceId|string|群主DoDoID|
 
 #### 入参示例
 
@@ -121,10 +121,10 @@ GetIslandInfo
         "coverUrl": "https://img.imdodo.com/dodo/730ace7b311879cee67bbbea41018bbe.png",
         "memberCount": 1000,
         "onlineMemberCount": 500,
-        "ownerDodoSourceId": "8527",
         "description": "这个是一个测试群",
         "defaultChannelId": "1000101",
-        "systemChannelId": "1000102"
+        "systemChannelId": "1000102",
+        "ownerDodoSourceId": "8527"
     },
     "status": 0,
     "message": "success"
