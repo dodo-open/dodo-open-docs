@@ -1,4 +1,4 @@
-# 频道消息Event（Modify）
+# 频道消息Event
 
 
 ## 消息事件

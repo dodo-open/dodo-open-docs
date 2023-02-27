@@ -1,4 +1,4 @@
-# 群API（Modify）
+# 群API
 
 
 ## 获取群列表
@@ -61,7 +61,7 @@ GetIslandList
 ```
 
 
-## 获取群信息（Modify）
+## 获取群信息
 
 GetIslandInfo
 
