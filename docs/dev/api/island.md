@@ -101,6 +101,7 @@ GetIslandInfo
 |description|string|群简介|
 |defaultChannelId|string|默认访问频道ID|
 |systemChannelId|string|系统消息频道ID|
+|ownerDodoSourceId|string|群主DoDoID|
 
 #### 入参示例
 
@@ -122,7 +123,8 @@ GetIslandInfo
         "onlineMemberCount": 500,
         "description": "这个是一个测试群",
         "defaultChannelId": "1000101",
-        "systemChannelId": "1000102"
+        "systemChannelId": "1000102",
+        "ownerDodoSourceId": "8527"
     },
     "status": 0,
     "message": "success"

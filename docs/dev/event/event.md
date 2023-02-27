@@ -27,13 +27,13 @@ EventSubjectDataBusiness
 
 ## 事件类型
 
-#### 文字频道
+#### 频道消息
 
-- 2001：[消息事件](./channel-text.md#消息事件)
-- 3001：[消息表情反应事件](./channel-text.md#消息表情反应事件)
-- 3002：[卡片消息按钮事件](./channel-text.md#卡片消息按钮事件)
-- 3003：[卡片消息表单回传事件](./channel-text.md#卡片消息表单回传事件)
-- 3004：[卡片消息列表回传事件](./channel-text.md#卡片消息列表回传事件)
+- 2001：[消息事件](./channel-message.md#消息事件)
+- 3001：[消息表情反应事件](./channel-message.md#消息表情反应事件)
+- 3002：[卡片消息按钮事件](./channel-message.md#卡片消息按钮事件)
+- 3003：[卡片消息表单回传事件](./channel-message.md#卡片消息表单回传事件)
+- 3004：[卡片消息列表回传事件](./channel-message.md#卡片消息列表回传事件)
 
 #### 语音频道
 
