@@ -41,6 +41,7 @@
 克隆代码
 
 ```bash
+# 如果不行，需要添加代理端口export http_proxy=127.0.0.1:xxxx
 git clone -b dev https://github.com/dodo-open/dodo-open-docs.git
 ```
 
