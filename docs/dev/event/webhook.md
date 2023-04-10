@@ -231,6 +231,42 @@ public class OpenSecretUtil {
 
   </CodeGroupItem>
 
+  <CodeGroupItem title="3 - JavaScript" active>
+
+```js
+import CryptoJS from "crypto-js";
+
+/**
+ * WebHook解密
+ * 
+ * @param {string} payload   加密消息
+ * @param {string} secretKey 解密密钥
+
+ * @returns
+ */
+export function decryptData(payload, secretKey) {
+  const key = CryptoJS.enc.Hex.parse(secretKey);
+  const encryptedBytes = CryptoJS.enc.Hex.parse(payload);
+  const iv = CryptoJS.enc.Hex.parse('00000000000000000000000000000000');
+
+  const decrypted = CryptoJS.AES.decrypt(
+    {
+      ciphertext: encryptedBytes,
+    },
+    key,
+    {
+      mode: CryptoJS.mode.CBC,
+      padding: CryptoJS.pad.Pkcs7,
+      iv: iv,
+    }
+  );
+  const message = decrypted.toString(CryptoJS.enc.Utf8);
+  return message;
+}
+```
+
+  </CodeGroupItem>
+
 </CodeGroup>
 
 
